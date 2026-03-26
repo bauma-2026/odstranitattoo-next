@@ -23,7 +23,7 @@ export default function HowItWorks() {
 
            <div className="overflow-hidden image-block border border-neutral-200/60 bg-white">
   <Image
-    src="/images/pico/pico-screen.jpg"
+    src="/images/pico/pico-screen.webp"
     alt="Pico laser zaslon in nastavitve"
     width={800}
     height={800}
