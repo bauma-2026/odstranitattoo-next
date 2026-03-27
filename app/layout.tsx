@@ -35,13 +35,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://odstranitattoo.si"),
+  metadataBase: new URL("https://odstranitattoo-next.vercel.app"),
+
   title: {
     default: "Odstrani Tattoo",
     template: "%s | Odstrani Tattoo",
   },
+
   description:
     "Lasersko odstranjevanje tattoojev s Pico laserjem v Domžalah. Individualna ocena tattooja, strokovni postopek in realen načrt odstranjevanja.",
+
   keywords: [
     "odstranjevanje tattoojev",
     "lasersko odstranjevanje tattoojev",
@@ -51,17 +54,44 @@ export const metadata: Metadata = {
     "odstranitev tattooja",
     "Domžale",
   ],
+
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png" }],
+  },
+
   openGraph: {
-    title: "Odstrani Tattoo",
+    title: "Odstrani tattoo brez poškodb kože",
     description:
-      "Lasersko odstranjevanje tattoojev s Pico laserjem v Domžalah.",
-    url: "https://odstranitattoo.si",
+      "Pico laser razbije pigment na mikro delce, ki jih telo naravno odstrani. Brezplačen posvet in realna ocena.",
+    url: "https://odstranitattoo-next.vercel.app",
     siteName: "Odstrani Tattoo",
     locale: "sl_SI",
     type: "website",
+    images: [
+      {
+        url: "/og-default.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Odstranjevanje tattoojev s Pico laserjem",
+      },
+    ],
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Odstrani tattoo brez poškodb kože",
+    description:
+      "Pico laser razbije pigment na mikro delce, ki jih telo naravno odstrani.",
+    images: ["/og-default.jpg"],
+  },
+
   alternates: {
-    canonical: "https://odstranitattoo.si",
+    canonical: "https://odstranitattoo-next.vercel.app",
   },
 };
 
