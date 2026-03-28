@@ -43,6 +43,10 @@ export default function ResultsPreviewSection() {
         <p className="text-body-lg max-w-[56ch]">
           Spodaj so realni primeri, kako pigment po več tretmajih postopoma bledi.
         </p>
+         {/* 🔥 interpretacija (not inside same stack) */}
+    <p className="text-body-sm text-neutral-500 max-w-[52ch]">
+    Rezultati se razlikujejo glede na pigment, globino in starost tetovaže, vendar je pri večini primerov viden postopni fade skozi več tretmajev.
+  </p>
       </div>
 
       {/* GRID */}

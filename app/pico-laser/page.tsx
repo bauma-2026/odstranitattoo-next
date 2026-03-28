@@ -69,11 +69,11 @@ export default function PicoLaserPage() {
       <div className="header-stack max-w-2xl">
         <p className="eyebrow-dark">Pico laser</p>
 
-      <h1 className="heading-display text-3xl text-white sm:text-4xl lg:text-[3.25rem]">
-              Zakaj je Pico laser
-              <br />
-              bolj učinkovit
-            </h1>
+        <h1 className="heading-display text-3xl text-white sm:text-4xl lg:text-[3.25rem]">
+          Zakaj je Pico laser
+          <br />
+          bolj učinkovit
+        </h1>
 
         <p className="text-body-inverse-lg max-w-[52ch]">
           Pico laser odda izjemno kratek svetlobni impulz, ki pigment
@@ -85,6 +85,22 @@ export default function PicoLaserPage() {
           Rezultat je bolj natančno razgrajen pigment in manjša obremenitev
           kože.
         </p>
+
+        <div className="flex flex-col gap-2 pt-3">
+          <a
+            href="/odstranjevanje-tattoojev"
+            className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+          >
+            Preberi, kako poteka odstranjevanje →
+          </a>
+
+          <a
+            href="/rezultati"
+            className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+          >
+            Poglej rezultate pred in po →
+          </a>
+        </div>
       </div>
     </Container>
 
@@ -113,6 +129,13 @@ export default function PicoLaserPage() {
             pigmenta, boljši nadzor nad postopkom in bolj realne možnosti za
             postopno odstranjevanje tetovaže.
           </p>
+
+          <a
+            href="/faq"
+            className="text-sm font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
+          >
+            Preberi pogosta vprašanja o postopku →
+          </a>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2">
@@ -158,6 +181,13 @@ export default function PicoLaserPage() {
             Laserski tretma je le prvi del postopka. Po razbitju pigmenta telo te
             delce postopoma odstranjuje preko imunskega in limfnega sistema.
           </p>
+
+          <a
+            href="/odstranjevanje-tattoojev"
+            className="text-sm font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
+          >
+            Preberi več o celotnem procesu odstranjevanja →
+          </a>
         </div>
 
         <div className="grid gap-8 sm:grid-cols-3 sm:gap-10">
@@ -211,6 +241,13 @@ export default function PicoLaserPage() {
           <div className="grid gap-3 pt-2 sm:grid-cols-2">
             {/* bullets ostanejo */}
           </div>
+
+          <a
+            href="/rezultati"
+            className="text-sm font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
+          >
+            Poglej realne rezultate odstranjevanja →
+          </a>
         </div>
 
         {/* VISUAL ostane enak */}
@@ -251,7 +288,14 @@ export default function PicoLaserPage() {
           </Button>
         </div>
 
-        <p className="text-body-inverse-sm pt-2">
+        <a
+          href="/faq"
+          className="mt-4 text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+        >
+          Preberi pogosta vprašanja →
+        </a>
+
+        <p className="mt-4 text-sm text-white/50">
           Posvet je brezplačen in brez obveznosti.
         </p>
       </div>

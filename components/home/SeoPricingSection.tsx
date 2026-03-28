@@ -22,6 +22,9 @@ export default function SeoPricingSection() {
             Cena odstranjevanja tattooja je vedno odvisna od posameznega
             primera, zato jo lahko natančno določimo šele po posvetu.
           </p>
+            <p className="text-body-sm text-neutral-500 max-w-[52ch]">
+    Končna cena je odvisna od velikosti tattooja, pigmenta in števila tretmajev.
+  </p>
         </div>
 
         <ul className="flex flex-col gap-3 text-neutral-700">
@@ -75,6 +78,7 @@ export default function SeoPricingSection() {
 
     </div>
   </Container>
+  
 </section>
   );
 }

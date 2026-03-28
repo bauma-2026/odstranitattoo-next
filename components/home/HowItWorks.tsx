@@ -99,9 +99,9 @@ export default function HowItWorks() {
               Želite vedeti, kako bo potekalo pri vas?
             </p>
 
-            <p className="text-body-sm mx-auto max-w-md text-neutral-600">
-              Na posvetu pregledamo tattoo in podamo realno oceno.
-            </p>
+  <p className="text-body-sm text-neutral-500 max-w-[46ch]">
+  Postopek je nadzorovan in prilagojen vsakemu tattooju, z minimalnim vplivom na kožo.
+</p>
 
             <div className="flex flex-wrap justify-center gap-3 pt-2">
               <Button href="/posvet" variant="primary-light">

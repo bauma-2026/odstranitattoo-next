@@ -29,14 +29,14 @@ export default function FinalCta() {
           podamo realno oceno glede na vaš primer.
         </p>
 
-        <p className="text-body-inverse-sm text-white/50">
-          Brezplačen posvet • individualna ocena • brez obveznosti
-        </p>
+         <p className="text-body-inverse-sm pt-2 text-white/60">
+        Posvet je brezplačen in brez obveznosti • odgovor dobite takoj
+      </p>
       </div>
 
       <div className="cta-spacing flex flex-wrap justify-center gap-4">
         <Button href="/posvet" variant="primary-dark">
-          Naroči brezplačen posvet
+          Preveri svoj primer
         </Button>
       </div>
     </div>

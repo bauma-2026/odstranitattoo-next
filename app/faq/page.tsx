@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function FaqPage() {
   return (
-  <main className="bg-white text-neutral-900">
+<main className="bg-white text-neutral-900">
   {/* HERO */}
   <section className="relative overflow-hidden bg-neutral-950 text-white">
     <div className="pointer-events-none absolute inset-0 z-[1]">
@@ -61,6 +61,23 @@ export default function FaqPage() {
           Na enem mestu lahko hitro preverite, kako poteka odstranjevanje,
           kaj lahko pričakujete in od česa je odvisen končni rezultat.
         </p>
+
+        {/* LINKS */}
+       <div className="flex flex-col gap-2 pt-3">
+          <a
+            href="/odstranjevanje-tattoojev"
+            className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+          >
+            Kako poteka odstranjevanje →
+          </a>
+
+          <a
+            href="/rezultati"
+            className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+          >
+            Poglej rezultate odstranjevanja →
+          </a>
+        </div>
       </div>
     </Container>
 

@@ -63,16 +63,30 @@ export default function SeoLocationSection() {
           prekrivanje z novim motivom.
         </p>
 
-        <div className="cta-spacing flex flex-wrap items-center gap-4 pt-0">
-          <Button href="/posvet" variant="primary-light">
-            Naroči brezplačen posvet
-          </Button>
+       <div className="cta-spacing flex flex-col items-start gap-3 pt-0">
+<p className="text-body-sm text-neutral-500 max-w-[52ch]">
+  Če razmišljate o odstranjevanju, je prvi korak vedno realna ocena tattooja in načrta postopka.
+</p>
+  <div className="flex flex-wrap items-center gap-4">
+    <Button href="/posvet" variant="primary-light">
+      Preveri svoj primer
+    </Button>
 
-          <Button href="/rezultati" variant="secondary-light">
-            Poglej rezultate
-          </Button>
-        </div>
-      </div>
+    <Button href="/rezultati" variant="secondary-light">
+      Poglej rezultate
+    </Button>
+  </div>
+
+  <a
+    href="/kontakt"
+    className="text-sm font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
+  >
+    Kontaktirajte nas za termin →
+  </a>
+
+</div>
+</div>
+      
     </div>
   </Container>
 </section>

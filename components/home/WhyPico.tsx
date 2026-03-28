@@ -102,45 +102,60 @@ export default function WhyPico() {
       </div>
 
       <div className="cta-spacing flex justify-center">
-        <div className="w-full max-w-2xl rounded-[20px] border border-neutral-200 border-skin-500/30 bg-skin-100 px-6 py-7 text-center shadow-[0_4px_14px_rgba(var(--skin-rgb),0.12)] transition-all duration-300 hover:-translate-y-[2px] hover:shadow-[0_6px_18px_rgba(var(--skin-rgb),0.18)] sm:px-8 sm:py-8">
-          <div className="flex flex-col items-center gap-3">
-            <p className="text-base font-medium text-neutral-900 sm:text-lg">
-              Želite preveriti, ali je Pico laser primeren za vaš tattoo?
-            </p>
+  <div className="w-full max-w-2xl rounded-[20px] border border-skin-500/30 bg-skin-100 px-6 py-7 text-center shadow-[0_4px_14px_rgba(var(--skin-rgb),0.12)] transition-all duration-300 hover:-translate-y-[2px] hover:shadow-[0_6px_18px_rgba(var(--skin-rgb),0.18)] sm:px-8 sm:py-8">
+    
+    <div className="flex flex-col items-center gap-3">
+      
+      {/* 🔥 HEADLINE (močnejši) */}
+      <p className="text-base font-medium text-neutral-900 sm:text-lg">
+        Preverite, ali je Pico laser primeren za vaš tattoo
+      </p>
 
-            <p className="text-body-sm mx-auto max-w-md text-neutral-700">
-              Na posvetu ocenimo vaš tattoo in razložimo, kaj lahko realno
-              pričakujete.
-            </p>
+      {/* 🔥 TEXT (bolj konkreten + boljši width) */}
+      <p className="text-body-sm max-w-[42ch] text-neutral-700">
+        Na posvetu dobite realno oceno odstranjevanja in števila tretmajev.
+      </p>
 
-            <div className="flex flex-wrap justify-center gap-3 pt-2">
-              <Button
-                href="/posvet"
-                variant="primary-light"
-                className="
-                  hover:!bg-skin-200
-                  hover:!text-skin-900
-                  hover:!border-skin-500/40
-                "
-              >
-                Preveri svoj primer
-              </Button>
+      {/* CTA BUTTONS */}
+      <div className="flex flex-wrap justify-center gap-3 pt-2">
+        <Button
+          href="/posvet"
+          variant="primary-light"
+          className="
+            hover:!bg-skin-200
+            hover:!text-skin-900
+            hover:!border-skin-500/40
+          "
+        >
+          Preveri svoj primer
+        </Button>
 
-              <Button
-                href="/rezultati"
-                variant="secondary-light"
-                className="
-                  hover:!border-skin-500/50
-                  hover:!text-skin-900
-                "
-              >
-                Poglej rezultate
-              </Button>
-            </div>
-          </div>
-        </div>
+        <Button
+          href="/rezultati"
+          variant="secondary-light"
+          className="
+            opacity-90
+            hover:opacity-100
+            hover:!border-skin-500/50
+            hover:!text-skin-900
+          "
+        >
+          Poglej rezultate
+        </Button>
       </div>
+
+      {/* 🔥 TERTIARY LINK (spacing fix) */}
+      <a
+        href="/pico-laser"
+        className="mt-1 pt-3 text-sm font-medium text-neutral-900/80 underline underline-offset-4 transition hover:text-neutral-900"
+      >
+        Preberi več o Pico laser tehnologiji →
+      </a>
+
     </div>
+  </div>
+</div></div>
+    
   </Container>
 </section>
   );

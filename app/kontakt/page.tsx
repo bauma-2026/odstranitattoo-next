@@ -11,6 +11,7 @@ export default function KontaktPage() {
   return (
    <main className="bg-white text-neutral-900">
   {/* HERO */}
+ {/* HERO */}
   <section className="relative overflow-hidden bg-neutral-950 text-white">
     <div className="pointer-events-none absolute inset-0 z-[1]">
       <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/20 to-transparent" />
@@ -36,20 +37,36 @@ export default function KontaktPage() {
         <p className="eyebrow-dark">Kontakt</p>
 
         <h1 className="heading-display text-3xl text-white sm:text-4xl lg:text-[3.25rem]">
-          Kontakt
+          Kontakt in
           <br />
-          in naročanje
+          lokacija
         </h1>
 
-        <p className="text-body-inverse-lg max-w-[52ch]">
-          Za vprašanja, posvet ali naročilo nas lahko kontaktirate po
-          telefonu, elektronski pošti ali preko družbenih omrežij.
+        <p className="text-body-inverse-lg max-w-[60ch]">
+          Če razmišljate o odstranjevanju tattooja, nas lahko kontaktirate za
+          brezplačen posvet, dodatna vprašanja ali uskladitev termina.
         </p>
 
-        <p className="text-body-inverse-sm max-w-[52ch]">
-          Pred začetkom odstranjevanja je vedno pomembna individualna ocena
-          tattooja in poteka postopka.
+        <p className="text-body-inverse-sm max-w-[60ch]">
+          Tukaj najdete kontaktne podatke, lokacijo studia v Domžalah in
+          hiter dostop do naslednjih korakov.
         </p>
+
+<div className="flex flex-col gap-2 pt-3">
+  <a
+    href="/posvet"
+    className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+  >
+    Naroči brezplačen posvet →
+  </a>
+
+  <a
+    href="/faq"
+    className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+  >
+    Preberi pogosta vprašanja →
+  </a>
+</div>
       </div>
     </Container>
 

@@ -76,6 +76,13 @@ export default function RezultatiPage() {
           Rezultate je zato vedno smiselno ocenjevati postopno in z realnimi
           pričakovanji.
         </p>
+
+        <a
+          href="/odstranjevanje-tattoojev"
+          className="pt-1 text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+        >
+          Preberi, kako poteka odstranjevanje →
+        </a>
       </div>
     </Container>
 
@@ -88,18 +95,24 @@ export default function RezultatiPage() {
   <section className="section-sm bg-white">
     <Container>
       <div className="section-gap">
-        
         {/* HEADER */}
         <div className="header-stack max-w-3xl">
-    <p className="eyebrow-muted">Pred / Po</p>
+          <p className="eyebrow-muted">Pred / Po</p>
 
-<h2 className="heading-section text-neutral-950">
-  Realni primeri odstranjevanja
-</h2>
+          <h2 className="heading-section text-neutral-950">
+            Realni primeri odstranjevanja
+          </h2>
 
-<p className="text-body-lg max-w-[56ch]">
-  Spodaj so primeri, kako tattoo skozi več tretmajev postopoma bledi.
-</p>
+          <p className="text-body-lg max-w-[56ch]">
+            Spodaj so primeri, kako tattoo skozi več tretmajev postopoma bledi.
+          </p>
+
+          <a
+            href="/faq"
+            className="text-sm font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
+          >
+            Preberi pogosta vprašanja o rezultatih →
+          </a>
         </div>
 
         {/* GRID */}
@@ -114,44 +127,43 @@ export default function RezultatiPage() {
                 hover:shadow-[0_10px_24px_rgba(var(--skin-rgb),0.12)]
               "
             >
-       <div className="relative aspect-[5/4] overflow-hidden bg-neutral-100">
-  <Image
-    src={item.image}
-    alt={item.alt}
-    fill
-    className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-    sizes="(min-width: 1280px) 33vw, (min-width: 1024px) 50vw, 100vw"
-  />
+              <div className="relative aspect-[5/4] overflow-hidden bg-neutral-100">
+                <Image
+                  src={item.image}
+                  alt={item.alt}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                  sizes="(min-width: 1280px) 33vw, (min-width: 1024px) 50vw, 100vw"
+                />
 
-  {/* subtle after emphasis */}
-<div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-white/8" />
+                {/* subtle after emphasis */}
+                <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-white/8" />
 
-  {/* optional bottom fade for better label readability */}
-  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[22%] bg-gradient-to-t from-black/18 to-transparent" />
+                {/* optional bottom fade for better label readability */}
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[22%] bg-gradient-to-t from-black/18 to-transparent" />
 
-  {/* overlay labels */}
-  <div className="pointer-events-none absolute inset-0 flex">
-    <div className="flex w-1/2 items-start justify-start p-3 sm:p-4">
-      <span className="rounded-full bg-black/70 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-white backdrop-blur">
-        Pred
-      </span>
-    </div>
+                {/* overlay labels */}
+                <div className="pointer-events-none absolute inset-0 flex">
+                  <div className="flex w-1/2 items-start justify-start p-3 sm:p-4">
+                    <span className="rounded-full bg-black/70 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-white backdrop-blur">
+                      Pred
+                    </span>
+                  </div>
 
-    <div className="flex w-1/2 items-start justify-end p-3 sm:p-4">
-      <span className="rounded-full bg-white/60 text-neutral-900/90 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-neutral-900 backdrop-blur">
-        Po
-      </span>
-    </div>
-  </div>
+                  <div className="flex w-1/2 items-start justify-end p-3 sm:p-4">
+                    <span className="rounded-full bg-white/60 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-neutral-900 backdrop-blur">
+                      Po
+                    </span>
+                  </div>
+                </div>
 
-  {/* center divider */}
- <div className="pointer-events-none absolute inset-y-0 left-0 w-1/2 bg-black/5" />
-</div>
+                {/* center divider */}
+                <div className="pointer-events-none absolute inset-y-0 left-0 w-1/2 bg-black/5" />
+              </div>
+
               <div className="p-5 sm:p-6">
                 <div className="flex flex-col gap-3">
                   <div className="flex flex-wrap items-center gap-2">
-                    
-                    {/* ❗ FIX: h2 → h3 */}
                     <h3 className="text-lg font-semibold text-neutral-950">
                       {item.title}
                     </h3>
@@ -161,7 +173,7 @@ export default function RezultatiPage() {
                     </span>
                   </div>
 
-                 <p className="text-body-sm text-neutral-600">
+                  <p className="text-body-sm text-neutral-600">
                     {item.description}
                   </p>
                 </div>
@@ -169,7 +181,6 @@ export default function RezultatiPage() {
             </article>
           ))}
         </div>
-
       </div>
     </Container>
   </section>
@@ -184,7 +195,6 @@ export default function RezultatiPage() {
 
     <Container className="relative z-10">
       <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-        
         <div className="flex flex-col items-center gap-4 sm:gap-5">
           <p className="eyebrow-dark">Posvet</p>
 
@@ -198,21 +208,29 @@ export default function RezultatiPage() {
             vam podamo realno pričakovanje rezultatov.
           </p>
         </div>
+<div className="cta-spacing flex flex-col items-center">
+  <div className="flex flex-wrap justify-center gap-4">
+    <Button href="/posvet" variant="primary-dark">
+      Naroči brezplačen posvet
+    </Button>
 
-        <div className="cta-spacing flex flex-wrap justify-center gap-4">
-          <Button href="/posvet" variant="primary-dark">
-            Naroči brezplačen posvet
-          </Button>
+    <Button href="/odstranjevanje-tattoojev" variant="secondary-dark">
+      Kako poteka odstranjevanje
+    </Button>
+  </div>
+<div className="flex flex-col gap-2 pt-3">
+  <a
+    href="/faq"
+    className="mt-6 text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+  >
+    Preberi pogosta vprašanja →
+  </a>
 
-          <Button href="/odstranjevanje-tattoojev" variant="secondary-dark">
-            Kako poteka odstranjevanje
-          </Button>
-        </div>
-
-        <p className="text-body-inverse-sm pt-2">
-          Posvet je brezplačen in brez obveznosti.
-        </p>
-      </div>
+  <p className="mt-4 text-sm text-white/50">
+    Posvet je brezplačen in brez obveznosti.
+  </p>
+</div></div>
+ </div>
     </Container>
   </section>
 </main>

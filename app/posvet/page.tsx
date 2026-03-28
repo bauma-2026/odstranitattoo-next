@@ -51,6 +51,21 @@ export default function PosvetPage() {
           Namen posveta je, da dobite jasen pregled nad možnostmi
           odstranjevanja in realnimi pričakovanji.
         </p>
+        <div className="flex flex-col gap-2 pt-3">
+  <a
+    href="/rezultati"
+    className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+  >
+    Poglej rezultate pred in po →
+  </a>
+
+  <a
+    href="/faq"
+    className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+  >
+    Preberi pogosta vprašanja →
+  </a>
+</div>
       </div>
     </Container>
 

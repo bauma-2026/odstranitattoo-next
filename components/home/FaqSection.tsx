@@ -5,27 +5,46 @@ import Script from "next/script";
 const faqs = [
   {
     q: "Ali odstranjevanje tattooja boli?",
-    a: "Občutek je odvisen od mesta tattooja in vaše občutljivosti, vendar ga večina primerja z rahlim pikanjem ali toploto. Tretma je kratek, po potrebi pa uporabimo tudi hlajenje za večje udobje.",
+    a: "Občutek je odvisen od mesta tattooja in vaše občutljivosti, večina pa ga opisuje kot rahlo pikanje ali toploto. Tretma je kratek, po potrebi uporabimo hlajenje za večje udobje.",
   },
   {
     q: "Koliko tretmajev je potrebnih?",
-    a: "To je odvisno od velikosti, barve in globine tattooja. Nekateri zbledijo hitreje, drugi potrebujejo več časa. Na posvetu vam podamo realno oceno števila tretmajev.",
+    a: "Odvisno od velikosti, barve in globine tattooja. Nekateri zbledijo hitreje, drugi potrebujejo več tretmajev. Na posvetu dobite realno oceno števila tretmajev.",
   },
   {
     q: "Ali se tattoo lahko popolnoma odstrani?",
-    a: "V veliko primerih je mogoče tattoo skoraj popolnoma odstraniti. Končni rezultat pa je vedno odvisen od pigmenta, kože in starosti tattooja. Na posvetu vam povemo, kaj lahko realno pričakujete.",
+    a: "V veliko primerih je možno tattoo skoraj popolnoma odstraniti. Končni rezultat pa je vedno odvisen od pigmenta, kože in starosti tattooja. Na posvetu vam jasno povemo, kaj lahko pričakujete.",
   },
   {
     q: "Koliko časa traja odstranjevanje?",
-    a: "Odstranjevanje je postopen proces. Med tretmaji mora miniti več tednov, da se koža obnovi in telo odstrani pigment. Celoten proces običajno traja več mesecev.",
+    a: "Odstranjevanje je postopen proces. Med tretmaji mora miniti nekaj tednov, da se koža obnovi in telo odstrani pigment. Celoten proces običajno traja več mesecev.",
   },
   {
     q: "Ali lahko nastanejo brazgotine?",
-    a: "Pri pravilno izvedenem postopku je tveganje za brazgotine majhno. Pomembna je tudi pravilna nega po tretmaju, ki jo natančno razložimo na posvetu.",
+    a: "Pri sodobni Pico laser tehnologiji je tveganje za brazgotine majhno. Pomembna je tudi pravilna nega po tretmaju, ki jo natančno razložimo na posvetu.",
   },
+
+  // 🔥 KILLER (fear removal)
+  {
+    q: "Ali odstranjevanje poškoduje kožo?",
+    a: "Pri Pico laser tehnologiji je energija usmerjena v pigment, ne v okolno tkivo. Zato je vpliv na kožo minimalen, postopek pa poteka postopno in nadzorovano.",
+  },
+
+  // 🔥 TRUST + REALITY
+  {
+    q: "Ali je rezultat takoj viden?",
+    a: "Ne. Pigment se razgrajuje postopoma, telo pa ga odstranjuje skozi čas. Vidne spremembe se pokažejo po vsakem tretmaju.",
+  },
+
+  // 🔥 DESIRE (pomembno vprašanje)
+  {
+    q: "Ali lahko odstranim samo del tattooja?",
+    a: "Da. Možno je postopno odstranjevanje ali svetljenje tattooja za prekrivanje (cover-up). Postopek prilagodimo vašemu cilju.",
+  },
+
   {
     q: "Koliko stane odstranjevanje tattooja?",
-    a: "Cena je odvisna od velikosti in zahtevnosti tattooja. Na posvetu vam pripravimo jasno oceno stroška in poteka odstranjevanja.",
+    a: "Cena je odvisna od velikosti in zahtevnosti tattooja. Na posvetu dobite jasno oceno stroška in poteka odstranjevanja.",
   },
 ];
 
