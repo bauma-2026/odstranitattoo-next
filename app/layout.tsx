@@ -34,8 +34,15 @@ const inter = Inter({
   display: "swap",
 });
 
+const BASE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  "https://odstranitattoo-next.vercel.app";
+
+// 🔥 detect production
+const isProd = BASE_URL === "https://odstranitattoo.si";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://odstranitattoo-next.vercel.app"),
+  metadataBase: new URL(BASE_URL),
 
   title: {
     default: "Odstrani Tattoo",
@@ -45,21 +52,30 @@ export const metadata: Metadata = {
   description:
     "Lasersko odstranjevanje tattoojev s Pico laserjem v Domžalah. Individualna ocena tattooja, strokovni postopek in realen načrt odstranjevanja.",
 
+  // ✅ ROBOTS (ključni del)
+  robots: isProd
+    ? {
+        index: true,
+        follow: true,
+      }
+    : {
+        index: false,
+        follow: false,
+      },
+
   icons: {
     icon: [
       { url: "/favicon.ico" },
       { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
     ],
-    apple: [
-      { url: "/apple-touch-icon.png" },
-    ],
+    apple: [{ url: "/apple-touch-icon.png" }],
   },
 
   openGraph: {
     title: "Odstrani Tattoo",
     description:
       "Lasersko odstranjevanje tattoojev s Pico laserjem v Domžalah.",
-    url: "https://odstranitattoo-next.vercel.app",
+    url: BASE_URL,
     siteName: "Odstrani Tattoo",
     locale: "sl_SI",
     type: "website",
@@ -73,8 +89,9 @@ export const metadata: Metadata = {
     ],
   },
 
+  // ✅ CANONICAL (vedno production!)
   alternates: {
-    canonical: "https://odstranitattoo-next.vercel.app",
+    canonical: "https://odstranitattoo.si",
   },
 };
 

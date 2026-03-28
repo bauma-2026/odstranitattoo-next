@@ -31,102 +31,77 @@ const faqs = [
 
 export default function FaqSection() {
   return (
-    <section className="section-sm border-t border-skin-400/30 bg-white">
-      <Container className="max-w-3xl">
-        <div className="flex flex-col gap-12">
-          {/* HEADER */}
-          <div className="flex max-w-2xl flex-col gap-4 sm:gap-5">
-            <p className="eyebrow-muted">Pogosta vprašanja</p>
+  <section className="section-tight border-t border-skin-400/30 bg-white">
+  <Container className="max-w-3xl">
+    <div className="section-gap">
+      
+      {/* HEADER */}
+      <div className="header-stack max-w-2xl">
+        <p className="eyebrow-muted">Pogosta vprašanja</p>
 
-            <h2 className="heading-section text-neutral-950">
-              Najpogostejša vprašanja o odstranjevanju tattoojev
-            </h2>
+        <h2 className="heading-section text-neutral-950">
+          Najpogostejša vprašanja o odstranjevanju tattoojev
+        </h2>
 
-            <p className="text-body-lg">
-              Spodaj so odgovori na vprašanja, ki jih stranke najpogosteje
-              zastavijo pred prvim tretmajem.
-            </p>
-          </div>
+        <p className="text-body-lg">
+          Spodaj so odgovori na vprašanja, ki jih stranke najpogosteje
+          zastavijo pred prvim tretmajem.
+        </p>
+      </div>
 
-          {/* FAQ LIST */}
-          <div className="max-w-3xl">
-            {faqs.map((faq) => (
-              <details
-                key={faq.q}
-                className="group border-b border-skin-400/20 py-2"
-              >
-                <summary className="flex cursor-pointer list-none items-start justify-between gap-6 px-4 py-4 text-left">
-                  <span className="pr-4 text-base font-semibold leading-7 tracking-tight text-neutral-950">
-                    {faq.q}
-                  </span>
+      {/* FAQ LIST */}
+      <div className="max-w-3xl -mt-2">
+        {faqs.map((faq) => (
+          <details
+            key={faq.q}
+            className="group border-b border-skin-400/20 py-1.5"
+          >
+            <summary className="flex cursor-pointer list-none items-start justify-between gap-6 px-4 py-4 text-left">
+              <span className="pr-4 text-base font-semibold leading-7 tracking-tight text-neutral-950">
+                {faq.q}
+              </span>
 
-                  <span className="relative mt-1 flex h-5 w-5 shrink-0 items-center justify-center">
-                    <span className="absolute h-[2px] w-4 bg-neutral-900 transition-transform duration-200" />
-                    <span className="absolute h-4 w-[2px] bg-neutral-900 transition-opacity duration-200 group-open:opacity-0" />
-                  </span>
-                </summary>
+              <span className="relative mt-1 flex h-5 w-5 shrink-0 items-center justify-center">
+                <span className="absolute h-[2px] w-4 bg-neutral-900 transition-transform duration-200" />
+                <span className="absolute h-4 w-[2px] bg-neutral-900 transition-opacity duration-200 group-open:opacity-0" />
+              </span>
+            </summary>
 
-                <div className="grid grid-rows-[0fr] transition-all duration-300 ease-out group-open:grid-rows-[1fr]">
-                  <div className="overflow-hidden">
-                    <div className="px-4 pb-5 pt-1">
-                      <p className="text-body">{faq.a}</p>
-                    </div>
-                  </div>
-                </div>
-              </details>
-            ))}
-          </div>
-
-          {/* MINI CTA */}
-          <div className="flex justify-center">
-            <div className="w-full max-w-2xl rounded-[18px] border border-skin-400/25 bg-skin-50/60 px-6 py-6 text-center sm:px-7 sm:py-7">
-              <div className="flex flex-col items-center gap-3">
-                <p className="text-[15px] font-medium text-neutral-900 sm:text-base">
-                  Imate dodatno vprašanje?
-                </p>
-
-                <p className="text-body-sm max-w-xs text-neutral-700">
-                  Pošljite vprašanje ali povpraševanje in pomagamo vam z jasno
-                  oceno naslednjega koraka.
-                </p>
-
-                <div className="pt-1">
-                  <Button
-                    href="/posvet"
-                    variant="primary-light"
-                    className="
-                      hover:!bg-skin-200
-                      hover:!text-skin-900
-                      hover:!border-skin-500/40
-                    "
-                  >
-                    Pošlji vprašanje
-                  </Button>
+            <div className="grid grid-rows-[0fr] transition-all duration-300 ease-out group-open:grid-rows-[1fr]">
+              <div className="overflow-hidden">
+                <div className="px-4 pb-5 pt-1">
+                  <p className="text-body">{faq.a}</p>
                 </div>
               </div>
             </div>
+          </details>
+        ))}
+      </div>
+
+      {/* MINI CTA */}
+      <div className="cta-spacing flex justify-center">
+        <div className="w-full max-w-2xl rounded-[18px] border border-skin-400/25 bg-skin-50/60 px-6 py-6 text-center sm:px-7 sm:py-7">
+          <div className="flex flex-col items-center gap-3">
+            <p className="text-[15px] font-medium text-neutral-900 sm:text-base">
+              Imate dodatno vprašanje?
+            </p>
+
+            <p className="text-body-sm max-w-xs text-neutral-700">
+              Pošljite vprašanje ali povpraševanje in pomagamo vam z jasno
+              oceno naslednjega koraka.
+            </p>
+
+            <div className="pt-1">
+              <Button href="/posvet" variant="primary-light">
+                Pošlji vprašanje
+              </Button>
+            </div>
           </div>
         </div>
-      </Container>
+      </div>
 
-      <Script
-        id="faq-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: faqs.map((faq) => ({
-              "@type": "Question",
-              name: faq.q,
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: faq.a,
-              },
-            })),
-          }),
-        }}
-      />
-    </section>
+    </div>
+  </Container>
+</section>
   );
 }

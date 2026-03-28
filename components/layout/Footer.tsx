@@ -24,113 +24,114 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-neutral-950 text-white">
-      <Container>
-        <div className="grid gap-12 pt-12 pb-10 sm:pt-14 sm:pb-12 lg:grid-cols-[1.1fr_0.9fr_0.9fr] lg:gap-16 lg:pt-16 lg:pb-14">
-          {/* BRAND */}
-          <div className="max-w-sm">
+  <footer className="border-t border-white/10 bg-neutral-950 text-white">
+  <Container>
+    <div className="grid gap-10 pt-12 pb-10 sm:pt-14 sm:pb-12 lg:grid-cols-[1.1fr_0.9fr_0.9fr] lg:gap-14 lg:pt-16 lg:pb-14">
+      
+      {/* BRAND */}
+      <div className="max-w-sm">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-3 transition-opacity duration-200 hover:opacity-90"
+        >
+          <Image
+            src="/logo/laser-symbol-white.svg"
+            alt="Odstrani Tattoo"
+            width={42}
+            height={42}
+            className="h-10 w-10"
+          />
+
+          <span className="text-[12px] font-medium uppercase tracking-[0.16em] text-white">
+            Odstrani Tattoo
+          </span>
+        </Link>
+
+        <p className="mt-4 text-sm leading-6 text-neutral-400">
+          Lasersko odstranjevanje tetovaž s Pico laserjem v Domžalah.
+          Individualna ocena, realna pričakovanja in postopen pristop do
+          rezultata.
+        </p>
+      </div>
+
+      {/* NAV */}
+      <div>
+        <p className="text-[12px] font-medium uppercase tracking-[0.16em] text-neutral-500">
+          Navigacija
+        </p>
+
+        <nav className="mt-4 grid gap-3">
+          {quickLinks.map((item) => (
             <Link
-              href="/"
-              className="inline-flex items-center gap-3 transition-opacity duration-200 hover:opacity-90"
+              key={item.href}
+              href={item.href}
+              className="text-sm text-neutral-300 transition-colors duration-200 hover:text-white"
             >
-              <Image
-                src="/logo/laser-symbol-white.svg"
-                alt="Odstrani Tattoo"
-                width={42}
-                height={42}
-                className="h-10 w-10"
-              />
-
-              <span className="text-[12px] font-medium uppercase tracking-[0.16em] text-white">
-                Odstrani Tattoo
-              </span>
+              {item.label}
             </Link>
+          ))}
+        </nav>
+      </div>
 
-            <p className="mt-5 text-sm leading-6 text-neutral-400">
-              Lasersko odstranjevanje tetovaž s Pico laserjem v Domžalah.
-              Individualna ocena, realna pričakovanja in postopen pristop do
-              rezultata.
-            </p>
+      {/* CONTACT */}
+      <div>
+        <p className="text-[12px] font-medium uppercase tracking-[0.16em] text-neutral-500">
+          Kontakt
+        </p>
+
+        <div className="mt-4 grid gap-4 text-sm">
+          <div>
+            <p className="text-neutral-500">Telefon</p>
+            <a
+              href="tel:+38670553340"
+              className="mt-1 inline-block text-neutral-300 transition-colors duration-200 hover:text-white"
+            >
+              070 55 33 40
+            </a>
           </div>
 
-          {/* NAV */}
           <div>
-            <p className="text-[12px] font-medium uppercase tracking-[0.16em] text-neutral-500">
-              Navigacija
-            </p>
+            <p className="text-neutral-500">E-pošta</p>
+            <a
+              href="mailto:odstranitattoo@gmail.com"
+              className="mt-1 inline-block break-all text-neutral-300 underline underline-offset-4 transition-colors duration-200 hover:text-white"
+            >
+              odstranitattoo@gmail.com
+            </a>
+          </div>
 
-            <nav className="mt-5 grid gap-3">
-              {quickLinks.map((item) => (
-                <Link
+          <div>
+            <p className="text-neutral-500">Lokacija</p>
+            <p className="mt-1 text-neutral-300">Ljubljanska 90, Domžale</p>
+          </div>
+
+          <div>
+            <p className="text-neutral-500">Družbena omrežja</p>
+
+            <div className="mt-2 flex flex-wrap gap-5">
+              {socialLinks.map((item) => (
+                <a
                   key={item.href}
                   href={item.href}
-                  className="text-sm text-neutral-300 transition-colors duration-200 hover:text-white"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-neutral-300 transition-colors duration-200 hover:text-white"
                 >
                   {item.label}
-                </Link>
+                </a>
               ))}
-            </nav>
-          </div>
-
-          {/* CONTACT */}
-          <div>
-            <p className="text-[12px] font-medium uppercase tracking-[0.16em] text-neutral-500">
-              Kontakt
-            </p>
-
-            <div className="mt-5 grid gap-4 text-sm">
-              <div>
-                <p className="text-neutral-500">Telefon</p>
-                <a
-                  href="tel:+38670553340"
-                  className="mt-1 inline-block text-neutral-300 transition-colors duration-200 hover:text-white"
-                >
-                  070 55 33 40
-                </a>
-              </div>
-
-              <div>
-                <p className="text-neutral-500">E-pošta</p>
-                <a
-                  href="mailto:odstranitattoo@gmail.com"
-                  className="mt-1 inline-block break-all text-neutral-300 underline underline-offset-4 transition-colors duration-200 hover:text-white"
-                >
-                  odstranitattoo@gmail.com
-                </a>
-              </div>
-
-              <div>
-                <p className="text-neutral-500">Lokacija</p>
-                <p className="mt-1 text-neutral-300">Ljubljanska 90, Domžale</p>
-              </div>
-
-              <div>
-                <p className="text-neutral-500">Družbena omrežja</p>
-
-                <div className="mt-2 flex flex-wrap gap-5">
-                  {socialLinks.map((item) => (
-                    <a
-                      key={item.href}
-                      href={item.href}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-neutral-300 transition-colors duration-200 hover:text-white"
-                    >
-                      {item.label}
-                    </a>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-      <div className="grid gap-3 border-t border-white/5 py-5 text-sm text-neutral-500 sm:grid-cols-[1.1fr_0.9fr_0.9fr] sm:items-center lg:gap-16">
-  <p>© {new Date().getFullYear()} Odstrani Tattoo</p>
-  <div />
-  <p>Odstranjevanje tetovaž v Domžalah</p>
-</div>
-      </Container>
-    </footer>
+    <div className="grid gap-3 border-t border-white/5 py-5 text-sm text-neutral-500 sm:grid-cols-[1.1fr_0.9fr_0.9fr] sm:items-center lg:gap-14">
+      <p>© {new Date().getFullYear()} Odstrani Tattoo</p>
+      <div />
+      <p>Odstranjevanje tetovaž v Domžalah</p>
+    </div>
+  </Container>
+</footer>
   );
 }

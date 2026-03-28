@@ -111,9 +111,9 @@ export default function RezultatiPage() {
 
                 <div className="p-6 sm:p-7">
                   <div className="flex flex-wrap items-center gap-3">
-                    <h2 className="text-xl font-semibold text-neutral-950">
+                   <h3 className="text-lg font-semibold text-neutral-950">
                       {item.title}
-                    </h2>
+                    </h3>
 
                     <span className="rounded-full bg-neutral-100 px-3 py-1 text-xs font-medium uppercase tracking-[0.12em] text-neutral-500">
                       {item.meta}

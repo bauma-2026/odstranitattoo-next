@@ -13,109 +13,116 @@ export const metadata: Metadata = {
 
 export default function OdstranjevanjeTattooDomzalePage() {
   return (
-    <main className="bg-white text-neutral-900">
+  <main className="bg-white text-neutral-900">
 
-   <section className="pt-12 pb-12 sm:pt-14 sm:pb-14 lg:pt-16 lg:pb-16">
-        <Container>
-          <div className="max-w-3xl">
-            <p className="text-[12px] font-medium uppercase tracking-[0.16em] text-neutral-500">
-              Domžale
+  {/* HERO / INTRO */}
+  <section className="section-sm">
+    <Container>
+      <div className="header-stack max-w-3xl">
+        <p className="eyebrow-muted">Domžale</p>
+
+        <h1 className="heading-display max-w-[16ch] text-neutral-950">
+          Odstranjevanje tattoojev
+          <br className="hidden sm:block" />
+          v Domžalah
+        </h1>
+
+        <p className="text-body-lg max-w-[56ch]">
+          V Domžalah izvajamo lasersko odstranjevanje tattoojev s Pico
+          laser tehnologijo. Postopek temelji na postopnem razbijanju
+          pigmenta, ki ga telo nato naravno odstrani.
+        </p>
+      </div>
+
+      <div className="cta-spacing flex flex-wrap gap-4">
+        <Button href="/posvet">Naroči posvet</Button>
+
+        <Button href="/rezultati" variant="secondary-light">
+          Poglej rezultate
+        </Button>
+      </div>
+    </Container>
+  </section>
+
+  {/* PROCESS + LOCATION */}
+  <section className="section-sm">
+    <Container>
+      <div className="grid gap-10 lg:grid-cols-[1fr_0.95fr] lg:gap-14">
+        
+        <div className="header-stack max-w-[60ch]">
+          <h2 className="heading-section text-neutral-950">
+            Pico laser za odstranjevanje tattoojev
+          </h2>
+
+          <p className="text-body-lg">
+            Pico laser odda zelo kratek impulz svetlobe, ki pigment
+            tattooja razbije na manjše delce. Ti delci se nato preko
+            limfnega sistema postopoma odstranijo iz telesa.
+          </p>
+
+          <p className="text-body">
+            Odstranjevanje tattoojev zato poteka postopoma in zahteva več
+            tretmajev. Končni rezultat je vedno odvisen od pigmenta,
+            globine nanosa in odziva kože.
+          </p>
+        </div>
+
+        <div className="rounded-[28px] border border-neutral-200 bg-neutral-50 p-7 sm:p-8">
+          <div className="flex flex-col gap-3">
+            <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-500">
+              Lokacija
             </p>
 
-            <h1 className="mt-3 text-4xl font-semibold tracking-tight leading-[1.05] text-neutral-950 sm:text-[48px]">
-              Odstranjevanje tattoojev
-              <br className="hidden sm:block" />
-              v Domžalah
-            </h1>
+            <h3 className="heading-tight text-2xl text-neutral-950">
+              Studio v Domžalah
+            </h3>
 
-            <p className="mt-6 max-w-2xl text-lg leading-[1.6] text-neutral-700">
-              V Domžalah izvajamo lasersko odstranjevanje tattoojev s Pico
-              laser tehnologijo. Postopek temelji na postopnem razbijanju
-              pigmenta, ki ga telo nato naravno odstrani.
+            <p className="text-body">
+              Studio se nahaja v Domžalah, kar omogoča enostaven dostop iz
+              Ljubljane in okolice.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Button href="/posvet">Naroči posvet</Button>
-
-              <Button href="/rezultati" variant="secondary-light">
-                Poglej rezultate
-              </Button>
-            </div>
+            <p className="text-body">
+              Pred začetkom odstranjevanja vedno naredimo individualno
+              oceno tattooja in pripravimo realen načrt postopka.
+            </p>
           </div>
-        </Container>
-      </section>
+        </div>
 
-      <section className="pt-12 pb-12 sm:pt-14 sm:pb-14 lg:pt-16 lg:pb-16">
-        <Container>
-          <div className="grid gap-12 lg:grid-cols-[1fr_0.95fr] lg:gap-14">
-            <div>
-              <h2 className="text-3xl font-semibold tracking-tight text-neutral-950 sm:text-4xl">
-                Pico laser za odstranjevanje tattoojev
-              </h2>
+      </div>
+    </Container>
+  </section>
 
-              <p className="mt-6 text-lg leading-[1.6] text-neutral-700">
-                Pico laser odda zelo kratek impulz svetlobe, ki pigment
-                tattooja razbije na manjše delce. Ti delci se nato preko
-                limfnega sistema postopoma odstranijo iz telesa.
-              </p>
+  {/* CONSULT CTA */}
+  <section className="section-sm border-y border-neutral-200 bg-neutral-50">
+    <Container>
+      <div className="section-gap">
+        
+        <div className="header-stack max-w-2xl">
+          <p className="eyebrow-muted">Posvet</p>
 
-              <p className="mt-5 leading-7 text-neutral-600">
-                Odstranjevanje tattoojev zato poteka postopoma in zahteva več
-                tretmajev. Končni rezultat je vedno odvisen od pigmenta,
-                globine nanosa in odziva kože.
-              </p>
-            </div>
+          <h2 className="heading-section text-neutral-950">
+            Individualna ocena tattooja
+          </h2>
 
-            <div className="rounded-[28px] border border-neutral-200 bg-neutral-50 p-7 sm:p-8">
-              <p className="text-sm font-medium uppercase tracking-[0.14em] text-neutral-500">
-                Lokacija
-              </p>
+          <p className="text-body-lg">
+            Pred začetkom postopka pregledamo tattoo in ocenimo možnosti
+            odstranjevanja glede na pigment, velikost in starost tetovaže.
+          </p>
+        </div>
 
-              <h3 className="mt-5 text-2xl font-semibold tracking-tight text-neutral-950">
-                Studio v Domžalah
-              </h3>
+        <div className="cta-spacing flex flex-wrap gap-4">
+          <Button href="/posvet">Naroči posvet</Button>
 
-              <p className="mt-5 leading-7 text-neutral-600">
-                Studio se nahaja v Domžalah, kar omogoča enostaven dostop iz
-                Ljubljane in okolice.
-              </p>
+          <Button href="/kontakt" variant="secondary-light">
+            Kontakt
+          </Button>
+        </div>
 
-              <p className="mt-3 leading-7 text-neutral-600">
-                Pred začetkom odstranjevanja vedno naredimo individualno
-                oceno tattooja in pripravimo realen načrt postopka.
-              </p>
-            </div>
-          </div>
-        </Container>
-      </section>
+      </div>
+    </Container>
+  </section>
 
-      <section className="border-y border-neutral-200 bg-neutral-50 pt-12 pb-12 sm:pt-14 sm:pb-14 lg:pt-16 lg:pb-16">
-        <Container>
-          <div className="max-w-2xl">
-            <p className="text-[12px] font-medium uppercase tracking-[0.16em] text-neutral-500">
-              Posvet
-            </p>
-
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-neutral-950 sm:text-4xl">
-              Individualna ocena tattooja
-            </h2>
-
-            <p className="mt-6 text-lg leading-[1.6] text-neutral-700">
-              Pred začetkom postopka pregledamo tattoo in ocenimo možnosti
-              odstranjevanja glede na pigment, velikost in starost tetovaže.
-            </p>
-
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Button href="/posvet">Naroči posvet</Button>
-
-              <Button href="/kontakt" variant="secondary-light">
-                Kontakt
-              </Button>
-            </div>
-          </div>
-        </Container>
-      </section>
-
-    </main>
+</main>
   );
 }

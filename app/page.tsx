@@ -19,19 +19,20 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-white text-neutral-900">
+<main className="min-h-screen bg-white text-neutral-900">
+  <Hero />
 
-      {/* NOVA SEKCIJA */}
-      <Hero />
-      <HowItWorks />
-      <WhyPico />
-      
-      <ResultsSection />
-      <FaqSection />
-      <SeoLocationSection />
-      <SeoPricingSection />
-      <FinalCta />
+  <HowItWorks />
+  <WhyPico />
 
-    </main>
+  <ResultsSection />
+
+  <FaqSection />
+
+  <SeoLocationSection />
+  <SeoPricingSection />
+
+  <FinalCta />
+</main>
   );
 }

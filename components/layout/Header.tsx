@@ -38,88 +38,88 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 border-b border-neutral-200/60 bg-white/80 backdrop-blur-md">
-        <Container>
-          <div className="flex min-h-[82px] items-center justify-between gap-6">
+    <header className="sticky top-0 z-40 border-b border-neutral-200/60 bg-white/80 backdrop-blur-md">
+  <Container>
+    <div className="flex min-h-[76px] items-center justify-between gap-4 sm:gap-6">
+      <Link
+        href="/"
+        className="group flex items-center gap-3 transition-opacity duration-200 hover:opacity-90"
+      >
+        <Image
+          src="/logo/laser-symbol.svg"
+          alt="Odstrani Tattoo"
+          width={52}
+          height={52}
+          priority
+          className={[
+            "h-[52px] w-[52px] shrink-0 transition-all duration-500 ease-out",
+            scrolled
+              ? "translate-y-[1px] scale-[0.97] opacity-90 brightness-95"
+              : "translate-y-0 scale-100 opacity-100 brightness-100",
+          ].join(" ")}
+        />
+
+        <span
+          className={[
+            "overflow-hidden whitespace-nowrap text-[12px] font-medium uppercase tracking-[0.16em] text-neutral-900 transition-all duration-400 ease-out",
+            scrolled
+              ? "max-w-0 -translate-x-2 opacity-0"
+              : "max-w-[180px] translate-x-0 opacity-100",
+          ].join(" ")}
+          aria-hidden={scrolled}
+        >
+          Odstrani Tattoo
+        </span>
+      </Link>
+
+      <nav className="hidden items-center gap-7 md:flex lg:gap-8">
+        {nav.map((item) => {
+          const active = isActive(pathname, item.href);
+
+          return (
             <Link
-              href="/"
-              className="group flex items-center gap-3 transition-opacity duration-200 hover:opacity-90"
+              key={item.href}
+              href={item.href}
+              className={[
+                "relative pb-1 text-[14px] font-medium tracking-[0.01em] transition-colors duration-200",
+                active
+                  ? "text-neutral-950"
+                  : "text-neutral-600 hover:text-neutral-950",
+              ].join(" ")}
             >
-              <Image
-                src="/logo/laser-symbol.svg"
-                alt="Odstrani Tattoo"
-                width={52}
-                height={52}
-                priority
-                className={[
-                  "h-[52px] w-[52px] shrink-0 transition-all duration-500 ease-out",
-                  scrolled
-                    ? "translate-y-[1px] scale-[0.97] opacity-90 brightness-95"
-                    : "translate-y-0 scale-100 opacity-100 brightness-100",
-                ].join(" ")}
-              />
+              {item.label}
 
               <span
                 className={[
-                  "overflow-hidden whitespace-nowrap text-[12px] font-medium uppercase tracking-[0.16em] text-neutral-900 transition-all duration-400 ease-out",
-                  scrolled
-                    ? "max-w-0 -translate-x-2 opacity-0"
-                    : "max-w-[180px] translate-x-0 opacity-100",
+                  "pointer-events-none absolute bottom-0 left-0 h-px bg-neutral-900 transition-all duration-200",
+                  active ? "w-full opacity-100" : "w-0 opacity-0",
                 ].join(" ")}
-                aria-hidden={scrolled}
-              >
-                Odstrani Tattoo
-              </span>
+              />
             </Link>
+          );
+        })}
+      </nav>
 
-            <nav className="hidden items-center gap-8 md:flex">
-              {nav.map((item) => {
-                const active = isActive(pathname, item.href);
+      <div className="ml-1 hidden md:block">
+        <Button href="/posvet" variant="primary-light">Posvet</Button>
+      </div>
 
-                return (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className={[
-                      "relative pb-1 text-[14px] font-medium tracking-[0.01em] transition-colors duration-200",
-                      active
-                        ? "text-neutral-950"
-                        : "text-neutral-600 hover:text-neutral-950",
-                    ].join(" ")}
-                  >
-                    {item.label}
-
-                    <span
-                      className={[
-                        "pointer-events-none absolute bottom-0 left-0 h-px bg-neutral-900 transition-all duration-200",
-                        active ? "w-full opacity-100" : "w-0 opacity-0",
-                      ].join(" ")}
-                    />
-                  </Link>
-                );
-              })}
-            </nav>
-
-            <div className="ml-2 hidden md:block">
-              <Button href="/posvet">Posvet</Button>
-            </div>
-
-            <button
-              type="button"
-              onClick={() => setMobileOpen(true)}
-              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-neutral-200 text-neutral-900 transition-colors hover:bg-neutral-100 md:hidden"
-              aria-label="Odpri meni"
-              aria-expanded={mobileOpen}
-            >
-              <span className="flex flex-col gap-[4px]">
-                <span className="block h-[1.5px] w-5 bg-current" />
-                <span className="block h-[1.5px] w-5 bg-current" />
-                <span className="block h-[1.5px] w-5 bg-current" />
-              </span>
-            </button>
-          </div>
-        </Container>
-      </header>
+      <button
+        type="button"
+        onClick={() => setMobileOpen(true)}
+        className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 text-neutral-900 transition-colors hover:bg-neutral-100 md:hidden"
+        aria-label="Odpri meni"
+        aria-expanded={mobileOpen}
+      >
+        <span className="flex flex-col gap-[4px]">
+          <span className="block h-[1.5px] w-5 bg-current" />
+          <span className="block h-[1.5px] w-5 bg-current" />
+          <span className="block h-[1.5px] w-5 bg-current" />
+        </span>
+      </button>
+    </div>
+  </Container>
+</header>
 
       <MobileNav
         open={mobileOpen}
