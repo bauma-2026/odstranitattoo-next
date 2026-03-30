@@ -5,174 +5,189 @@ import Button from "@/components/ui/Button";
 export default function WhyPico() {
   return (
     <>
-    <section className="section-sm border-t border-neutral-200/70 bg-white">
+   <section className="section-sm border-t border-neutral-200/70 bg-white">
   <Container>
     <div className="section-gap-lg">
-      <div className="grid gap-10 lg:grid-cols-[1fr_1.05fr] lg:items-top lg:gap-14">
+      <div className="grid gap-10 lg:grid-cols-[1fr_1.05fr] lg:items-start lg:gap-14">
         <div className="header-stack max-w-xl">
           <p className="eyebrow-muted">Tehnologija</p>
 
-  
+          <h2 className="heading-section text-neutral-950">
+            Zakaj tehnologija vpliva na rezultat
+          </h2>
 
-  <h2 className="heading-section text-neutral-950">
-    Kaj Pico laser naredi drugače
-  </h2>
+          <p className="text-body-lg">
+            Pri odstranjevanju tattoojev ni pomembno samo, da se pigment razbije — pomembno je tudi, kako natančno se to zgodi.
+          </p>
 
-  <p className="text-body-lg">
-    Klasični laserji pigment bolj segrevajo, Pico laser pa ga razbije
-    na manjše delce. Zato jih telo lažje postopoma odstrani.
-  </p>
+          <p className="text-body">
+            To vpliva na to, kako postopno telo odstranjuje pigment, kako se koža odziva in kako predvidljiv je proces skozi več tretmajev.
+          </p>
 
-  <p className="text-body">
-    To v praksi pomeni hitrejše bledenje tattooja, manjšo
-    obremenitev kože in bolj nadzorovan potek odstranjevanja.
-  </p>
+         <p className="text-body pt-1">
+  Če vas zanima celoten potek, lahko preberete{" "}
+  <a
+    href="/odstranjevanje-tattoojev"
+    className="font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
+  >
+    kako poteka odstranjevanje
+  </a>
+  , podrobneje pa tudi{" "}
+  <a
+    href="/odstranjevanje-tetovaze"
+    className="font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
+  >
+    odstranjevanje tetovaže z laserjem
+  </a>
+  {" "}ali preverite{" "}
+  <a
+    href="/odstranjevanje-tattoo-domzale"
+    className="font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
+  >
+    odstranjevanje tattoojev v Domžalah
+  </a>
+  .
+</p>
+        </div>
 
-  <div className="flex flex-col gap-2 pt-1">
-    <a
-      href="/odstranjevanje-tattoojev"
-      className="text-sm font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
-    >
-      Preberi, kako poteka odstranjevanje →
-    </a>
-
-    <a
-      href="/odstranjevanje-tetovaze"
-      className="text-sm font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
-    >
-      Preberi več o odstranjevanju tetovaže z laserjem →
-    </a>
-
-    <a
-      href="/odstranjevanje-tattoo-domzale"
-      className="text-sm font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
-    >
-      Odstranjevanje tattoojev v Domžalah →
-    </a>
-  </div>
-</div>
-
-       <div className="image-block relative h-[420px] overflow-hidden border border-neutral-200/60 bg-white sm:h-[480px] lg:h-full lg:min-h-[560px]">
-  <Image
-    src="/images/pico/pico-laser-odstranjevanje-tetovaz-naprava.webp"
-    alt="Pico laser naprava za odstranjevanje tetovaž"
-    fill
-    sizes="(min-width: 1024px) 50vw, 100vw"
-    className="object-cover object-top scale-[1.08] -translate-y-[4%]"
-  />
-</div>
+        <div className="image-block relative h-[420px] overflow-hidden border border-neutral-200/60 bg-white sm:h-[480px] lg:h-full lg:min-h-[560px]">
+          <Image
+            src="/images/pico/pico-laser-odstranjevanje-tetovaz-naprava.webp"
+            alt="Pico laser naprava za odstranjevanje tetovaž"
+            fill
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="object-cover object-top scale-[1.08] -translate-y-[4%]"
+          />
+        </div>
       </div>
 
+      {/* SUMMARY + CARDS */}
       <div className="border-t border-neutral-200/70 pt-8 sm:pt-12">
-  <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:gap-6">
+        
+        {/* MOBILE SUMMARY */}
+        <div className="lg:hidden">
+  <div className="flex flex-col gap-3">
+    <p className="text-body text-neutral-900">
+      Pico laser omogoča bolj natančen in bolj predvidljiv potek odstranjevanja.
+    </p>
 
-    {/* ITEM */}
-    <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5 sm:p-6">
-      <div className="flex items-start gap-4">
-        <span className="text-sm font-semibold text-neutral-400">01</span>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="text-base font-semibold text-neutral-950">
-            Pigment se lažje razbije
-          </h3>
-          <p className="text-body max-w-[32ch]">
-            Pico laser deluje v izjemno kratkih impulzih, zato pigment
-            razbije na manjše delce kot starejše tehnologije.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    {/* ITEM */}
-    <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5 sm:p-6">
-      <div className="flex items-start gap-4">
-        <span className="text-sm font-semibold text-neutral-400">02</span>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="text-base font-semibold text-neutral-950">
-            Telo ga lažje odstranjuje
-          </h3>
-          <p className="text-body max-w-[32ch]">
-            Manjši delci pomenijo, da telo med posameznimi tretmaji
-            lažje postopoma odstranjuje pigment.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    {/* ITEM */}
-    <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5 sm:p-6">
-      <div className="flex items-start gap-4">
-        <span className="text-sm font-semibold text-neutral-400">03</span>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="text-base font-semibold text-neutral-950">
-            Manj vpliva na kožo
-          </h3>
-          <p className="text-body max-w-[32ch]">
-            Energija je bolj usmerjena v pigment in manj v okoliško
-            tkivo, zato je postopek za kožo manj obremenjujoč.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    {/* ITEM */}
-    <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5 sm:p-6">
-      <div className="flex items-start gap-4">
-        <span className="text-sm font-semibold text-neutral-400">04</span>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="text-base font-semibold text-neutral-950">
-            Boljši pri zahtevnih tattoojih
-          </h3>
-          <p className="text-body max-w-[32ch]">
-            Pico laser omogoča bolj nadzorovan potek odstranjevanja tudi
-            pri gostejšem pigmentu in zahtevnejših tattoo motivih.
-          </p>
-        </div>
-      </div>
-    </div>
-
+    <ul className="list-disc pl-4 space-y-2 text-body-sm text-neutral-700 marker:text-skin-500/70">
+      <li>tattoo bledi bolj enakomerno skozi čas</li>
+      <li>koža je med postopkom manj obremenjena</li>
+      <li>pri zahtevnejših tattoojih omogoča več kontrole</li>
+    </ul>
   </div>
 </div>
+
+        {/* DESKTOP CARDS */}
+        <div className="hidden lg:block">
+          <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:gap-6">
+            
+            {/* ITEM */}
+            <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5 sm:p-6">
+              <div className="flex items-start gap-4">
+                <span className="text-sm font-semibold text-skin-500/70">01</span>
+
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-base font-semibold text-neutral-950">
+                    Predvidljivost
+                  </h3>
+                  <p className="text-body max-w-[32ch]">
+                    Pico laser pigment razbije na manjše delce, kar omogoča bolj postopen in nadzorovan proces odstranjevanja.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* ITEM */}
+            <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5 sm:p-6">
+              <div className="flex items-start gap-4">
+                <span className="text-sm font-semibold text-skin-500/70">02</span>
+
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-base font-semibold text-neutral-950">
+                    Bolj enakomerno bledenje skozi čas
+                  </h3>
+                  <p className="text-body max-w-[32ch]">
+                    Pigment se razbija bolj dosledno, zato tattoo skozi tretmaje bledi bolj enakomerno — brez nepredvidljivih razlik.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* ITEM */}
+            <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5 sm:p-6">
+              <div className="flex items-start gap-4">
+                <span className="text-sm font-semibold text-skin-500/70">03</span>
+
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-base font-semibold text-neutral-950">
+                    Manj tveganja za kožo
+                  </h3>
+                  <p className="text-body max-w-[32ch]">
+                    Energija je bolj usmerjena v pigment, zato je manj vpliva na okolico — kar pomeni manjšo obremenitev kože.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* ITEM */}
+            <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5 sm:p-6">
+              <div className="flex items-start gap-4">
+                <span className="text-sm font-semibold text-skin-500/70">04</span>
+
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-base font-semibold text-neutral-950">
+                    Več kontrole pri zahtevnih tattoojih
+                  </h3>
+                  <p className="text-body max-w-[32ch]">
+                    Pri gostejšem ali barvnem pigmentu omogoča bolj natančen in predvidljiv potek odstranjevanja.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
   </Container>
 </section>
 
      <section className="section-sm border-t border-white/10 bg-neutral-950 text-white">
-  <Container>
-    <div className="section-gap">
-      <div className="mx-auto flex max-w-2xl flex-col items-center text-center gap-5">
-        <p className="text-sm text-white/45">
-          Naslednji korak je individualna ocena vašega primera.
-        </p>
+<Container>
+  <div className="section-gap">
+    <div className="mx-auto flex max-w-2xl flex-col items-center text-center gap-5">
+      <p className="text-sm text-white/45">
+        Kako se to odrazi pri vašem tattooju?
+      </p>
 
-        <p className="eyebrow-skin text-skin-600/80">
-          Posvet
-        </p>
+      <p className="eyebrow-skin text-skin-600/80">
+        Posvet
+      </p>
 
-        <h2 className="heading-section text-white">
-          Kaj lahko realno pričakujete?
-        </h2>
+      <h2 className="heading-section text-white">
+        Kaj to pomeni za vaš primer?
+      </h2>
 
-        <p className="text-body-inverse-lg max-w-[52ch] text-neutral-200">
-          Na posvetu ocenimo vaš tattoo in vam jasno povemo, kakšen
-          rezultat lahko pričakujete ter koliko tretmajev je smiselnih.
-        </p>
+      <p className="text-body-inverse-lg max-w-[52ch] text-neutral-200">
+        Tehnologija vpliva na potek odstranjevanja, ampak rezultat je vedno
+        odvisen od konkretnega tattooja. Na podlagi pigmenta, globine in
+        stanja kože vam jasno povemo, kaj je realno dosegljivo.
+      </p>
 
-        <p className="text-body-inverse-sm pt-1 text-white/55">
-          Posvet je brezplačen • brez obveznosti
-        </p>
+      <p className="text-body-inverse-sm pt-1 text-white/55">
+        Posvet je brezplačen • brez obveznosti
+      </p>
 
-        <div className="pt-3">
-          <Button href="/posvet" variant="primary-dark">
-            Preveri svoj primer
-          </Button>
-        </div>
+      <div className="pt-3">
+        <Button href="/posvet" variant="primary-dark">
+          Preveri svoj primer
+        </Button>
       </div>
     </div>
-  </Container>
+  </div>
+</Container>
 </section>
     </>
   );

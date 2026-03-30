@@ -10,63 +10,65 @@ export default function Hero() {
       {/* BASE BG */}
       <div className="pointer-events-none absolute inset-0 z-0 bg-black" />
 
-      {/* MOBILE HERO */}
-      <div className="relative z-10 md:hidden">
-        <div className="relative min-h-[620px] overflow-hidden">
-          <Image
-            src="/images/hero/hero-machines.webp"
-            alt="Pico laser naprava za odstranjevanje tetovaž"
-            fill
-            sizes="100vw"
-            priority
-            className="object-cover object-[74%_center] scale-[2.2] translate-y-[14%]"
-          />
+  {/* MOBILE HERO */}
+<div className="relative z-10 md:hidden">
+  <div className="relative min-h-[620px] overflow-hidden">
+    <Image
+      src="/images/hero/hero-machines.webp"
+      alt="Pico laser naprava za odstranjevanje tetovaž"
+      fill
+      sizes="100vw"
+      priority
+      className="object-cover object-[60%_70%] scale-[1.2] translate-y-[14%]"
+    />
 
-          {/* OVERLAYS */}
-          <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-black/50 via-black/28 to-black/72" />
-          <div className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-[70%] bg-gradient-to-r from-black/80 via-black/48 to-transparent" />
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[32%] bg-gradient-to-t from-black/70 to-transparent" />
+    {/* OVERLAYS */}
+    <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b bg-gradient-to-b from-black/60 via-black/40 to-black/75 to-black/72" />
+    <div className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-[70%] bg-gradient-to-r from-black/80 via-black/48 to-transparent" />
+    <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[32%] bg-gradient-to-t from-black/70 to-transparent" />
 
-          {/* PIXELS */}
-          <PixelLayerRandom
-            basePixels={pixelsHeroMobile}
-            className="pointer-events-none absolute inset-0 z-[2]"
-          />
+  
 
-          {/* CONTENT */}
-          <Container className="relative z-[3] flex min-h-[620px] flex-col justify-between pt-12 pb-10">
-            <div className="flex max-w-[22rem] flex-col gap-4">
-              <p className="eyebrow-dark text-white/60">Pico laser • Domžale</p>
+    {/* CONTENT */}
+    <Container className="relative z-[3] flex min-h-[620px] flex-col justify-between pt-12 pb-10">
+  
+  {/* TOP */}
+  <div className="flex max-w-[22rem] flex-col gap-4">
+    <p className="eyebrow-dark text-white/60">Domžale • lasersko odstranjevanje</p>
 
-              <h1 className="max-w-[10ch] text-[2.7rem] font-semibold leading-[0.94] tracking-tight">
-                Ali je vaš tattoo mogoče odstraniti?
-              </h1>
+    <h1 className="max-w-[13ch] text-[2.45rem] font-semibold leading-[0.94] tracking-tight text-white sm:text-[2.7rem]">
+      Ali je vaš tattoo
+      <br />
+      <span className="whitespace-nowrap">mogoče odstraniti?</span>
+    </h1>
 
-              <p className="max-w-[22ch] text-[1.08rem] leading-[1.5] text-neutral-200">
-                Na posvetu dobite realno oceno odstranjevanja glede na vaš primer.
-              </p>
+    <p className="max-w-[24ch] text-[1.06rem] leading-[1.45] text-neutral-200">
+      Večino tattoojev je mogoče odstraniti postopno — varno, brez brazgotin.
+    </p>
+  </div>
 
-              <div className="mt-6 flex flex-col items-start">
-                <Button href="/posvet" variant="primary-dark">
-                  Naroči brezplačen posvet
-                </Button>
+  {/* BOTTOM */}
+  <div className="flex flex-col items-start gap-4">
+    <Button href="/posvet" variant="primary-dark">
+      Naroči posvet
+    </Button>
 
-                <p className="mt-6 text-[11px] text-white/45">
-                  Del studia{" "}
-                  <a
-                    href="https://artbite-tattoo.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-white/70 underline underline-offset-4 transition hover:text-white"
-                  >
-                    Artbite Tattoo
-                  </a>
-                </p>
-              </div>
-            </div>
-          </Container>
-        </div>
-      </div>
+    <p className="text-[11px] text-white/45">
+      Del studia{" "}
+      <a
+        href="https://artbite-tattoo.com/"
+        target="_blank"
+        rel="noreferrer"
+        className="text-white/70 underline underline-offset-4 transition hover:text-white"
+      >
+        Artbite Tattoo
+      </a>
+    </p>
+  </div>
+
+</Container>
+  </div>
+</div>
 
       {/* DESKTOP HERO */}
       <div className="relative z-10 hidden md:block">
@@ -100,16 +102,15 @@ export default function Hero() {
 
           {/* CONTENT */}
           <Container className="relative z-[3] flex min-h-[calc(100vh-72px)] items-center">
-            <div className="flex max-w-[560px] flex-col gap-5 lg:pr-10 xl:max-w-[580px] xl:pr-14">
-              <p className="eyebrow-dark text-white/50">Pico laser • Domžale</p>
+            <div className="flex max-w-[560px] flex-col gap-5 lg:pr-10 xl:max-w-[680px] xl:pr-14">
+              <p className="eyebrow-dark text-white/50">Domžale • lasersko odstranjevanje</p>
 
-              <h1 className="heading-display max-w-[13ch] text-[3.25rem] leading-[0.95] lg:text-[4.05rem]">
+              <h1 className="heading-display max-w-[16ch] text-[3.25rem] leading-[0.95] lg:text-[4.05rem]">
                 Ali je vaš tattoo mogoče odstraniti?
               </h1>
 
               <p className="text-body-inverse max-w-[36ch] text-neutral-300">
-                Na brezplačnem posvetu ocenimo vaš tattoo in vam povemo, kakšen rezultat
-                lahko realno pričakujete.
+               Tattoo ne izgine čez noč. Ampak ga lahko postopno odstranimo — varno, brez brazgotin.
               </p>
 
               <p className="text-body-inverse-sm text-white/50">
