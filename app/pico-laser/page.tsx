@@ -12,34 +12,34 @@ import {
 const benefits = [
   {
     title: "Izjemno kratek impulz",
-    text: "Pico laser deluje v izjemno kratkih časovnih intervalih, kar omogoča učinkovitejše razbijanje pigmenta na manjše delce.",
+    text: "Pico laser deluje v zelo kratkih impulzih, zato pigment razbije bolj natančno in na manjše delce.",
   },
   {
     title: "Manjša obremenitev kože",
-    text: "Energija je bolj usmerjena v pigment tetovaže, zato je okoliško tkivo manj obremenjeno kot pri starejših tehnologijah.",
+    text: "Energija je usmerjena predvsem v pigment tattooja, zato je okoliško tkivo manj obremenjeno kot pri starejših tehnologijah.",
   },
   {
-    title: "Hitrejše razbijanje pigmenta",
-    text: "Manjši delci pigmenta se lažje in hitreje odstranjujejo preko imunskega in limfnega sistema.",
+    title: "Lažje odstranjevanje pigmenta",
+    text: "Manjši delci pigmenta se lažje postopoma odstranjujejo preko imunskega in limfnega sistema.",
   },
   {
-    title: "Boljši končni rezultat",
-    text: "Odstranjevanje je bolj postopno, natančno in prilagojeno posamezni tetovaži ter odzivu kože.",
+    title: "Boljši nadzor nad postopkom",
+    text: "Odstranjevanje je bolj postopno, bolj natančno in bolje prilagojeno posameznemu tattooju ter odzivu kože.",
   },
 ];
 
 const process = [
   {
     title: "Svetlobni impulz",
-    text: "Pico laser odda zelo kratek svetlobni impulz, ki se usmeri v pigment tetovaže.",
+    text: "Pico laser odda zelo kratek impulz, ki se usmeri v pigment tattooja.",
   },
   {
-    title: "Razgradnja pigmenta",
-    text: "Pigment se razbije na drobnejše delce, ki jih telo lažje obdela.",
+    title: "Razbitje pigmenta",
+    text: "Pigment se razbije na manjše delce, ki jih telo lažje postopoma obdela.",
   },
   {
     title: "Naravno odstranjevanje",
-    text: "Imunski sistem in limfni sistem postopoma odstranjujeta razbite delce pigmenta.",
+    text: "Telo razbite delce pigmenta skozi čas odstranjuje preko imunskega in limfnega sistema.",
   },
 ];
 
@@ -74,17 +74,15 @@ export default function PicoLaserPage() {
           <br />
           bolj učinkovit
         </h1>
+<p className="text-body-inverse-lg max-w-[52ch]">
+  Pico laser pigment tattooja razbije na manjše delce kot starejše
+  tehnologije. Zato ga telo lažje postopoma odstranjuje, koža pa je pri
+  postopku manj obremenjena.
+</p>
 
-        <p className="text-body-inverse-lg max-w-[52ch]">
-          Pico laser odda izjemno kratek svetlobni impulz, ki pigment
-          tetovaže razbije na zelo majhne delce. Ti so manjši kot pri
-          starejših tehnologijah, zato jih telo lažje odstrani.
-        </p>
-
-        <p className="text-body-inverse-sm max-w-[52ch]">
-          Rezultat je bolj natančno razgrajen pigment in manjša obremenitev
-          kože.
-        </p>
+<p className="text-body-inverse-sm max-w-[52ch]">
+  Izbira tehnologije neposredno vpliva na potek odstranjevanja in končni rezultat.
+</p>
 
         <div className="flex flex-col gap-2 pt-3">
           <a
@@ -115,20 +113,18 @@ export default function PicoLaserPage() {
       <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-start lg:gap-16">
         <div className="header-stack max-w-[60ch]">
           <h2 className="heading-section text-neutral-950">
-            Zakaj je Pico laser učinkovitejši
+            Zakaj je Pico laser bolj učinkovit
           </h2>
 
-          <p className="text-body-lg">
-            Pico laser deluje v pikosekundah – energijo odda v izjemno
-            kratkem času. Zaradi tega pigment razbije bolj natančno in z
-            manjšo obremenitvijo za kožo.
-          </p>
+ <p className="text-body-lg">
+  Pico laser deluje v izjemno kratkih impulzih, zato pigment tattooja
+  razbije bolj natančno.
+</p>
 
-          <p className="text-body">
-            Pri odstranjevanju tattoojev to pomeni učinkovitejšo razgradnjo
-            pigmenta, boljši nadzor nad postopkom in bolj realne možnosti za
-            postopno odstranjevanje tetovaže.
-          </p>
+<p className="text-body">
+  To pomeni manjšo obremenitev kože, boljši nadzor nad postopkom in bolj
+  predvidljiv potek odstranjevanja.
+</p>
 
           <a
             href="/faq"
@@ -174,13 +170,13 @@ export default function PicoLaserPage() {
           <p className="eyebrow-skin">Proces</p>
 
           <h2 className="heading-section text-neutral-950">
-            Kako telo odstranjuje pigment
+           Kako telo postopoma odstranjuje pigment
           </h2>
 
-          <p className="text-body-lg">
-            Laserski tretma je le prvi del postopka. Po razbitju pigmenta telo te
-            delce postopoma odstranjuje preko imunskega in limfnega sistema.
-          </p>
+<p className="text-body-lg">
+  Laserski tretma je prvi korak. Ko se pigment razbije, telo te delce
+  skozi čas postopoma odstranjuje preko imunskega in limfnega sistema.
+</p>
 
           <a
             href="/odstranjevanje-tattoojev"
@@ -227,16 +223,15 @@ export default function PicoLaserPage() {
             Kaj Pico laser naredi drugače
           </h2>
 
-          <p className="text-body-lg">
-            Pico laser deluje v izjemno kratkih impulzih, ki pigment tetovaže
-            razbijejo na bistveno manjše delce kot starejše tehnologije.
-          </p>
+ <p className="text-body-lg">
+  Razlika ni samo v tehnologiji, ampak v tem, kako telo lahko nadaljuje
+  proces odstranjevanja po tretmaju.
+</p>
 
-          <p className="text-body">
-            Manjši delci pomenijo, da jih telo lažje odstrani. Rezultat je bolj
-            postopno odstranjevanje tetovaže, manjša obremenitev kože in boljši
-            nadzor nad celotnim procesom.
-          </p>
+<p className="text-body">
+  Pico laser omogoča bolj postopno odstranjevanje, manjšo obremenitev kože
+  in bolj natančen pristop glede na posamezen tattoo in odziv kože.
+</p>
 
           <div className="grid gap-3 pt-2 sm:grid-cols-2">
             {/* bullets ostanejo */}
@@ -269,13 +264,13 @@ export default function PicoLaserPage() {
           <p className="eyebrow-dark">Posvet</p>
 
           <h2 className="heading-section text-white">
-            Razmišljate o odstranitvi tetovaže?
+            Razmišljate o odstranjevanju tattooja?
           </h2>
 
-          <p className="text-body-inverse max-w-[52ch]">
-            Naročite se na brezplačen posvet, kjer ocenimo stanje tetovaže,
-            število potrebnih tretmajev in vam razložimo celoten postopek.
-          </p>
+         <p className="text-body-inverse max-w-[52ch]">
+  Na posvetu pregledamo tattoo, ocenimo možnosti odstranjevanja in
+  razložimo, kaj lahko glede na vaš primer realno pričakujete.
+</p>
         </div>
 
         <div className="cta-spacing flex flex-wrap justify-center gap-4">
@@ -295,9 +290,9 @@ export default function PicoLaserPage() {
           Preberi pogosta vprašanja →
         </a>
 
-        <p className="mt-4 text-sm text-white/50">
-          Posvet je brezplačen in brez obveznosti.
-        </p>
+       <p className="mt-4 text-sm text-white/50">
+  Posvet je brezplačen in namenjen realni oceni vašega primera.
+</p>
       </div>
     </Container>
   </section>

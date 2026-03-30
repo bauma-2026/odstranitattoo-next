@@ -52,18 +52,16 @@ export default function FaqPage() {
         </h1>
 
         <p className="text-body-inverse-lg max-w-[60ch]">
-          Zbrali smo odgovore na vprašanja, ki jih stranke najpogosteje
-          zastavijo pred prvim posvetom, tretmajem in med samim postopkom
-          odstranjevanja tattooja.
+          Tukaj najdete odgovore na vprašanja, ki se najpogosteje pojavijo pred
+          posvetom, med postopkom odstranjevanja in pri realnih pričakovanjih glede rezultata.
         </p>
 
         <p className="text-body-inverse-sm max-w-[60ch]">
-          Na enem mestu lahko hitro preverite, kako poteka odstranjevanje,
-          kaj lahko pričakujete in od česa je odvisen končni rezultat.
+          Namen te strani je, da hitro razjasni najpogostejše dileme in vam
+          pomaga do bolj jasne odločitve.
         </p>
 
-        {/* LINKS */}
-       <div className="flex flex-col gap-2 pt-3">
+        <div className="flex flex-col gap-2 pt-3">
           <a
             href="/odstranjevanje-tattoojev"
             className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"

@@ -14,6 +14,11 @@ const nav = [
   { href: "/rezultati", label: "Rezultati" },
   { href: "/faq", label: "FAQ" },
   { href: "/kontakt", label: "Kontakt" },
+  {
+    href: "https://artbite-tattoo.com/",
+    label: "Artbite",
+    external: true,
+  },
 ];
 
 function isActive(pathname: string, href: string) {
@@ -72,34 +77,40 @@ export default function Header() {
         </span>
       </Link>
 
-      <nav className="hidden items-center gap-7 md:flex lg:gap-8">
-        {nav.map((item) => {
-          const active = isActive(pathname, item.href);
+<nav className="hidden items-center gap-7 md:flex lg:gap-8">
+  {nav.map((item) => {
+    const active = !item.external && isActive(pathname, item.href);
 
-          return (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={[
-                "relative pb-1 text-[14px] font-medium tracking-[0.01em] transition-colors duration-200",
-                active
-                  ? "text-neutral-950"
-                  : "text-neutral-600 hover:text-neutral-950",
-              ].join(" ")}
-            >
-              {item.label}
+    return (
+      <Link
+        key={item.href}
+        href={item.href}
+        {...(item.external ? { target: "_blank", rel: "noreferrer" } : {})}
+        className={[
+          "relative pb-1 text-[14px] font-medium tracking-[0.01em] transition-colors duration-200",
+          "whitespace-nowrap",
+          active
+            ? "text-neutral-950"
+            : "text-neutral-600 hover:text-neutral-950",
+        ].join(" ")}
+      >
+        {item.label}
 
-              <span
-                className={[
-                  "pointer-events-none absolute bottom-0 left-0 h-px bg-neutral-900 transition-all duration-200",
-                  active ? "w-full opacity-100" : "w-0 opacity-0",
-                ].join(" ")}
-              />
-            </Link>
-          );
-        })}
-      </nav>
-
+        <span
+          className={[
+            "pointer-events-none absolute bottom-0 left-0 h-px bg-neutral-900 transition-all duration-200",
+            item.external
+              ? "w-0 opacity-0"
+              : active
+              ? "w-full opacity-100"
+              : "w-0 opacity-0",
+          ].join(" ")}
+        />
+      </Link>
+    );
+  })}
+</nav>
+  
       <div className="ml-1 hidden md:block">
         <Button href="/posvet" variant="primary-light">Posvet</Button>
       </div>

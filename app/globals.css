@@ -145,8 +145,22 @@
   .list-item-divider:last-child {
     @apply border-b-0 pb-0;
   }
-}
   
+}
+    .header-stack-sm {
+    @apply flex flex-col gap-3;
+  }
+
+  .header-stack-lg {
+    @apply flex flex-col gap-5;
+  }
+  .content-stack {
+  @apply flex flex-col gap-4;
+}
+
+.content-stack-md {
+  @apply flex flex-col gap-6;
+}
 }
 @theme inline {
   --color-background: var(--background);

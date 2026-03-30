@@ -2,11 +2,7 @@ import Image from "next/image";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
 import PixelLayerRandom from "@/components/ui/pixels/PixelLayerRandom";
-import {
-  pixelsHeroMobile,
-  pixelsHeroTablet,
-  pixelsHeroDesktop,
-} from "@/components/ui/pixels/pixels.config";
+import { pixelsHeroMobile } from "@/components/ui/pixels/pixels.config";
 
 export default function Hero() {
   return (
@@ -23,22 +19,15 @@ export default function Hero() {
             fill
             sizes="100vw"
             priority
-            className="
-              object-cover
-              object-[74%_center]
-              scale-[2.1]
-              translate-y-[14%]
-              min-[400px]:scale-[2.3]
-            "
+            className="object-cover object-[74%_center] scale-[2.2] translate-y-[14%]"
           />
 
-          {/* MOBILE OVERLAYS */}
-          <div className="pointer-events-none absolute inset-0 z-[1] bg-black/42" />
+          {/* OVERLAYS */}
           <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-black/50 via-black/28 to-black/72" />
-          <div className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-[70%] bg-gradient-to-r from-black/78 via-black/46 to-transparent" />
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[32%] bg-gradient-to-t from-black/68 to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-[70%] bg-gradient-to-r from-black/80 via-black/48 to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[32%] bg-gradient-to-t from-black/70 to-transparent" />
 
-          {/* HERO PIXELS */}
+          {/* PIXELS */}
           <PixelLayerRandom
             basePixels={pixelsHeroMobile}
             className="pointer-events-none absolute inset-0 z-[2]"
@@ -47,96 +36,116 @@ export default function Hero() {
           {/* CONTENT */}
           <Container className="relative z-[3] flex min-h-[620px] flex-col justify-between pt-12 pb-10">
             <div className="flex max-w-[22rem] flex-col gap-4">
-              <p className="eyebrow-dark text-white/58">Pico laser • Domžale</p>
+              <p className="eyebrow-dark text-white/60">Pico laser • Domžale</p>
 
-              <h1 className="max-w-[9ch] text-[2.7rem] font-semibold leading-[0.94] tracking-tight text-white">
-                Lasersko odstranjevanje tetovaž
+              <h1 className="max-w-[10ch] text-[2.7rem] font-semibold leading-[0.94] tracking-tight">
+                Ali je vaš tattoo mogoče odstraniti?
               </h1>
 
-              <p className="max-w-[20ch] text-[1.08rem] leading-[1.5] text-neutral-200">
-                Pico laser razbije pigment na mikro delce, ki jih telo naravno
-                odstrani.
+              <p className="max-w-[22ch] text-[1.08rem] leading-[1.5] text-neutral-200">
+                Na posvetu dobite realno oceno odstranjevanja glede na vaš primer.
               </p>
-            </div>
 
-            <div className="flex flex-col items-start gap-3">
-              <Button href="/posvet" variant="primary-dark">
-                Naroči brezplačen posvet
-              </Button>
+              <div className="mt-6 flex flex-col items-start">
+                <Button href="/posvet" variant="primary-dark">
+                  Naroči brezplačen posvet
+                </Button>
+
+                <p className="mt-6 text-[11px] text-white/45">
+                  Del studia{" "}
+                  <a
+                    href="https://artbite-tattoo.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-white/70 underline underline-offset-4 transition hover:text-white"
+                  >
+                    Artbite Tattoo
+                  </a>
+                </p>
+              </div>
             </div>
           </Container>
         </div>
       </div>
 
-   {/* TABLET + DESKTOP HERO */}
-<div className="relative z-10 hidden md:block">
-  <div className="relative min-h-[calc(100vh-72px)] overflow-hidden">
-    {/* BG VIDEO */}
-    <video
-      className="
-        absolute inset-0 h-full w-full object-cover
-        object-[50%_28%]
-      "
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="metadata"
-      poster="/videos/hero/hero-machine-poster.jpg"
-    >
-      <source src="/videos/hero/hero-machine.mp4" type="video/mp4" />
-    </video>
+      {/* DESKTOP HERO */}
+      <div className="relative z-10 hidden md:block">
+        <div className="relative min-h-[calc(100vh-72px)] overflow-hidden">
+          {/* VIDEO */}
+          <video
+            className="absolute inset-0 h-full w-full object-cover object-[50%_28%]"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/videos/hero/hero-machine-poster.jpg"
+          >
+            <source src="/videos/hero/hero-machine_1_2.webm" type="video/webm" />
+            <source src="/videos/hero/hero-machine_1_2.mp4" type="video/mp4" />
+          </video>
 
-    {/* OVERLAYS */}
-<div className="pointer-events-none absolute inset-0 z-[1] bg-black/28" />
+          {/* OVERLAYS */}
+          <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-black/40 via-black/14 to-black/52" />
 
-<div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-black/42 via-black/18 to-black/54" />
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-[56%] bg-gradient-to-r from-black/86 via-black/52 to-transparent" />
 
-<div className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-[50%] bg-gradient-to-r from-black/84 via-black/50 to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-[1] w-[38%] bg-gradient-to-l from-black/30 via-black/12 to-transparent" />
 
-<div className="pointer-events-none absolute inset-y-0 right-0 z-[1] w-[82%] bg-gradient-to-l from-black/94 via-black/78 via-40% to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[20%] bg-gradient-to-t from-black/38 to-transparent" />
 
-<div className="pointer-events-none absolute inset-x-0 top-0 z-[1] h-[24%] bg-gradient-to-b from-black/40 via-black/16 to-transparent" />
+          {/* FOCUS LIGHT */}
+          <div className="pointer-events-none absolute inset-0 z-[2] bg-[radial-gradient(ellipse_at_46%_65%,rgba(255,255,255,0.05),transparent_18%)]" />
+          <div className="pointer-events-none absolute inset-0 z-[2] bg-[radial-gradient(ellipse_at_44%_74%,rgba(255,170,110,0.04),transparent_24%)]" />
 
-<div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[22%] bg-gradient-to-t from-black/52 via-black/18 to-transparent" />
+          {/* CONTENT */}
+          <Container className="relative z-[3] flex min-h-[calc(100vh-72px)] items-center">
+            <div className="flex max-w-[560px] flex-col gap-5 lg:pr-10 xl:max-w-[580px] xl:pr-14">
+              <p className="eyebrow-dark text-white/50">Pico laser • Domžale</p>
 
-{/* FOCUS LIGHT (laser area) */}
-<div className="pointer-events-none absolute inset-0 z-[2] bg-[radial-gradient(ellipse_at_52%_68%,rgba(255,255,255,0.06),transparent_60%)]" />    {/* CONTENT */}
-    <Container className="relative z-[2] flex min-h-[calc(100vh-72px)] items-center">
-      <div className="flex max-w-[540px] flex-col gap-5 md:pr-6 lg:max-w-[560px] lg:pr-10 xl:max-w-[580px] xl:pr-14">
-        <p className="eyebrow-dark text-white/50">Pico laser • Domžale</p>
+              <h1 className="heading-display max-w-[13ch] text-[3.25rem] leading-[0.95] lg:text-[4.05rem]">
+                Ali je vaš tattoo mogoče odstraniti?
+              </h1>
 
-        <h1 className="heading-display max-w-[12ch] text-[3.25rem] leading-[0.95] text-white lg:max-w-[13ch] lg:text-[4.05rem]">
-          Lasersko odstranjevanje tetovaž
-        </h1>
+              <p className="text-body-inverse max-w-[36ch] text-neutral-300">
+                Na brezplačnem posvetu ocenimo vaš tattoo in vam povemo, kakšen rezultat
+                lahko realno pričakujete.
+              </p>
 
-        <p className="text-body-inverse max-w-[34ch] text-neutral-300">
-          Pico laser razbije pigment na mikro delce, ki jih telo naravno
-          odstrani.
-        </p>
+              <p className="text-body-inverse-sm text-white/50">
+                Del studia{" "}
+                <a
+                  href="https://artbite-tattoo.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline underline-offset-4 hover:text-white"
+                >
+                  Artbite Tattoo
+                </a>.
+              </p>
 
-        <p className="text-body-inverse-sm text-white/50">
-          Brezplačen posvet • individualna ocena • brez obveznosti
-        </p>
+              <p className="text-body-inverse-sm text-white/50">
+                Brezplačen posvet • individualna ocena • brez obveznosti
+              </p>
 
-        <div className="pt-2">
-  <div className="flex flex-wrap items-center gap-5 lg:gap-6">
-    <Button href="/posvet" variant="primary-dark">
-      Naroči brezplačen posvet
-    </Button>
+              <div className="pt-2">
+                <div className="flex flex-wrap items-center gap-6">
+                  <Button href="/posvet" variant="primary-dark">
+                    Naroči brezplačen posvet
+                  </Button>
 
-    <a
-      href="/rezultati"
-      className="text-sm font-medium text-white/70 underline underline-offset-4 decoration-white/30 transition hover:text-white hover:decoration-white/60"
-    >
-      Poglej rezultate pred in po →
-    </a>
-  </div>
-</div>
+                  <a
+                    href="/rezultati"
+                    className="text-sm font-medium text-white/70 underline underline-offset-4 decoration-white/30 transition hover:text-white hover:decoration-white/60"
+                  >
+                    Poglej rezultate pred in po →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </Container>
+        </div>
       </div>
-    </Container>
-  </div>
-</div>
     </section>
   );
 }

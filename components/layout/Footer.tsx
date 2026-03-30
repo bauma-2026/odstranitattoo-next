@@ -47,11 +47,22 @@ export default function Footer() {
           </span>
         </Link>
 
-        <p className="mt-4 text-sm leading-6 text-neutral-400">
+    <p className="mt-5 text-sm leading-6 text-neutral-500">
           Lasersko odstranjevanje tetovaž s Pico laserjem v Domžalah.
           Individualna ocena, realna pričakovanja in postopen pristop do
           rezultata.
         </p>
+        <p className="mt-5 text-sm leading-6 text-neutral-500">
+  Odstrani Tattoo je del{" "}
+  <a
+    href="https://artbite-tattoo.com/"
+    target="_blank"
+    rel="noreferrer"
+    className="underline underline-offset-4 transition-colors duration-200 hover:text-white"
+  >
+    Artbite Tattoo
+  </a>.
+</p>
       </div>
 
       {/* NAV */}

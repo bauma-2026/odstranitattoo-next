@@ -9,7 +9,7 @@ import {
 
 export default function PosvetPage() {
   return (
-   <main className="bg-white text-neutral-900">
+  <main className="bg-white text-neutral-900">
   {/* HERO */}
   <section className="relative overflow-hidden bg-neutral-950 text-white">
     <div className="pointer-events-none absolute inset-0 z-[1]">
@@ -36,36 +36,35 @@ export default function PosvetPage() {
         <p className="eyebrow-dark">Posvet</p>
 
         <h1 className="heading-display text-3xl text-white sm:text-4xl lg:text-[3.25rem]">
-          Posvet
+          Kako ocenimo 
           <br />
-          in ocena tattooja
+         vaš tattoo
         </h1>
 
         <p className="text-body-inverse-lg max-w-[52ch]">
-          Pred začetkom odstranjevanja pregledamo tattoo, razložimo potek
-          postopka in podamo realno oceno glede na pigment, velikost,
-          starost tattooja in odziv kože.
+          Na posvetu pregledamo tattoo, ocenimo možnosti odstranjevanja in
+          razložimo, kaj lahko glede na vaš primer realno pričakujete.
         </p>
 
         <p className="text-body-inverse-sm max-w-[52ch]">
-          Namen posveta je, da dobite jasen pregled nad možnostmi
-          odstranjevanja in realnimi pričakovanji.
+          Cilj posveta je jasna ocena, realna pričakovanja in miren naslednji korak.
         </p>
-        <div className="flex flex-col gap-2 pt-3">
-  <a
-    href="/rezultati"
-    className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
-  >
-    Poglej rezultate pred in po →
-  </a>
 
-  <a
-    href="/faq"
-    className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
-  >
-    Preberi pogosta vprašanja →
-  </a>
-</div>
+        <div className="flex flex-col gap-2 pt-3">
+          <a
+            href="/rezultati"
+            className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+          >
+            Poglej rezultate pred in po →
+          </a>
+
+          <a
+            href="/faq"
+            className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+          >
+            Preberi pogosta vprašanja →
+          </a>
+        </div>
       </div>
     </Container>
 
@@ -83,12 +82,12 @@ export default function PosvetPage() {
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-3">
               <h2 className="heading-tight text-2xl text-neutral-950">
-                Kaj vključuje posvet
+            Kaj dobite na posvetu
               </h2>
 
               <p className="text-body max-w-[48ch]">
-                Na posvetu pregledamo tattoo, razložimo potek odstranjevanja in podamo
-                realno oceno naslednjih korakov.
+                Posvet je namenjen temu, da dobite jasno oceno tattooja, razumete
+                potek odstranjevanja in lažje presodite, kaj je smiseln naslednji korak.
               </p>
             </div>
 
@@ -100,8 +99,8 @@ export default function PosvetPage() {
                   </h3>
 
                   <p className="text-body">
-                    Ocenimo velikost, barvo, starost tattooja in splošno
-                    stanje kože.
+                    Ocenimo velikost, pigment, starost tattooja in stanje kože, ker vse to
+                    vpliva na potek odstranjevanja.
                   </p>
                 </div>
               </div>
@@ -113,8 +112,8 @@ export default function PosvetPage() {
                   </h3>
 
                   <p className="text-body">
-                    Razložimo, kako deluje Pico laser in kako telo postopoma
-                    odstranjuje pigment.
+                    Razložimo, kako postopek poteka, zakaj je potreben čas med tretmaji
+                    in kaj lahko pričakujete po posameznem obisku.
                   </p>
                 </div>
               </div>
@@ -126,8 +125,8 @@ export default function PosvetPage() {
                   </h3>
 
                   <p className="text-body">
-                    Podamo realna pričakovanja glede odstranjevanja tetovaže
-                    in okvirnega števila tretmajev.
+                    Podamo realna pričakovanja glede poteka odstranjevanja in okvirne
+                    ocene, koliko tretmajev je lahko potrebnih.
                   </p>
                 </div>
               </div>
@@ -139,8 +138,8 @@ export default function PosvetPage() {
                   </h3>
 
                   <p className="text-body">
-                    Po posvetu se lažje odločite, ali želite začeti s
-                    postopkom odstranjevanja.
+                    Po posvetu imate bolj jasno sliko, ali želite začeti s postopkom
+                    in kako bi ta glede na vaš primer potekal.
                   </p>
                 </div>
               </div>
@@ -161,9 +160,9 @@ export default function PosvetPage() {
               </h2>
 
               <p className="text-body-inverse">
-                Za termin nas lahko kontaktirate po telefonu ali elektronski
-                pošti. Posvet je namenjen individualni oceni tattooja in
-                razlagi postopka odstranjevanja.
+                Za termin nas lahko kontaktirate po telefonu ali elektronski pošti.
+                Posvet je namenjen individualni oceni tattooja in realni razlagi
+                možnosti odstranjevanja.
               </p>
             </div>
 
@@ -182,7 +181,7 @@ export default function PosvetPage() {
 
               <div className="flex flex-col gap-2">
                 <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-500">
-                  Email
+                  E-pošta
                 </p>
                 <a
                   href="mailto:odstranitattoo@gmail.com"
@@ -209,9 +208,13 @@ export default function PosvetPage() {
                 href="mailto:odstranitattoo@gmail.com"
                 className="inline-flex items-center justify-center rounded-full border border-white px-5 py-3 text-sm font-medium text-white transition hover:bg-white/10"
               >
-                Pošlji email
+                Pošlji e-pošto
               </a>
             </div>
+
+            <p className="text-sm text-white/50">
+              Posvet je namenjen jasni oceni vašega primera in realnim pričakovanjem.
+            </p>
           </div>
         </div>
       </div>

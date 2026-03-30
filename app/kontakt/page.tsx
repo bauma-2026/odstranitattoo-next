@@ -9,9 +9,8 @@ import {
 
 export default function KontaktPage() {
   return (
-   <main className="bg-white text-neutral-900">
+  <main className="bg-white text-neutral-900">
   {/* HERO */}
- {/* HERO */}
   <section className="relative overflow-hidden bg-neutral-950 text-white">
     <div className="pointer-events-none absolute inset-0 z-[1]">
       <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/20 to-transparent" />
@@ -44,29 +43,29 @@ export default function KontaktPage() {
 
         <p className="text-body-inverse-lg max-w-[60ch]">
           Če razmišljate o odstranjevanju tattooja, nas lahko kontaktirate za
-          brezplačen posvet, dodatna vprašanja ali uskladitev termina.
+          posvet, dodatna vprašanja ali uskladitev termina.
         </p>
 
         <p className="text-body-inverse-sm max-w-[60ch]">
-          Tukaj najdete kontaktne podatke, lokacijo studia v Domžalah in
-          hiter dostop do naslednjih korakov.
+          Tukaj najdete kontaktne podatke, lokacijo studia v Domžalah in hiter
+          dostop do naslednjih korakov.
         </p>
 
-<div className="flex flex-col gap-2 pt-3">
-  <a
-    href="/posvet"
-    className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
-  >
-    Naroči brezplačen posvet →
-  </a>
+        <div className="flex flex-col gap-2 pt-3">
+          <a
+            href="/posvet"
+            className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+          >
+            Naroči posvet →
+          </a>
 
-  <a
-    href="/faq"
-    className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
-  >
-    Preberi pogosta vprašanja →
-  </a>
-</div>
+          <a
+            href="/faq"
+            className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+          >
+            Preberi pogosta vprašanja →
+          </a>
+        </div>
       </div>
     </Container>
 
@@ -91,9 +90,8 @@ export default function KontaktPage() {
                 </h2>
 
                 <p className="text-body max-w-[44ch]">
-                  Dosegljivi smo za vprašanja, naročanje in osnovne informacije
-                  o odstranjevanju tattoojev. Kontaktirate nas lahko po
-                  telefonu, e-pošti ali preko družbenih omrežij.
+                  Kontaktirate nas lahko za naročanje, dodatna vprašanja in
+                  osnovne informacije glede odstranjevanja tattoojev.
                 </p>
               </div>
 
@@ -134,7 +132,9 @@ export default function KontaktPage() {
                       Lokacija
                     </h3>
 
-                    <p className="text-body">Ljubljanska 90, Domžale</p>
+                    <p className="text-body">
+                      Ljubljanska 90, Domžale
+                    </p>
                   </div>
                 </div>
 
@@ -178,13 +178,13 @@ export default function KontaktPage() {
                 </p>
 
                 <h2 className="heading-tight text-2xl text-white">
-                  Individualna ocena
+                  Naročanje na posvet
                 </h2>
 
                 <p className="text-body-inverse">
                   Za termin nas lahko kontaktirate po telefonu ali elektronski
-                  pošti. Pred začetkom odstranjevanja je pomembna realna ocena
-                  tattooja, pigmenta in odziva kože.
+                  pošti. Pred začetkom odstranjevanja je pomembno, da se tattoo
+                  oceni individualno in da dobite realna pričakovanja.
                 </p>
               </div>
 
@@ -195,9 +195,9 @@ export default function KontaktPage() {
                   </p>
 
                   <p className="text-body-inverse">
-                    Končni rezultat je vedno odvisen od pigmenta, globine
-                    nanosa, starosti tattooja in odziva kože. Zato vsak primer
-                    ocenimo individualno.
+                    Končni rezultat je odvisen od pigmenta, globine nanosa,
+                    starosti tattooja in odziva kože. Zato vsak primer
+                    pregledamo posebej.
                   </p>
                 </div>
               </div>
@@ -221,7 +221,7 @@ export default function KontaktPage() {
                   </p>
                   <a
                     href="mailto:odstranitattoo@gmail.com"
-                    className="text-lg text-white transition hover:text-neutral-300 break-all"
+                    className="break-all text-lg text-white transition hover:text-neutral-300"
                   >
                     odstranitattoo@gmail.com
                   </a>
@@ -249,6 +249,11 @@ export default function KontaktPage() {
                   Navodila za pot
                 </a>
               </div>
+
+              <p className="text-sm text-white/50">
+                Posvet je namenjen jasni oceni vašega primera in naslednjemu
+                koraku brez ugibanja.
+              </p>
             </div>
           </div>
         </div>

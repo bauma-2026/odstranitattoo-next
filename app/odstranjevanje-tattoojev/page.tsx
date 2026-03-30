@@ -70,14 +70,14 @@ export default function OdstranjevanjeTattooPage() {
         Kako poteka odstranjevanje tattooja
       </h1>
 
-      <p className="text-body-inverse-lg max-w-[44ch]">
-        Odstranjevanje tattooja je postopen proces, pri katerem telo
-        razgrajeni pigment skozi čas naravno odstrani.
-      </p>
+    <p className="text-body-inverse-lg max-w-[44ch]">
+  Odstranjevanje tattooja je postopen proces, pri katerem telo
+  razgrajeni pigment skozi čas naravno odstrani.
+</p>
 
-      <p className="text-body-inverse-sm max-w-[44ch]">
-        Število tretmajev je odvisno od posamezne tetovaže in odziva kože.
-      </p>
+<p className="text-body-inverse-sm max-w-[44ch]">
+  Število tretmajev je vedno odvisno od vašega tattooja in odziva kože.
+</p>
 <a
   href="/rezultati"
   className="pt-1 text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
@@ -122,30 +122,31 @@ export default function OdstranjevanjeTattooPage() {
         </a>
       </div>
 
-      <div className="rounded-[28px] border border-skin-400/25 bg-skin-50/60 p-7 sm:p-8">
-        <div className="flex flex-col gap-3">
-          <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-skin-500/90">
-            Pomembno
-          </p>
+     {/* RIGHT BOX */}
+<div className="rounded-[28px] border border-skin-400/25 bg-skin-50/60 p-7 sm:p-8">
+  <div className="flex flex-col gap-3">
+    <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-skin-500/90">
+      Pomembno
+    </p>
 
-          <h3 className="heading-tight text-2xl text-skin-900">
-            Koliko tretmajev je potrebnih?
-          </h3>
+    <h3 className="heading-tight text-2xl text-skin-900">
+      Zakaj je potreben čas med tretmaji?
+    </h3>
 
-          <p className="text-skin-body">
-            Število tretmajev je odvisno od velikosti tattooja, pigmenta,
-            globine nanosa, starosti tetovaže in odziva kože. Zato je
-            individualna ocena pred začetkom postopka zelo pomembna.
-          </p>
+    <p className="text-skin-body">
+      Po vsakem tretmaju telo postopoma odstranjuje razgrajeni pigment.
+      Zato mora med tretmaji miniti dovolj časa, da se koža umiri in da
+      se rezultat lahko razvije.
+    </p>
 
-          <a
-            href="/posvet"
-            className="pt-1 text-sm font-medium text-skin-900 underline underline-offset-4 transition hover:text-skin-700"
-          >
-            Naroči posvet →
-          </a>
-        </div>
-      </div>
+    <a
+      href="/posvet"
+      className="pt-1 text-sm font-medium text-skin-900 underline underline-offset-4 transition hover:text-skin-700"
+    >
+      Naroči posvet →
+    </a>
+  </div>
+</div>
     </div>
   </Container>
 </section>
@@ -162,8 +163,7 @@ export default function OdstranjevanjeTattooPage() {
         </h2>
 
         <p className="text-body-lg">
-          Končni rezultat je odvisen od več dejavnikov – od same tetovaže
-          do odziva vaše kože.
+          Končni rezultat ni enak pri vsakem tattooju.
         </p>
       </div>
 
@@ -214,18 +214,15 @@ export default function OdstranjevanjeTattooPage() {
           Ali se tattoo lahko popolnoma odstrani?
         </h2>
 
-        <p className="text-body-lg">
-          Veliko tattoojev je mogoče zelo uspešno odstraniti, vendar je
-          končni rezultat vedno odvisen od pigmenta, globine nanosa,
-          starosti tetovaže in odziva kože. Zato je pomembno, da se
-          odstranjevanje začne z realnimi pričakovanji.
-        </p>
+      <p className="text-body-lg">
+  Veliko tattoojev je mogoče zelo uspešno odstraniti, končni rezultat pa je
+  vedno odvisen od pigmenta, globine nanosa, starosti tetovaže in odziva kože.
+</p>
 
-        <p className="text-body">
-          V nekaterih primerih je cilj popolna odstranitev, v drugih pa
-          priprava tattooja na cover-up. Vsak primer zato ocenimo
-          individualno.
-        </p>
+<p className="text-body">
+  Pri nekaterih je cilj popolna odstranitev, pri drugih pa priprava tattooja
+  na cover-up. Zato je realna ocena pred začetkom odstranjevanja ključna.
+</p>
       </div>
 
       <div className="cta-spacing flex flex-wrap gap-4 pt-0">
@@ -258,14 +255,13 @@ export default function OdstranjevanjeTattooPage() {
       <div className="flex flex-col items-center gap-4 sm:gap-5">
         <p className="eyebrow-dark">Posvet</p>
 
-        <h2 className="heading-section text-white">
-          Razmišljate o odstranitvi tattooja?
-        </h2>
+       <h2 className="heading-section text-white">
+  Preverite svoj primer.
+</h2>
 
-        <p className="text-body-inverse max-w-[52ch]">
-          Na posvetu pregledamo tattoo, razložimo potek odstranjevanja in
-          podamo realno oceno glede na vaš primer.
-        </p>
+<p className="text-body-inverse max-w-[52ch]">
+  Na posvetu ocenimo vaš tattoo in vam jasno povemo, kako lahko poteka odstranjevanje.
+</p>
       </div>
 
       <div className="cta-spacing flex flex-col items-center gap-4">
