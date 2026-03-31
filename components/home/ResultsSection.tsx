@@ -5,26 +5,26 @@ import Button from "@/components/ui/Button";
 const resultsPreview = [
   {
     image: "/images/results/fairy-before-after.jpg",
-    title: "Vidno bledenje po 4 tretmajih",
+    title: "4 tretmaji — vidno zmanjšanje pigmenta",
     meta: "4 tretmaji",
-    caption: "Pred / Po – odstranjevanje še ni zaključeno",
-    note: "Pigment je vidno svetlejši. Za končni rezultat je potreben nadaljnji postopek.",
+    caption: "Pred / Po",
+    note: "Pigment je občutno svetlejši. Za končni rezultat je potreben nadaljnji postopek.",
     alt: "Pred in po štirih tretmajih laserskega odstranjevanja tattooja",
   },
   {
     image: "/images/results/phoenix-before-after.jpg",
-    title: "Napredek po prvih tretmajih",
+    title: "2 tretmaja — začetni fade",
     meta: "2 tretmaja",
-    caption: "Pred / Po – pigment postopoma bledi",
-    note: "Po prvih tretmajih je viden začetni fade, rezultat pa se izboljšuje med nadaljnjimi obiski.",
+    caption: "Pred / Po",
+    note: "Prvi rezultati so vidni že po nekaj obiskih. Tattoo postopoma bledi skozi nadaljnje tretmaje.",
     alt: "Pred in po dveh tretmajih laserskega odstranjevanja tattooja",
   },
   {
     image: "/images/results/tree-before-after.jpg",
-    title: "Postopen fade pigmenta",
+    title: "4 tretmaji — enakomerno bledenje",
     meta: "4 tretmaji",
-    caption: "Pred / Po – vidno zmanjšanje intenzivnosti",
-    note: "Odstranjevanje poteka postopoma, hitrost rezultata pa je odvisna od pigmenta in odziva kože.",
+    caption: "Pred / Po",
+    note: "Napredek je postopen in odvisen od pigmenta, globine in odziva kože.",
     alt: "Pred in po štirih tretmajih laserskega odstranjevanja temnejšega pigmenta",
   },
 ];
@@ -35,25 +35,60 @@ export default function ResultsPreviewSection() {
   <Container>
     <div className="section-gap">
       
-      {/* HEADER */}
-      <div className="header-stack max-w-3xl">
-        <p className="eyebrow-muted">Rezultati</p>
+   {/* HEADER */}
+{/* HEADER */}
+<div className="grid gap-10 lg:grid-cols-[1fr_0.72fr] lg:items-start lg:gap-14">
+  <div className="header-stack max-w-3xl">
+    <p className="eyebrow-muted">Rezultati</p>
 
-        <h2 className="heading-section text-neutral-950">
-          Realni primeri odstranjevanja
-        </h2>
+    <h2 className="heading-section text-neutral-950">
+      Realni primeri odstranjevanja
+    </h2>
 
-        <p className="text-body-lg max-w-[56ch]">
-          Spodaj so realni primeri, kako tattoo po več tretmajih postopoma
-          bledi.
-        </p>
+    <p className="text-body-lg max-w-[56ch]">
+      Spodaj so realni primeri,
+      <br className="hidden sm:block" />
+      kako tattoo skozi več tretmajev postopoma bledi.
+    </p>
 
-        <p className="text-body-sm max-w-[52ch] text-neutral-600">
-          Rezultati niso takojšnji — pigment se zmanjšuje postopoma, zato je pri
-          vsakem primeru pomembna realna ocena glede na tattoo in odziv kože.
-        </p>
-      </div>
+    <p className="text-body-sm max-w-[52ch] text-neutral-600">
+      Napredek ni enak pri vseh — odvisen je od pigmenta, globine in odziva kože, zato je pri vsakem primeru potrebna individualna ocena.
+    </p>
+  </div>
 
+ <div className="hidden lg:block max-w-[34ch]">
+  <div className="relative rounded-[20px] bg-neutral-50/80 p-6 ring-1 ring-neutral-200/60">
+    
+    {/* LEFT ACCENT */}
+    <div className="absolute left-0 top-6 bottom-6 w-[2px] bg-skin-400/70" />
+
+    <div className="pl-4">
+      <p className="eyebrow-muted">Kaj je pomembno</p>
+
+      <ul className="mt-5 flex flex-col gap-3 text-body-sm text-neutral-700">
+        <li className="flex items-start gap-2">
+          <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-skin-500/70" />
+          <span>rezultati niso takojšnji</span>
+        </li>
+
+        <li className="flex items-start gap-2">
+          <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-skin-500/70" />
+          <span>število tretmajev je odvisno od tattooja</span>
+        </li>
+
+        <li className="flex items-start gap-2">
+          <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-skin-500/70" />
+          <span>primeri spodaj prikazujejo postopen napredek</span>
+        </li>
+      </ul>
+
+      <p className="mt-6 text-body-sm text-neutral-500">
+        Končni rezultat je vedno odvisen od pigmenta, starega tattooja in odziva kože.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
       {/* GRID */}
       <div className="grid gap-6 pt-2 lg:grid-cols-3">
         {resultsPreview.map((item) => (

@@ -79,78 +79,90 @@ export default function WhyPico() {
   </div>
 </div>
 
-        {/* DESKTOP CARDS */}
-        <div className="hidden lg:block">
-          <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:gap-6">
-            
-            {/* ITEM */}
-            <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5 sm:p-6">
-              <div className="flex items-start gap-4">
-                <span className="text-sm font-semibold text-skin-500/70">01</span>
+       {/* DESKTOP CARDS */}
+<div className="hidden lg:block">
+  <div className="grid gap-6 sm:grid-cols-2">
+    {/* ITEM 01 */}
+    <div className="relative pl-6">
+      <div className="absolute left-0 top-1 h-[80%] w-[2px] bg-skin-400/60" />
 
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-base font-semibold text-neutral-950">
-                    Predvidljivost
-                  </h3>
-                  <p className="text-body max-w-[32ch]">
-                    Pico laser pigment razbije na manjše delce, kar omogoča bolj postopen in nadzorovan proces odstranjevanja.
-                  </p>
-                </div>
-              </div>
-            </div>
+      <div className="flex flex-col gap-2">
+        <span className="text-xs font-semibold tracking-[0.14em] text-skin-500/70">
+          01
+        </span>
 
-            {/* ITEM */}
-            <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5 sm:p-6">
-              <div className="flex items-start gap-4">
-                <span className="text-sm font-semibold text-skin-500/70">02</span>
+        <h3 className="text-base font-semibold text-neutral-950">
+          Predvidljivost
+        </h3>
 
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-base font-semibold text-neutral-950">
-                    Bolj enakomerno bledenje skozi čas
-                  </h3>
-                  <p className="text-body max-w-[32ch]">
-                    Pigment se razbija bolj dosledno, zato tattoo skozi tretmaje bledi bolj enakomerno — brez nepredvidljivih razlik.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* ITEM */}
-            <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5 sm:p-6">
-              <div className="flex items-start gap-4">
-                <span className="text-sm font-semibold text-skin-500/70">03</span>
-
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-base font-semibold text-neutral-950">
-                    Manj tveganja za kožo
-                  </h3>
-                  <p className="text-body max-w-[32ch]">
-                    Energija je bolj usmerjena v pigment, zato je manj vpliva na okolico — kar pomeni manjšo obremenitev kože.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* ITEM */}
-            <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5 sm:p-6">
-              <div className="flex items-start gap-4">
-                <span className="text-sm font-semibold text-skin-500/70">04</span>
-
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-base font-semibold text-neutral-950">
-                    Več kontrole pri zahtevnih tattoojih
-                  </h3>
-                  <p className="text-body max-w-[32ch]">
-                    Pri gostejšem ali barvnem pigmentu omogoča bolj natančen in predvidljiv potek odstranjevanja.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
+        <p className="text-body max-w-[36ch]">
+          Pico laser pigment razbije na manjše delce, kar omogoča bolj
+          postopen in nadzorovan proces odstranjevanja.
+        </p>
       </div>
     </div>
+
+    {/* ITEM 02 */}
+    <div className="relative pl-6">
+      <div className="absolute left-0 top-1 h-[80%] w-[2px] bg-skin-400/60" />
+
+      <div className="flex flex-col gap-2">
+        <span className="text-xs font-semibold tracking-[0.14em] text-skin-500/70">
+          02
+        </span>
+
+        <h3 className="text-base font-semibold text-neutral-950">
+          Bolj enakomerno bledenje skozi čas
+        </h3>
+
+        <p className="text-body max-w-[36ch]">
+          Pigment se razbija bolj dosledno, zato tattoo skozi tretmaje
+          bledi bolj enakomerno — brez nepredvidljivih razlik.
+        </p>
+      </div>
+    </div>
+
+    {/* ITEM 03 */}
+    <div className="relative pl-6">
+      <div className="absolute left-0 top-1 h-[80%] w-[2px] bg-skin-400/60" />
+
+      <div className="flex flex-col gap-2">
+        <span className="text-xs font-semibold tracking-[0.14em] text-skin-500/70">
+          03
+        </span>
+
+        <h3 className="text-base font-semibold text-neutral-950">
+          Manj tveganja za kožo
+        </h3>
+
+        <p className="text-body max-w-[36ch]">
+          Energija je bolj usmerjena v pigment, zato je manj vpliva na
+          okolico — kar pomeni manjšo obremenitev kože.
+        </p>
+      </div>
+    </div>
+
+    {/* ITEM 04 */}
+    <div className="relative pl-6">
+      <div className="absolute left-0 top-1 h-[80%] w-[2px] bg-skin-400/60" />
+
+      <div className="flex flex-col gap-2">
+        <span className="text-xs font-semibold tracking-[0.14em] text-skin-500/70">
+          04
+        </span>
+
+        <h3 className="text-base font-semibold text-neutral-950">
+          Več kontrole pri zahtevnih tattoojih
+        </h3>
+
+        <p className="text-body max-w-[36ch]">
+          Pri gostejšem ali barvnem pigmentu omogoča bolj natančen in
+          predvidljiv potek odstranjevanja.
+        </p>
+      </div>
+    </div>
+  </div>
+</div></div></div>
   </Container>
 </section>
 

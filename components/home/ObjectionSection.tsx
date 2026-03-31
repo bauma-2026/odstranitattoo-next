@@ -45,21 +45,44 @@ export default function ObjectionSection() {
           </div>
         </div>
 {/* INFO BLOCK */}
-<div className="hidden lg:block max-w-[34rem] border-l border-skin-400/20 pl-10">
-  <p className="eyebrow-muted text-neutral-500">
-    Kaj vpliva na rezultat
-  </p>
+<div className="hidden lg:block max-w-[36ch]">
+  <div className="relative rounded-[20px] bg-neutral-50/80 p-6 ring-1 ring-neutral-200/60">
+    
+    {/* LEFT ACCENT */}
+    <div className="absolute left-0 top-6 bottom-6 w-[2px] bg-skin-400/70" />
 
-  <ul className="mt-5 list-disc pl-4 space-y-2.5 text-body-sm text-neutral-700 marker:text-skin-500/70">
-    <li>barva tattooja</li>
-    <li>starost tattooja</li>
-    <li>globina nanosa</li>
-    <li>odziv kože</li>
-  </ul>
+    <div className="pl-4">
+      <p className="eyebrow-muted text-neutral-500">
+         Kaj je pomembno vedeti
+      </p>
 
-  <p className="mt-6 max-w-[34ch] text-body-sm text-neutral-500">
-    Zato lahko šele na podlagi vašega tattooja realno ocenimo, kaj je smiselno pričakovati.
-  </p>
+      <ul className="mt-5 flex flex-col gap-3 text-body-sm text-neutral-700">
+        <li className="flex items-start gap-2">
+          <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-skin-500/70" />
+          <span>barva tattooja</span>
+        </li>
+
+        <li className="flex items-start gap-2">
+          <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-skin-500/70" />
+          <span>starost tattooja</span>
+        </li>
+
+        <li className="flex items-start gap-2">
+          <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-skin-500/70" />
+          <span>globina nanosa</span>
+        </li>
+
+        <li className="flex items-start gap-2">
+          <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-skin-500/70" />
+          <span>odziv kože</span>
+        </li>
+      </ul>
+
+      <p className="mt-6 text-body-sm text-neutral-500">
+        Zato lahko šele na podlagi vašega tattooja realno ocenimo, kaj je smiselno pričakovati.
+      </p>
+    </div>
+  </div>
 </div></div>
 
     </div>

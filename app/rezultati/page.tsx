@@ -13,43 +13,43 @@ import {
 const results = [
   {
     image: "/images/results/fairy-before-after.jpg",
-    title: "Vidno bledenje po 4 tretmajih",
+    title: "4 tretmaji — vidno zmanjšanje pigmenta",
     meta: "4 tretmaji",
     alt: "Postopno bledenje tattooja po štirih tretmajih",
     description:
-      "Pigment je po štirih tretmajih vidno svetlejši. Postopek še ni zaključen, rezultat pa se gradi postopoma.",
+      "Pigment je po štirih tretmajih občutno svetlejši. Postopek še ni zaključen, rezultat pa se gradi postopoma.",
   },
   {
     image: "/images/results/phoenix-before-after.jpg",
-    title: "Začetni rezultati po 2 tretmajih",
+    title: "2 tretmaja — začetni fade",
     meta: "2 tretmaja",
     alt: "Začetni rezultati odstranjevanja tattooja po dveh tretmajih",
     description:
-      "Po prvih tretmajih je viden začetni napredek. Pigment postopoma bledi tudi med posameznimi obiski.",
+      "Prvi rezultati so vidni že po nekaj obiskih. Pigment postopoma bledi tudi med posameznimi tretmaji.",
   },
   {
     image: "/images/results/tree-before-after.jpg",
-    title: "Postopno bledenje pigmenta",
+    title: "4 tretmaji — enakomerno bledenje",
     meta: "4 tretmaji",
     alt: "Postopno zmanjšanje intenzivnosti pigmenta",
     description:
-      "Intenzivnost pigmenta se zmanjšuje skozi več tretmajev. Rezultat je vedno odvisen od posameznega tattooja.",
+      "Napredek je postopen in odvisen od pigmenta, globine nanosa in odziva kože.",
   },
   {
     image: "/images/results/rose-before-after-1.jpg",
-    title: "Barvni tattoo – viden napredek",
+    title: "5 tretmajev — viden napredek pri barvnem tattooju",
     meta: "5 tretmajev",
     alt: "Odstranjevanje barvnega tattooja po petih tretmajih",
     description:
-      "Barvni pigment praviloma bledi postopoma. Za nadaljnji rezultat je pogosto potrebnih več tretmajev.",
+      "Barvni pigment praviloma zahteva več časa. Tudi pri takem tattooju je po več tretmajih lahko viden jasen napredek.",
   },
   {
     image: "/images/results/fineline-before-after.jpg",
-    title: "Nežen tattoo – skoraj odstranjen",
+    title: "6 tretmajev — nežen tattoo skoraj odstranjen",
     meta: "6 tretmajev",
     alt: "Odstranjevanje nežnega tattooja po šestih tretmajih",
     description:
-      "Pri tanjših linijah je napredek pogosto hitreje viden. Končni rezultat je še vedno odvisen od pigmenta in kože.",
+      "Pri tanjših linijah je napredek pogosto hitreje viden, končni rezultat pa je še vedno odvisen od pigmenta in kože.",
   },
 ];
 
