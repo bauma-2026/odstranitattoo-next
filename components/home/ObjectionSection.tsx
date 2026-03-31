@@ -56,27 +56,12 @@ export default function ObjectionSection() {
          Kaj je pomembno vedeti
       </p>
 
-      <ul className="mt-5 flex flex-col gap-3 text-body-sm text-neutral-700">
-        <li className="flex items-start gap-2">
-          <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-skin-500/70" />
-          <span>barva tattooja</span>
-        </li>
-
-        <li className="flex items-start gap-2">
-          <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-skin-500/70" />
-          <span>starost tattooja</span>
-        </li>
-
-        <li className="flex items-start gap-2">
-          <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-skin-500/70" />
-          <span>globina nanosa</span>
-        </li>
-
-        <li className="flex items-start gap-2">
-          <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-skin-500/70" />
-          <span>odziv kože</span>
-        </li>
-      </ul>
+   <ul className="mt-5 list-disc pl-5 space-y-2 text-body-sm text-neutral-700 marker:text-skin-500/70">
+  <li className="leading-[1.5]">barva tattooja</li>
+  <li className="leading-[1.5]">starost tattooja</li>
+  <li className="leading-[1.5]">globina nanosa</li>
+  <li className="leading-[1.5]">odziv kože</li>
+</ul>
 
       <p className="mt-6 text-body-sm text-neutral-500">
         Zato lahko šele na podlagi vašega tattooja realno ocenimo, kaj je smiselno pričakovati.

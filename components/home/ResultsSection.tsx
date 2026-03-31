@@ -65,23 +65,11 @@ export default function ResultsPreviewSection() {
     <div className="pl-4">
       <p className="eyebrow-muted">Kaj je pomembno</p>
 
-      <ul className="mt-5 flex flex-col gap-3 text-body-sm text-neutral-700">
-        <li className="flex items-start gap-2">
-          <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-skin-500/70" />
-          <span>rezultati niso takojšnji</span>
-        </li>
-
-        <li className="flex items-start gap-2">
-          <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-skin-500/70" />
-          <span>število tretmajev je odvisno od tattooja</span>
-        </li>
-
-        <li className="flex items-start gap-2">
-          <span className="mt-[6px] h-1.5 w-1.5 rounded-full bg-skin-500/70" />
-          <span>primeri spodaj prikazujejo postopen napredek</span>
-        </li>
-      </ul>
-
+      <ul className="mt-5 list-disc pl-5 space-y-2 text-body-sm text-neutral-700 marker:text-skin-500/70">
+  <li className="leading-[1.5]">rezultati niso takojšnji</li>
+  <li className="leading-[1.5]">število tretmajev je odvisno od tattooja</li>
+  <li className="leading-[1.5]">primeri spodaj prikazujejo postopen napredek</li>
+</ul>
       <p className="mt-6 text-body-sm text-neutral-500">
         Končni rezultat je vedno odvisen od pigmenta, starega tattooja in odziva kože.
       </p>
