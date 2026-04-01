@@ -137,11 +137,31 @@ export default function Footer() {
       </div>
     </div>
 
-    <div className="grid gap-3 border-t border-white/5 py-5 text-sm text-neutral-500 sm:grid-cols-[1.1fr_0.9fr_0.9fr] sm:items-center lg:gap-14">
-      <p>© {new Date().getFullYear()} Odstrani Tattoo</p>
-      <div />
-      <p>Odstranjevanje tetovaž v Domžalah</p>
-    </div>
+   <div className="grid gap-3 border-t border-white/5 py-5 text-sm text-neutral-500 sm:grid-cols-[1.1fr_0.9fr_0.9fr] sm:items-center lg:gap-14">
+  
+  <p>© {new Date().getFullYear()} Odstrani Tattoo</p>
+
+  {/* LEGAL LINKS */}
+  <div className="flex flex-wrap gap-4 sm:justify-center">
+    <Link
+      href="/piskotki"
+      className="transition-colors duration-200 hover:text-white"
+    >
+      Politika piškotkov
+    </Link>
+
+    <Link
+      href="/zasebnost"
+      className="transition-colors duration-200 hover:text-white"
+    >
+      Politika zasebnosti
+    </Link>
+  </div>
+
+  <p className="sm:text-right">
+    Odstranjevanje tetovaž v Domžalah
+  </p>
+</div>
   </Container>
 </footer>
   );
