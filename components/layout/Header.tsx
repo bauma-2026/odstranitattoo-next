@@ -46,36 +46,36 @@ export default function Header() {
     <header className="sticky top-0 z-40 border-b border-neutral-200/60 bg-white/80 backdrop-blur-md">
   <Container>
     <div className="flex min-h-[76px] items-center justify-between gap-4 sm:gap-6">
-      <Link
-        href="/"
-        className="group flex items-center gap-3 transition-opacity duration-200 hover:opacity-90"
-      >
-        <Image
-          src="/logo/laser-symbol.svg"
-          alt="Odstrani Tattoo"
-          width={52}
-          height={52}
-          priority
-          className={[
-            "h-[52px] w-[52px] shrink-0 transition-all duration-500 ease-out",
-            scrolled
-              ? "translate-y-[1px] scale-[0.97] opacity-90 brightness-95"
-              : "translate-y-0 scale-100 opacity-100 brightness-100",
-          ].join(" ")}
-        />
+   <Link
+  href="/"
+  className="group flex items-center gap-2 transition-opacity duration-200 hover:opacity-90"
+>
+  <Image
+    src="/logo/laser-symbol.svg"
+    alt="Odstrani Tattoo"
+    width={52}
+    height={52}
+    priority
+    className={[
+      "h-[52px] w-[52px] shrink-0 opacity-95 transition-all duration-500 ease-out",
+      scrolled
+        ? "translate-y-[1px] scale-[0.97] opacity-90 brightness-95"
+        : "translate-y-0 scale-100 opacity-100 brightness-90",
+    ].join(" ")}
+  />
 
-        <span
-          className={[
-            "overflow-hidden whitespace-nowrap text-[12px] font-medium uppercase tracking-[0.16em] text-neutral-900 transition-all duration-400 ease-out",
-            scrolled
-              ? "max-w-0 -translate-x-2 opacity-0"
-              : "max-w-[180px] translate-x-0 opacity-100",
-          ].join(" ")}
-          aria-hidden={scrolled}
-        >
-          Odstrani Tattoo
-        </span>
-      </Link>
+  <span
+    className={[
+      "overflow-hidden whitespace-nowrap text-[12px] font-medium uppercase tracking-[0.14em] text-neutral-900 transition-all duration-400 ease-out",
+      scrolled
+        ? "max-w-0 -translate-x-2 opacity-0"
+        : "max-w-[180px] translate-x-0 opacity-100",
+    ].join(" ")}
+    aria-hidden={scrolled}
+  >
+    Odstrani Tattoo
+  </span>
+</Link>
 
 <nav className="hidden items-center gap-7 md:flex lg:gap-8">
   {nav.map((item) => {

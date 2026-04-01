@@ -24,46 +24,55 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-  <footer className="border-t border-white/10 bg-neutral-950 text-white">
+ <footer className="border-t border-white/10 bg-neutral-950 text-white">
   <Container>
     <div className="grid gap-10 pt-12 pb-10 sm:pt-14 sm:pb-12 lg:grid-cols-[1.1fr_0.9fr_0.9fr] lg:gap-14 lg:pt-16 lg:pb-14">
-      
       {/* BRAND */}
       <div className="max-w-sm">
-        <Link
-          href="/"
-          className="inline-flex items-center gap-3 transition-opacity duration-200 hover:opacity-90"
-        >
-          <Image
-            src="/logo/laser-symbol-white.svg"
-            alt="Odstrani Tattoo"
-            width={42}
-            height={42}
-            className="h-10 w-10"
-          />
-
-          <span className="text-[12px] font-medium uppercase tracking-[0.16em] text-white">
-            Odstrani Tattoo
-          </span>
-        </Link>
-
-    <p className="mt-5 text-sm leading-6 text-neutral-500">
-          Lasersko odstranjevanje tetovaž s Pico laserjem v Domžalah.
-          Individualna ocena, realna pričakovanja in postopen pristop do
-          rezultata.
-        </p>
-        <p className="mt-5 text-sm leading-6 text-neutral-500">
-  Odstrani Tattoo je del{" "}
-  <a
-    href="https://artbite-tattoo.com/"
-    target="_blank"
-    rel="noreferrer"
-    className="underline underline-offset-4 transition-colors duration-200 hover:text-white"
+  <Link
+    href="/"
+    className="inline-flex items-center gap-2 transition-opacity duration-200 hover:opacity-90"
   >
-    Artbite Tattoo
-  </a>.
-</p>
-      </div>
+    <Image
+      src="/logo/laser-symbol-white.svg"
+      alt="Odstrani Tattoo"
+      width={48}
+      height={48}
+      className="h-12 w-12 opacity-95"
+    />
+
+    <span className="text-[11px] font-medium uppercase tracking-[0.13em] text-white/90">
+      Odstrani Tattoo
+    </span>
+  </Link>
+
+  <p className="mt-5 text-sm leading-6 text-neutral-500">
+    Lasersko odstranjevanje tetovaž s Pico laserjem v Domžalah.
+    Individualna ocena, realna pričakovanja in postopen pristop do
+    rezultata.
+  </p>
+
+  <p className="mt-5 text-sm leading-6 text-neutral-500">
+    Odstrani Tattoo je del{" "}
+    <a
+      href="https://artbite-tattoo.com/"
+      target="_blank"
+      rel="noreferrer"
+      className="underline underline-offset-4 transition-colors duration-200 hover:text-white"
+    >
+      Artbite Tattoo
+    </a>.
+  </p>
+
+  <div className="mt-5">
+    <Link
+      href="/piskotki"
+      className="text-[11px] underline underline-offset-4 text-neutral-600 transition-colors duration-200 hover:text-neutral-300"
+    >
+      Politika piškotkov
+    </Link>
+  </div>
+</div>
 
       {/* NAV */}
       <div>
@@ -137,31 +146,11 @@ export default function Footer() {
       </div>
     </div>
 
-   <div className="grid gap-3 border-t border-white/5 py-5 text-sm text-neutral-500 sm:grid-cols-[1.1fr_0.9fr_0.9fr] sm:items-center lg:gap-14">
-  
-  <p>© {new Date().getFullYear()} Odstrani Tattoo</p>
+    <div className="grid gap-3 border-t border-white/5 py-5 text-sm text-neutral-500 sm:grid-cols-[1fr_auto] sm:items-center">
+      <p>© {new Date().getFullYear()} Odstrani Tattoo</p>
 
-  {/* LEGAL LINKS */}
-  <div className="flex flex-wrap gap-4 sm:justify-center">
-    <Link
-      href="/piskotki"
-      className="transition-colors duration-200 hover:text-white"
-    >
-      Politika piškotkov
-    </Link>
-
-    <Link
-      href="/zasebnost"
-      className="transition-colors duration-200 hover:text-white"
-    >
-      Politika zasebnosti
-    </Link>
-  </div>
-
-  <p className="sm:text-right">
-    Odstranjevanje tetovaž v Domžalah
-  </p>
-</div>
+      <p className="sm:text-right">Odstranjevanje tetovaž v Domžalah</p>
+    </div>
   </Container>
 </footer>
   );
