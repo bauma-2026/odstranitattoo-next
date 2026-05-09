@@ -60,7 +60,7 @@ className="scale-[1.15] object-cover object-[26%_76%] brightness-[0.92] contrast
         </div>
 
         {/* BOTTOM */}
-        <div className="absolute bottom-10 left-0 flex flex-col items-start gap-5">
+        <div className="absolute bottom-14 left-0 flex flex-col items-start gap-5">
           <Button href="/posvet" variant="primary-dark">
             Pošlji povpraševanje
           </Button>
