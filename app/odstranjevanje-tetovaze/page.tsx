@@ -70,7 +70,7 @@ export default function OdstranjevanjeTattooDomzalePage() {
 
       <div className="cta-spacing flex flex-col items-start gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
         <Button href="/posvet" variant="primary-dark">
-          Naroči posvet
+     Pošlji povpraševanje
         </Button>
 
         <a

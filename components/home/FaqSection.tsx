@@ -5,43 +5,27 @@ import Script from "next/script";
 const faqs = [
   {
     q: "Ali se tattoo lahko popolnoma odstrani?",
-    a: "V veliko primerih je mogoče tattoo zelo uspešno odstraniti. Končni rezultat pa je vedno odvisen od pigmenta, kože in starosti tattooja. Zato vam že na začetku jasno povemo, kaj je pri vašem primeru realno pričakovati.",
+    a: "V veliko primerih je mogoče tattoo zelo uspešno odstraniti. Končni rezultat pa je vedno odvisen od pigmenta, kože in starosti tattooja.",
   },
   {
     q: "Koliko tretmajev je potrebnih?",
-    a: "Število tretmajev je odvisno od pigmenta, globine nanosa in odziva kože. Nekateri tattooji bledijo hitreje, drugi potrebujejo več časa. Okvirno število vedno določimo glede na vaš konkreten primer.",
+    a: "Število tretmajev je odvisno od pigmenta, globine nanosa in odziva kože. Nekateri tattooji bledijo hitreje, drugi potrebujejo več časa.",
   },
   {
     q: "Ali odstranjevanje tattooja boli?",
-    a: "Občutek je odvisen od mesta tattooja in vaše občutljivosti. Večina ga opisuje kot hitro pikanje ali občutek rahlega \"švikanja\" po koži. Tretma je kratek, po potrebi pa poskrbimo za večje udobje.",
+    a: "Večina občutek opisuje kot hitro pikanje ali rahlo \"švikanje\" po koži. Občutek je odvisen od mesta tattooja in občutljivosti.",
   },
   {
     q: "Kdaj so vidni prvi rezultati?",
-    a: "Rezultat ni takojšen. Pigment se razgrajuje postopoma, telo pa ga odstranjuje skozi čas. Prve spremembe so pogosto vidne že po nekaj tretmajih, napredek pa se nadaljuje tudi med posameznimi obiski.",
-  },
-  {
-    q: "Koliko časa mora miniti med tretmaji?",
-    a: "Med tretmaji je potreben čas, da se koža obnovi in telo odstrani razbite delce pigmenta. Razmiki so običajno več tednov, natančen potek pa vedno prilagodimo glede na kožo in tattoo.",
+    a: "Pigment se razgrajuje postopoma, zato rezultat ni takojšen. Prve spremembe so pogosto vidne po nekaj tretmajih.",
   },
   {
     q: "Ali Pico laser deluje na vse barve tattooja?",
-    a: "Pico laser je učinkovit tudi pri zahtevnejših pigmentih, vendar rezultat ni pri vseh barvah enak. Na hitrost bledenja vplivajo barva, gostota in globina tattooja.",
+    a: "Pico laser je učinkovit tudi pri zahtevnejših pigmentih, vendar hitrost bledenja ni pri vseh barvah enaka.",
   },
   {
-    q: "Ali odstranjevanje poškoduje kožo?",
-    a: "Pri Pico laser tehnologiji je energija usmerjena predvsem v pigment, zato je vpliv na okolno tkivo manjši. Po tretmaju sta možni prehodna rdečina ali rahla občutljivost, kar je normalen odziv kože.",
-  },
-  {
-    q: "Ali lahko nastanejo brazgotine?",
-    a: "Tveganje za brazgotine je pri sodobni Pico laser tehnologiji majhno. Ključno je pravilno izveden tretma in ustrezna nega po postopku.",
-  },
-  {
-    q: "Ali lahko odstranim samo del tattooja ali ga posvetlim za cover-up?",
-    a: "Da. Tattoo lahko odstranjujemo postopoma ali ga posvetlimo do točke, primerne za prekrivanje. Postopek vedno prilagodimo vašemu cilju.",
-  },
-  {
-    q: "Koliko stane odstranjevanje tattooja?",
-    a: "Cena je odvisna od velikosti, zahtevnosti in cilja odstranjevanja. Okviren strošek in potek vedno določimo glede na vaš konkreten primer.",
+    q: "Ali lahko tattoo samo posvetlim za cover-up?",
+    a: "Da. Tattoo lahko odstranjujemo postopoma ali ga posvetlimo do stopnje, primerne za cover-up.",
   },
 ];
 
@@ -80,18 +64,11 @@ export default function FaqSection() {
         </h2>
 
         <p className="text-body-lg max-w-[46ch] text-neutral-700">
-          Spodaj so odgovori na vprašanja, ki jih stranke najpogosteje zastavijo
-          pred prvim tretmajem.
+    Najpogostejša vprašanja pred odločitvijo.
         </p>
       </div>
 
-      {/* MINI INTRO */}
-      <div className="border-t border-neutral-200/60 pt-6 sm:pt-8">
-        <p className="text-body-sm max-w-[58ch] text-neutral-500">
-          Če svojega primera ne najdete tukaj, ga skupaj pogledamo na posvetu in
-          vam jasno povemo, kaj je smiselno pričakovati.
-        </p>
-      </div>
+    
 
       {/* FAQ LIST */}
       <div className="max-w-3xl">
@@ -127,40 +104,30 @@ export default function FaqSection() {
   </Container>
 </section>
 
-     {/* CTA */}
-<section className="section-tight border-t border-neutral-300/60 bg-neutral-200/60">
+  {/* CTA */}
+<section className="section-tight border-t border-neutral-200/70 bg-neutral-100/70">
   <Container>
-    <div className="section-gap">
-      <div className="mx-auto flex max-w-2xl flex-col items-center gap-5 text-center">
-        <p className="text-sm text-neutral-500">
-          Še vedno imate vprašanje?
-        </p>
+    <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
+      
+      <p className="eyebrow-muted">
+        Posvet
+      </p>
 
-        <p className="eyebrow-skin text-skin-600/80">
-          Posvet
-        </p>
+      <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-neutral-950 sm:text-4xl">
+        Še vedno imate vprašanje?
+      </h2>
 
-        <h2 className="heading-section text-neutral-950">
-          Preverite svoj primer
-        </h2>
+      <p className="mt-4 max-w-[50ch] text-body-lg text-neutral-600">
+        Če svojega primera niste našli med vprašanji,
+        ga skupaj pregledamo na posvetu.
+      </p>
 
-        <p className="text-body-lg max-w-[46ch] text-neutral-700">
-          Na posvetu pregledamo vaš tattoo in vam jasno povemo,
-          <br className="hidden sm:block" />
-          kaj je pri vašem primeru smiselno pričakovati.
-        </p>
-
-        <div className="pt-2">
-          <Button href="/posvet" variant="primary-light">
-            Preveri svoj primer
-          </Button>
-        </div>
-
-        {/* subtle trust line */}
-        <p className="text-sm text-neutral-500">
-          Brez obveznosti. Realna ocena.
-        </p>
+      <div className="mt-8">
+        <Button href="/kontakt" variant="primary-light">
+          Pošlji povpraševanje
+        </Button>
       </div>
+      
     </div>
   </Container>
 </section>

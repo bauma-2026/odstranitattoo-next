@@ -43,7 +43,7 @@ export default function Header() {
 
   return (
     <>
-    <header className="sticky top-0 z-40 border-b border-neutral-200/60 bg-white/80 backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-white/10 bg-white/80 backdrop-blur-md">
   <Container>
     <div className="flex min-h-[76px] items-center justify-between gap-4 sm:gap-6">
    <Link

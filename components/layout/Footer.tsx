@@ -47,23 +47,20 @@ export default function Footer() {
   </Link>
 
   <p className="mt-5 text-sm leading-6 text-neutral-500">
-    Lasersko odstranjevanje tetovaž s Pico laserjem v Domžalah.
-    Individualna ocena, realna pričakovanja in postopen pristop do
-    rezultata.
-  </p>
+  Lasersko odstranjevanje tattoojev s Pico laserjem v Domžalah.
+</p>
 
-  <p className="mt-5 text-sm leading-6 text-neutral-500">
-    Odstrani Tattoo je del{" "}
-    <a
-      href="https://artbite-tattoo.com/"
-      target="_blank"
-      rel="noreferrer"
-      className="underline underline-offset-4 transition-colors duration-200 hover:text-white"
-    >
-      Artbite Tattoo
-    </a>.
-  </p>
-
+<p className="mt-4 text-sm leading-6 text-neutral-500">
+  Del studia{" "}
+  <a
+    href="https://artbite-tattoo.com/"
+    target="_blank"
+    rel="noreferrer"
+    className="underline underline-offset-4 transition-colors duration-200 hover:text-white"
+  >
+    Artbite Tattoo
+  </a>.
+</p>
   <div className="mt-5">
     <Link
       href="/piskotki"
@@ -149,7 +146,7 @@ export default function Footer() {
     <div className="grid gap-3 border-t border-white/5 py-5 text-sm text-neutral-500 sm:grid-cols-[1fr_auto] sm:items-center">
       <p>© {new Date().getFullYear()} Odstrani Tattoo</p>
 
-      <p className="sm:text-right">Odstranjevanje tetovaž v Domžalah</p>
+      <p className="sm:text-right">Pico laser • Domžale</p>
     </div>
   </Container>
 </footer>

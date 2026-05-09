@@ -12,42 +12,52 @@ import {
 
 const results = [
   {
-    image: "/images/results/fairy-before-after.jpg",
+    before: "/images/results/fairy-before.jpg",
+    after: "/images/results/fairy-after.jpg",
     title: "Opazno bledenje po 4 tretmajih",
     meta: "4 tretmaji",
-    alt: "Postopno bledenje tattooja po štirih tretmajih",
+    beforeAlt: "Tattoo pred laserskim odstranjevanjem",
+    afterAlt: "Tattoo po štirih tretmajih laserskega odstranjevanja",
     description:
       "Pigment je po štirih tretmajih občutno svetlejši. Postopek še ni zaključen, napredek pa je že jasno viden.",
   },
   {
-    image: "/images/results/phoenix-before-after.jpg",
+    before: "/images/results/phoenix-before.jpg",
+    after: "/images/results/phoenix-after.jpg",
     title: "Začetni fade",
     meta: "2 tretmaja",
-    alt: "Začetni rezultati odstranjevanja tattooja po dveh tretmajih",
+    beforeAlt: "Tattoo pred laserskim odstranjevanjem",
+    afterAlt: "Tattoo po dveh tretmajih laserskega odstranjevanja",
     description:
       "Prvi rezultati so vidni že po nekaj obiskih. Pigment postopoma bledi tudi med posameznimi tretmaji.",
   },
   {
-    image: "/images/results/tree-before-after.jpg",
+    before: "/images/results/tree-before.jpg",
+    after: "/images/results/tree-after.jpg",
     title: "Enakomerno bledenje",
     meta: "4 tretmaji",
-    alt: "Postopno zmanjšanje intenzivnosti pigmenta",
+    beforeAlt: "Temnejši tattoo pred laserskim odstranjevanjem",
+    afterAlt: "Temnejši tattoo po štirih tretmajih laserskega odstranjevanja",
     description:
       "Napredek je postopen in odvisen od pigmenta, globine nanosa in odziva kože.",
   },
   {
-    image: "/images/results/rose-before-after-1.jpg",
+    before: "/images/results/rose-before.jpg",
+    after: "/images/results/rose-after.jpg",
     title: "Viden napredek pri barvnem tattooju",
     meta: "5 tretmajev",
-    alt: "Odstranjevanje barvnega tattooja po petih tretmajih",
+    beforeAlt: "Barvni tattoo pred laserskim odstranjevanjem",
+    afterAlt: "Barvni tattoo po petih tretmajih laserskega odstranjevanja",
     description:
       "Barvni pigment praviloma zahteva več časa. Tudi pri takem tattooju je po več tretmajih lahko viden jasen napredek.",
   },
   {
-    image: "/images/results/fineline-before-after.jpg",
+    before: "/images/results/fineline-before.jpg",
+    after: "/images/results/fineline-after.jpg",
     title: "Nežen tattoo skoraj odstranjen",
     meta: "6 tretmajev",
-    alt: "Odstranjevanje nežnega tattooja po šestih tretmajih",
+    beforeAlt: "Nežen tattoo pred laserskim odstranjevanjem",
+    afterAlt: "Nežen tattoo po šestih tretmajih laserskega odstranjevanja",
     description:
       "Pri tanjših linijah je napredek pogosto hitreje viden, končni rezultat pa je še vedno odvisen od pigmenta in kože.",
   },
@@ -161,35 +171,35 @@ ne kot obljubo enakega rezultata za vsak primer.
               hover:shadow-[0_10px_24px_rgba(var(--skin-rgb),0.12)]
             "
           >
-            <div className="relative aspect-[5/4] overflow-hidden bg-neutral-100">
-              <Image
-                src={item.image}
-                alt={item.alt}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                sizes="(min-width: 1280px) 33vw, (min-width: 1024px) 50vw, 100vw"
-              />
+            <div className="grid grid-cols-2 gap-[2px] overflow-hidden bg-neutral-100">
+  <div className="relative aspect-[4/5]">
+    <Image
+      src={item.before}
+      alt={item.beforeAlt}
+      fill
+      className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+      sizes="(min-width: 1280px) 16vw, (min-width: 1024px) 25vw, 50vw"
+    />
 
-              <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-white/8" />
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[22%] bg-gradient-to-t from-black/18 to-transparent" />
+    <div className="pointer-events-none absolute left-3 top-3 rounded-full bg-black/70 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-white backdrop-blur">
+      Pred
+    </div>
+  </div>
 
-              <div className="pointer-events-none absolute inset-0 flex">
-                <div className="flex w-1/2 items-start justify-start p-3 sm:p-4">
-                  <span className="rounded-full bg-black/70 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-white backdrop-blur">
-                    Pred
-                  </span>
-                </div>
+  <div className="relative aspect-[4/5]">
+    <Image
+      src={item.after}
+      alt={item.afterAlt}
+      fill
+      className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+      sizes="(min-width: 1280px) 16vw, (min-width: 1024px) 25vw, 50vw"
+    />
 
-                <div className="flex w-1/2 items-start justify-end p-3 sm:p-4">
-                  <span className="rounded-full bg-white/60 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-neutral-900 backdrop-blur">
-                    Po
-                  </span>
-                </div>
-              </div>
-
-              <div className="pointer-events-none absolute inset-y-0 left-0 w-1/2 bg-black/5" />
-            </div>
-
+    <div className="pointer-events-none absolute right-3 top-3 rounded-full bg-white/70 px-3 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-neutral-900 backdrop-blur">
+      Po
+    </div>
+  </div>
+</div>
             <div className="p-5 sm:p-6">
   <div className="flex flex-col gap-3">
     <div className="flex flex-col gap-1">
@@ -302,7 +312,7 @@ ne kot obljubo enakega rezultata za vsak primer.
       <div className="cta-spacing flex flex-col items-center">
        <div className="flex flex-wrap justify-center gap-4 mt-4 sm:mt-6">
           <Button href="/posvet" variant="primary-dark">
-            Naroči posvet
+           Pošlji povpraševanje
           </Button>
 
           <Button href="/odstranjevanje-tattoojev" variant="secondary-dark">

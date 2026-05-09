@@ -42,13 +42,12 @@ export default function FaqPage() {
     />
 
    <Container className="relative z-10 pt-10 pb-12 sm:pt-12 sm:pb-14 lg:pt-14 lg:pb-16">
-  <div className="header-stack max-w-2xl">
+ <div className="header-stack max-w-3xl">
     <p className="eyebrow-dark">FAQ</p>
 
-    <h1 className="heading-display leading-[1.04] text-3xl text-white sm:text-4xl lg:text-[3.25rem]">
-      Pogosta
-      vprašanja
-    </h1>
+   <h1 className="heading-display leading-[1.04] text-3xl text-white sm:text-4xl lg:text-[3.25rem]">
+  Pogosta vprašanja
+</h1>
 
     {/* MOBILE */}
     <p className="text-body-inverse-lg max-w-[56ch] sm:hidden">

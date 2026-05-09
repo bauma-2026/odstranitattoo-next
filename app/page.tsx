@@ -8,6 +8,7 @@ import Hero from "@/components/home/Hero";
 import SeoLocationSection from "@/components/home/SeoLocationSection";
 import SeoPricingSection from "@/components/home/SeoPricingSection";
 import ObjectionSection from "@/components/home/ObjectionSection";
+import TreatmentExpectations from "@/components/sections/TreatmentExpectations";
 
 export const metadata: Metadata = {
   title: "Lasersko odstranjevanje tattoojev s Pico laserjem",
@@ -28,7 +29,7 @@ export default function HomePage() {
   <WhyPico />
 
   <ResultsSection />
-
+<TreatmentExpectations />
   <FaqSection />
 
   <SeoLocationSection />

@@ -68,7 +68,7 @@ export default function KontaktPage() {
           href="/posvet"
           className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
         >
-          Naroči posvet →
+          Pošlji povpraševanje →
         </a>
 
         <a
@@ -253,7 +253,7 @@ export default function KontaktPage() {
 
             <div className="cta-spacing flex flex-col items-start gap-3 pt-0 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
               <Button href="/posvet" variant="primary-dark">
-                Naroči posvet
+                Pošlji povpraševanje
               </Button>
 
               <a

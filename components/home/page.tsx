@@ -189,7 +189,7 @@ export default function OdstranjevanjeTattooPage() {
             </p>
 
             <div className="flex flex-wrap gap-4 pt-2">
-              <Button href="/posvet">Naroči posvet</Button>
+              <Button href="/posvet">Pošlji povpraševanje</Button>
               <Button href="/kontakt" variant="secondary-light">
                 Kontakt
               </Button>

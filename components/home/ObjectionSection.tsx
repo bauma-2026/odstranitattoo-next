@@ -21,17 +21,13 @@ export default function ObjectionSection() {
           </p>
 
           <div className="flex flex-col gap-4 pt-2">
-            <p className="text-body">
-              Rezultat pa ni vedno enak.
-            </p>
+           
 
             <p className="text-body">
-              Odvisen je od pigmenta, globine in odziva telesa.
+            Rezultat je odvisen od pigmenta, globine nanosa in odziva kože — pri nekaterih tattoojih lahko ostanejo rahle sledi.
             </p>
 
-            <p className="text-body">
-              Nekateri tattooji izginejo skoraj v celoti, pri drugih lahko ostanejo rahle sledi.
-            </p>
+           
           </div>
 
           <div className="cta-spacing flex flex-wrap items-center gap-4 pt-3">
@@ -44,32 +40,8 @@ export default function ObjectionSection() {
             </Button>
           </div>
         </div>
-{/* INFO BLOCK */}
-<div className="hidden lg:block max-w-[36ch]">
-  <div className="relative rounded-[20px] bg-neutral-50/80 p-6 ring-1 ring-neutral-200/60">
-    
-    {/* LEFT ACCENT */}
-    <div className="absolute left-0 top-6 bottom-6 w-[2px] bg-skin-400/70" />
 
-    <div className="pl-4">
-      <p className="eyebrow-muted text-neutral-500">
-         Kaj je pomembno vedeti
-      </p>
-
-   <ul className="mt-5 list-disc pl-5 space-y-2 text-body-sm text-neutral-700 marker:text-skin-500/70">
-  <li className="leading-[1.5]">barva tattooja</li>
-  <li className="leading-[1.5]">starost tattooja</li>
-  <li className="leading-[1.5]">globina nanosa</li>
-  <li className="leading-[1.5]">odziv kože</li>
-</ul>
-
-      <p className="mt-6 text-body-sm text-neutral-500">
-        Zato lahko šele na podlagi vašega tattooja realno ocenimo, kaj je smiselno pričakovati.
-      </p>
-    </div>
-  </div>
-</div></div>
-
+</div>
     </div>
   </Container>
 </section>
