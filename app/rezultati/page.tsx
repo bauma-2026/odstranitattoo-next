@@ -296,42 +296,42 @@ ne kot obljubo enakega rezultata za vsak primer.
       <div className="flex flex-col items-center gap-4 sm:gap-5">
         <p className="eyebrow-dark">Posvet</p>
 
-       <h2 className="heading-section text-white">
-  Kaj lahko realno pričakujete
-  <br className="hidden sm:block" />
-  od odstranjevanja
-</h2>
+        <h2 className="heading-section text-white">
+          Niste prepričani,
+          <br className="hidden sm:block" />
+          kaj lahko pričakujete?
+        </h2>
 
         <p className="text-body-inverse max-w-[52ch]">
-          Na posvetu pregledamo tattoo in vam jasno povemo,
-          <br className="hidden sm:block" />
-          kaj je pri vašem primeru smiselno pričakovati.
+          Na posvetu pregledamo tattoo in vam jasno povemo, kakšen rezultat je pri vašem primeru realno pričakovati.
         </p>
       </div>
 
       <div className="cta-spacing flex flex-col items-center">
-       <div className="flex flex-wrap justify-center gap-4 mt-4 sm:mt-6">
+        <div className="mt-4 flex flex-wrap justify-center gap-4 sm:mt-6">
           <Button href="/posvet" variant="primary-dark">
-           Pošlji povpraševanje
+            Naroči posvet
           </Button>
 
-          <Button href="/odstranjevanje-tattoojev" variant="secondary-dark">
-            Poglej potek odstranjevanja
+          <Button href="/cenik" variant="secondary-dark">
+            Poglej cenik
           </Button>
         </div>
 
-        <div className="flex flex-col gap-2 pt-3">
-          <a
-            href="/faq"
-            className="mt-6 text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
-          >
-            Preberi pogosta vprašanja →
-          </a>
+       <div className="flex flex-col items-center pt-4">
+  <p className="text-sm leading-6 text-white/55">
+    Posvet pred lasersko terapijo: 30 €
+    <br />
+    Ob zakupu storitve se znesek odšteje.
+  </p>
 
-          <p className="mt-4 text-sm text-white/50">
-            Posvet je brezplačen in namenjen realni oceni vašega primera.
-          </p>
-        </div>
+  <a
+    href="/faq"
+    className="mt-8 text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+  >
+    Preberi pogosta vprašanja →
+  </a>
+</div>
       </div>
     </div>
   </Container>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
 import PixelLayer from "@/components/ui/pixels/PixelLayer";
@@ -120,7 +121,7 @@ export default function OdstranjevanjeTattooPage() {
 
         <p className="text-body">
           Med posameznimi tretmaji mora miniti dovolj časa, da se koža umiri
-          in da telo razgrajeni pigment postopoma odstrani. 
+          in da telo razgrajeni pigment postopoma odstrani.
         </p>
 
         <a
@@ -131,30 +132,24 @@ export default function OdstranjevanjeTattooPage() {
         </a>
       </div>
 
-      {/* INFO BLOCK */}
-      <div className="hidden lg:block max-w-[36ch]">
-        <div className="relative rounded-[20px] bg-neutral-50/80 p-6 ring-1 ring-neutral-200/60">
-          <div className="absolute left-0 top-6 bottom-6 w-[2px] bg-skin-400/70" />
+      {/* PROCESS VISUAL */}
+<div className="relative overflow-hidden rounded-[24px] border border-neutral-200/70 bg-neutral-100">
+  <Image
+    src="/images/pico/pico-laser-process-01-desktop.webp"
+    alt="Pico laser odstranjevanje tattooja med tretmajem"
+    width={2560}
+    height={1440}
+    className="hidden aspect-[16/10] w-full object-cover lg:block"
+  />
 
-          <div className="pl-4">
-            <p className="eyebrow-muted text-neutral-500">
-              Kaj je pomembno vedeti
-            </p>
-
-            <ul className="mt-5 list-disc space-y-2 pl-5 text-body-sm text-neutral-700 marker:text-skin-500/70">
-              <li className="leading-[1.5]">barva tattooja</li>
-              <li className="leading-[1.5]">starost tattooja</li>
-              <li className="leading-[1.5]">globina nanosa</li>
-              <li className="leading-[1.5]">odziv kože</li>
-            </ul>
-
-            <p className="mt-6 text-body-sm text-neutral-500">
-              Zato lahko šele na podlagi vašega tattooja realno ocenimo, kaj
-              je smiselno pričakovati.
-            </p>
-          </div>
-        </div>
-      </div>
+  <Image
+    src="/images/pico/pico-laser-process-01-mobile.webp"
+    alt="Pico laser odstranjevanje tattooja med tretmajem"
+    width={1080}
+    height={1350}
+    className="block aspect-[5/6] w-full object-cover lg:hidden"
+  />
+</div>
     </div>
   </Container>
 </section>

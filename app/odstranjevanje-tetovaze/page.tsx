@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
 import PixelLayerRandom from "@/components/ui/pixels/PixelLayerRandom";
@@ -118,33 +119,23 @@ export default function OdstranjevanjeTattooDomzalePage() {
           </a>
         </div>
 
-        {/* RIGHT */}
-<div className="rounded-[24px] border border-neutral-200/70 bg-neutral-50/80 p-7 sm:p-8">
-  <div className="flex flex-col gap-4">
-    <p className="eyebrow-muted text-neutral-500">
-      Posvet v studiu
-    </p>
+       {/* RIGHT */}
+<div className="relative overflow-hidden rounded-[24px] border border-neutral-200/70 bg-neutral-100">
+  <Image
+    src="/images/pico/pico-laser-process-01-desktop.webp"
+    alt="Pico laser odstranjevanje tattooja med tretmajem"
+    width={2560}
+    height={1440}
+    className="hidden aspect-[16/10] w-full object-cover lg:block"
+  />
 
-    <h3 className="text-2xl font-semibold leading-[1.2] text-neutral-950">
-      Studio v Domžalah
-    </h3>
-
-    <p className="text-body">
-      Pred začetkom pregledamo tattoo in ocenimo, kaj je za vaš primer
-      smiselno — odstranitev ali priprava na cover-up.
-    </p>
-
-    <p className="text-body-sm text-neutral-500">
-      Studio je enostavno dostopen iz Ljubljane in okolice.
-    </p>
-
-    <a
-      href="/kontakt"
-      className="pt-2 text-sm font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
-    >
-      Poglej lokacijo in kontakt →
-    </a>
-  </div>
+  <Image
+    src="/images/pico/pico-laser-process-01-mobile.webp"
+    alt="Pico laser odstranjevanje tattooja med tretmajem"
+    width={1080}
+    height={1350}
+    className="block aspect-[4/5] w-full object-cover lg:hidden"
+  />
 </div>
       </div>
     </Container>
