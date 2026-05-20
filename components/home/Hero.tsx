@@ -7,38 +7,31 @@ export default function Hero() {
     <section className="relative overflow-hidden bg-neutral-950 text-white">
       {/* BASE BG */}
       <div className="pointer-events-none absolute inset-0 z-0 bg-black" />
-
-    {/* MOBILE HERO */}
+{/* MOBILE HERO */}
 <div className="relative z-10 md:hidden">
   <div className="relative min-h-[640px] overflow-hidden bg-black">
     <Image
-      src="/images/hero/2.png"
-      alt="Pico laser odstranjevanje tattooja med tretmajem"
+      src="/images/hero/hero-machines.webp"
+      alt="PicoFocus laser za odstranjevanje tattoojev"
       fill
       sizes="100vw"
       priority
-className="scale-[1.15] object-cover object-[26%_76%] brightness-[0.92] contrast-[1.06]"
+      className="scale-[1.0] object-contain object-[62%_48%] opacity-88"
     />
 
-  {/* OVERLAYS */}
-<div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-black/38 via-black/20 to-black/68" />
+    {/* OVERLAYS */}
+    <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-black/48 via-black/18 to-black/72" />
+    <div className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-[88%] bg-gradient-to-r from-black/78 via-black/44 to-transparent" />
+    <div className="pointer-events-none absolute inset-x-0 top-0 z-[1] h-[30%] bg-gradient-to-b from-black/48 to-transparent" />
+    <div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[34%] bg-gradient-to-t from-black/72 via-black/28 to-transparent" />
 
-<div className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-[82%] bg-gradient-to-r from-black/62 via-black/34 to-transparent" />
-
-<div className="pointer-events-none absolute inset-x-0 top-0 z-[1] h-[30%] bg-gradient-to-b from-black/44 to-transparent" />
-
-<div className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-[30%] bg-gradient-to-t from-black/62 via-black/22 to-transparent" />
-
-<div className="pointer-events-none absolute inset-0 z-[2] bg-[radial-gradient(circle_at_45%_46%,rgba(255,210,170,0.15),transparent_13%)]" />
-
-<div className="pointer-events-none absolute inset-0 z-[2] bg-[radial-gradient(ellipse_at_32%_52%,rgba(255,190,130,0.1),transparent_24%)]" />
-
-<div className="pointer-events-none absolute inset-0 z-[2] bg-[radial-gradient(circle_at_56%_53%,rgba(255,210,170,0.12),transparent_14%)]" />
+    {/* CINEMATIC FOCUS LIGHT */}
+    <div className="pointer-events-none absolute inset-0 z-[2] bg-[radial-gradient(ellipse_at_48%_62%,rgba(255,255,255,0.06),transparent_20%)]" />
+    <div className="pointer-events-none absolute inset-0 z-[2] bg-[radial-gradient(ellipse_at_44%_72%,rgba(255,170,110,0.055),transparent_26%)]" />
 
     {/* CONTENT */}
     <Container className="relative z-[3] min-h-[640px] pt-12 pb-6">
       <div className="relative flex min-h-[592px] flex-col">
-        
         {/* TOP */}
         <div className="flex max-w-[22rem] flex-col gap-4">
           <p className="eyebrow-dark text-white/60">
@@ -81,7 +74,6 @@ className="scale-[1.15] object-cover object-[26%_76%] brightness-[0.92] contrast
     </Container>
   </div>
 </div>
-
       {/* DESKTOP HERO */}
       <div className="relative z-10 hidden md:block">
         <div className="relative min-h-[calc(100vh-72px)] overflow-hidden">
