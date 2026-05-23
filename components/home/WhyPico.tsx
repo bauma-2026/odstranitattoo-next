@@ -8,7 +8,7 @@ export default function WhyPico() {
       <section className="section-sm border-t border-neutral-200/70 bg-white">
         <Container>
           <div className="section-gap-lg">
-          <div className="grid gap-10 lg:grid-cols-[1fr_1.05fr] lg:items-start lg:gap-14">
+            <div className="grid gap-10 lg:grid-cols-[1fr_1.05fr] lg:items-start lg:gap-14">
               <div className="header-stack max-w-xl">
                 <p className="eyebrow-muted">Tehnologija vpliva na rezultat</p>
 
@@ -23,7 +23,7 @@ export default function WhyPico() {
 
                 <p className="text-body">
                   To vpliva na to, kako postopno telo odstranjuje pigment, kako
-                  se koža odziva in kako predvidljiv je proces skozi več
+                  se koža odziva in kako nadzorovan je postopek skozi več
                   tretmajev.
                 </p>
 
@@ -42,18 +42,19 @@ export default function WhyPico() {
                   >
                     odstranjevanje tetovaže z laserjem
                   </a>{" "}
-                  ali preverite{" "}
+                  ali več o{" "}
                   <a
                     href="/odstranjevanje-tattoo-domzale"
                     className="font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
                   >
-                    odstranjevanje tattoojev v Domžalah
+                    odstranjevanju tattoojev v Domžalah
                   </a>
                   .
                 </p>
               </div>
 
-<div className="image-block relative h-[380px] overflow-hidden border border-neutral-200/60 bg-white sm:h-[440px] lg:h-full lg:min-h-[560px]">                <Image
+              <div className="image-block relative h-[380px] overflow-hidden border border-neutral-200/60 bg-white sm:h-[440px] lg:h-full lg:min-h-[560px]">
+                <Image
                   src="/images/pico/pico-technology-detail.webp"
                   alt="Pico laser naprava za odstranjevanje tattoojev"
                   fill
@@ -61,40 +62,40 @@ export default function WhyPico() {
                   className="scale-[1.01] object-cover object-[56%_31%]"
                 />
               </div>
-              {/* MOBILE SUMMARY */}
-<div className="pt-0 lg:hidden">
-  <div className="flex flex-col gap-2">
-   <p className="text-body font-medium text-neutral-900">
-  Pico laser omogoča bolj predvidljivo odstranjevanje.
-</p>
 
-    <ul className="list-disc pl-4 space-y-2 text-body-sm text-neutral-700 marker:text-skin-500/70">
-      <li>tattoo bledi bolj enakomerno skozi čas</li>
-      <li>koža je med postopkom manj obremenjena</li>
-      <li>več kontrole pri zahtevnejših tattoojih</li>
-    </ul>
-  </div>
-</div>
+              {/* MOBILE SUMMARY */}
+              <div className="pt-0 lg:hidden">
+                <div className="flex flex-col gap-2">
+                  <p className="text-body font-medium text-neutral-900">
+                    Pico laser omogoča bolj nadzorovan potek odstranjevanja.
+                  </p>
+
+                  <ul className="list-disc space-y-2 pl-4 text-body-sm text-neutral-700 marker:text-skin-500/70">
+                    <li>pigment se postopoma razgrajuje skozi čas</li>
+                    <li>postopek se prilagaja odzivu kože in pigmenta</li>
+                    <li>več kontrole pri zahtevnejših tattoojih</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-</div>
-       
+          </div>
         </Container>
       </section>
 
       <section className="section-sm border-t border-white/10 bg-neutral-950 text-white">
         <Container>
-         <div className="py-16 sm:py-20">
+          <div className="py-16 sm:py-20">
             <div className="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
-              <p className="eyebrow-skin text-skin-600/80">Posvet</p>
+              <p className="eyebrow-skin text-skin-600/80">Naslednji korak</p>
 
               <h2 className="heading-section text-white">
-                Kaj to pomeni za vaš primer?
+                Vsak tattoo se odziva drugače
               </h2>
 
               <p className="text-body-inverse-lg max-w-[52ch] text-neutral-200">
-                Tehnologija vpliva na potek odstranjevanja, rezultat pa je
-                vedno odvisen od konkretnega tattooja. Na posvetu ocenimo, kaj
-                je pri vašem primeru realno dosegljivo.
+                Na začetku lahko okvirno ocenimo izhodišče in razložimo
+                pričakovan potek. Bolj jasen odziv pigmenta pa se pokaže po
+                nekaj tretmajih.
               </p>
 
               <p className="text-body-inverse-sm pt-1 text-white/55">

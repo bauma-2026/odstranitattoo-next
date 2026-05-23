@@ -5,15 +5,19 @@ import Script from "next/script";
 const faqs = [
   {
     q: "Ali se tattoo lahko popolnoma odstrani?",
-    a: "V veliko primerih je mogoče tattoo zelo uspešno odstraniti. Končni rezultat pa je vedno odvisen od pigmenta, kože in starosti tattooja.",
+    a: "Večino tetovaž je možno uspešno odstraniti v celoti, vendar je potek odvisen od pigmenta, barve, globine, starosti tattooja in odziva kože.",
   },
   {
     q: "Koliko tretmajev je potrebnih?",
-    a: "Število tretmajev je odvisno od pigmenta, globine nanosa in odziva kože. Nekateri tattooji bledijo hitreje, drugi potrebujejo več časa.",
+    a: "Število tretmajev je odvisno od barve, globine, starosti pigmenta in odziva kože. Na začetku lahko okvirno predvidimo potek, bolj jasen odziv pigmenta pa se pokaže po nekaj tretmajih.",
+  },
+  {
+    q: "Koliko časa mora miniti med tretmaji?",
+    a: "Koža se po tretmaju celi približno 28–60 dni, zato se tretmaji izvajajo približno na 8 tednov. V tem času telo postopoma odstranjuje razgrajeni pigment.",
   },
   {
     q: "Ali odstranjevanje tattooja boli?",
-    a: "Večina občutek opisuje kot hitro pikanje ali rahlo \"švikanje\" po koži. Občutek je odvisen od mesta tattooja in občutljivosti.",
+    a: 'Občutek se pogosto opisuje kot hitro pikanje ali rahlo "švikanje" po koži. Občutek je odvisen od mesta tattooja in občutljivosti.',
   },
   {
     q: "Kdaj so vidni prvi rezultati?",
@@ -21,11 +25,15 @@ const faqs = [
   },
   {
     q: "Ali Pico laser deluje na vse barve tattooja?",
-    a: "Pico laser je učinkovit tudi pri zahtevnejših pigmentih, vendar hitrost bledenja ni pri vseh barvah enaka.",
+    a: "Pico laser se uporablja tudi pri zahtevnejših pigmentih, vendar hitrost bledenja ni pri vseh barvah enaka. Odziv je odvisen od barve, globine pigmenta in kože.",
   },
   {
     q: "Ali lahko tattoo samo posvetlim za cover-up?",
-    a: "Da. Tattoo lahko odstranjujemo postopoma ali ga posvetlimo do stopnje, primerne za cover-up.",
+    a: "Da. Tattoo lahko postopoma posvetlimo do stopnje, ki je primerna za cover-up. V tem primeru cilj ni nujno popolna odstranitev, ampak dovolj enakomeren fade za nov tattoo.",
+  },
+  {
+    q: "Ali odstranjujete tudi permanentne obrvi?",
+    a: "Da. Pico laser se lahko uporablja tudi za odstranjevanje neželenega pigmenta pri permanentnih obrveh. Ker gre za občutljiv predel obraza, je pomemben postopen pristop in dovolj časa za celjenje med tretmaji.",
   },
 ];
 
@@ -51,86 +59,78 @@ export default function FaqSection() {
         }}
       />
 
-{/* FAQ */}
-<section className="section-tight border-t border-neutral-200/70 bg-neutral-50">
-  <Container className="max-w-3xl">
-    <div className="section-gap">
-      {/* HEADER */}
-      <div className="header-stack max-w-2xl">
-        <p className="eyebrow-muted">Pogosta vprašanja</p>
+      {/* FAQ */}
+      <section className="section-tight border-t border-neutral-200/70 bg-neutral-50">
+        <Container className="max-w-3xl">
+          <div className="section-gap">
+            {/* HEADER */}
+            <div className="header-stack max-w-2xl">
+              <p className="eyebrow-muted">Pogosta vprašanja</p>
 
-        <h2 className="heading-section text-neutral-950">
-          Odgovori na pogosta vprašanja
-        </h2>
+              <h2 className="heading-section text-neutral-950">
+                Odgovori na pogosta vprašanja
+              </h2>
 
-        <p className="text-body-lg max-w-[46ch] text-neutral-700">
-    Najpogostejša vprašanja pred odločitvijo.
-        </p>
-      </div>
-
-    
-
-      {/* FAQ LIST */}
-      <div className="max-w-3xl">
-        {faqs.map((faq) => (
-          <details
-            key={faq.q}
-            className="group border-b border-neutral-200/70"
-          >
-            <summary className="flex cursor-pointer list-none items-start justify-between gap-6 px-0 py-5 text-left">
-              <span className="pr-4 text-base font-semibold leading-7 tracking-tight text-neutral-950 sm:text-[1.05rem]">
-                {faq.q}
-              </span>
-
-              <span className="relative mt-1 flex h-5 w-5 shrink-0 items-center justify-center">
-                <span className="absolute h-[2px] w-4 bg-neutral-900 transition-transform duration-200" />
-                <span className="absolute h-4 w-[2px] bg-neutral-900 transition-opacity duration-200 group-open:opacity-0" />
-              </span>
-            </summary>
-
-            <div className="grid grid-rows-[0fr] transition-all duration-300 ease-out group-open:grid-rows-[1fr]">
-              <div className="overflow-hidden">
-                <div className="pb-6 pr-10 pt-0">
-                  <p className="text-body text-neutral-700">
-                    {faq.a}
-                  </p>
-                </div>
-              </div>
+              <p className="text-body-lg max-w-[46ch] text-neutral-700">
+                Najpogostejša vprašanja pred odločitvijo.
+              </p>
             </div>
-          </details>
-        ))}
-      </div>
-    </div>
-  </Container>
-</section>
 
-  {/* CTA */}
-<section className="section-tight border-t border-neutral-200/70 bg-neutral-100/70">
-  <Container>
-    <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
-      
-      <p className="eyebrow-muted">
-        Posvet
-      </p>
+            {/* FAQ LIST */}
+            <div className="max-w-3xl">
+              {faqs.map((faq) => (
+                <details
+                  key={faq.q}
+                  className="group border-b border-neutral-200/70"
+                >
+                  <summary className="flex cursor-pointer list-none items-start justify-between gap-6 px-0 py-5 text-left">
+                    <span className="pr-4 text-base font-semibold leading-7 tracking-tight text-neutral-950 sm:text-[1.05rem]">
+                      {faq.q}
+                    </span>
 
-      <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-neutral-950 sm:text-4xl">
-        Še vedno imate vprašanje?
-      </h2>
+                    <span className="relative mt-1 flex h-5 w-5 shrink-0 items-center justify-center">
+                      <span className="absolute h-[2px] w-4 bg-neutral-900 transition-transform duration-200" />
+                      <span className="absolute h-4 w-[2px] bg-neutral-900 transition-opacity duration-200 group-open:opacity-0" />
+                    </span>
+                  </summary>
 
-      <p className="mt-4 max-w-[50ch] text-body-lg text-neutral-600">
-        Če svojega primera niste našli med vprašanji,
-        ga skupaj pregledamo na posvetu.
-      </p>
+                  <div className="grid grid-rows-[0fr] transition-all duration-300 ease-out group-open:grid-rows-[1fr]">
+                    <div className="overflow-hidden">
+                      <div className="pb-6 pr-10 pt-0">
+                        <p className="text-body text-neutral-700">{faq.a}</p>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
 
-      <div className="mt-8">
-        <Button href="/kontakt" variant="primary-light">
-          Pošlji povpraševanje
-        </Button>
-      </div>
-      
-    </div>
-  </Container>
-</section>
+      {/* CTA */}
+      <section className="section-tight border-t border-neutral-200/70 bg-neutral-100/70">
+        <Container>
+          <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
+            <p className="eyebrow-muted">Kontakt</p>
+
+            <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-neutral-950 sm:text-4xl">
+              Še vedno imate vprašanje?
+            </h2>
+
+            <p className="mt-4 max-w-[50ch] text-body-lg text-neutral-600">
+              Pošljite vprašanje ali fotografijo tattooja in dogovorili se bomo
+              za naslednji korak.
+            </p>
+
+            <div className="mt-8">
+              <Button href="/kontakt" variant="primary-light">
+                Pošlji povpraševanje
+              </Button>
+            </div>
+          </div>
+        </Container>
+      </section>
     </>
   );
 }

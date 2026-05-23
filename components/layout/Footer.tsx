@@ -8,7 +8,7 @@ const quickLinks = [
   { href: "/rezultati", label: "Rezultati" },
   { href: "/faq", label: "FAQ" },
   { href: "/kontakt", label: "Kontakt" },
-  { href: "/posvet", label: "Posvet" },
+  { href: "/posvet", label: "Povpraševanje" },
 ];
 
 const socialLinks = [
@@ -47,7 +47,7 @@ export default function Footer() {
   </Link>
 
   <p className="mt-5 text-sm leading-6 text-neutral-500">
-  Lasersko odstranjevanje tattoojev s Pico laserjem v Domžalah.
+  Odstranjevanje tattoojev in permanentnega pigmenta s Pico laserjem v Domžalah.
 </p>
 
 <p className="mt-4 text-sm leading-6 text-neutral-500">
@@ -143,11 +143,18 @@ export default function Footer() {
       </div>
     </div>
 
-    <div className="grid gap-3 border-t border-white/5 py-5 text-sm text-neutral-500 sm:grid-cols-[1fr_auto] sm:items-center">
-      <p>© {new Date().getFullYear()} Odstrani Tattoo</p>
+ <div className="grid gap-3 border-t border-white/5 pb-16 pt-5 text-sm text-neutral-500 sm:grid-cols-[1fr_auto] sm:items-center sm:py-5">
+  <p>© {new Date().getFullYear()} Odstrani Tattoo</p>
 
-      <p className="sm:text-right">Pico laser • Domžale</p>
-    </div>
+  <a
+    href="https://bauma.si"
+    target="_blank"
+    rel="noreferrer"
+    className="w-fit transition-colors duration-200 hover:text-neutral-300 sm:justify-self-end"
+  >
+    Struktura in izvedba: Bauma
+  </a>
+</div>
   </Container>
 </footer>
   );

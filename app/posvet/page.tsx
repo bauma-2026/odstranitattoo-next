@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
 import PixelLayerRandom from "@/components/ui/pixels/PixelLayerRandom";
@@ -6,6 +7,15 @@ import {
   pixelsSectionDarkTablet,
   pixelsSectionDarkDesktop,
 } from "@/components/ui/pixels/pixels.config";
+
+export const metadata: Metadata = {
+  title: "Povpraševanje za odstranjevanje tattooja",
+  description:
+    "Pošljite povpraševanje za odstranjevanje tattooja ali permanentnega pigmenta s Pico laserjem v Domžalah. Kontakt, termin in informacije pred tretmajem.",
+  alternates: {
+    canonical: "https://odstranitattoo.si/posvet",
+  },
+};
 
 const expectations = [
   {
@@ -52,22 +62,20 @@ export default function PosvetPage() {
 
         <Container className="relative z-10 pt-10 pb-12 sm:pt-12 sm:pb-14 lg:pt-14 lg:pb-16">
           <div className="header-stack max-w-2xl">
-            <p className="eyebrow-dark">Posvet</p>
+            <p className="eyebrow-dark">Povpraševanje</p>
 
-            <h1 className="heading-display leading-[1.04] text-3xl text-white sm:text-4xl lg:text-[3.25rem]">
-              Kako ocenimo
-              <br />
-              vaš tattoo
+            <h1 className="heading-display max-w-[13ch] leading-[1.04] text-3xl text-white sm:text-4xl lg:text-[3.25rem]">
+              Pošljite vprašanje ali fotografijo
             </h1>
 
-            <p className="max-w-[52ch] text-body-inverse-lg">
-              Na posvetu pregledamo tattoo, ocenimo možnosti odstranjevanja in
-              razložimo, kaj lahko glede na vaš primer realno pričakujete.
+            <p className="max-w-[48ch] text-body-inverse-lg">
+              Pošljite povpraševanje za odstranjevanje tattooja in dogovorili se
+              bomo za naslednji korak.
             </p>
 
-            <p className="max-w-[52ch] text-body-inverse-sm">
-              Cilj posveta je jasna ocena, realna pričakovanja in miren
-              naslednji korak.
+            <p className="max-w-[48ch] text-body-inverse-sm">
+              Dodate lahko tudi fotografijo tattooja, obrvi ali predela, ki vas
+              zanima.
             </p>
 
             <div className="flex flex-col gap-2 pt-3">
@@ -97,140 +105,145 @@ export default function PosvetPage() {
       <section className="section-tight bg-white">
         <Container>
           <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start lg:gap-10">
-            {/* WHITE SIDE */}
-            <div className="rounded-[28px] bg-white px-5 pt-4 pb-6 sm:px-8 sm:pt-6 sm:pb-8">
-              <div className="flex flex-col gap-8">
-                <div className="flex flex-col gap-3">
-                  <h2 className="heading-tight text-2xl text-neutral-950">
-                    Kaj dobite na posvetu
-                  </h2>
+           {/* WHITE SIDE */}
+<div className="rounded-[28px] bg-white px-5 pb-6 pt-4 sm:px-7 sm:pb-7 sm:pt-6">
+  <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-2">
+      <h2 className="heading-tight text-2xl text-neutral-950">
+        Kaj dobite pri prvem stiku
+      </h2>
 
-                  <p className="max-w-[48ch] text-body">
-                    Posvet je namenjen temu, da dobite jasno oceno tattooja,
-                    razumete potek odstranjevanja in lažje presodite, kaj je
-                    smiseln naslednji korak.
-                  </p>
-                </div>
+      <p className="max-w-[48ch] text-body">
+        Prvi stik je namenjen temu, da nam opišete svoj primer,
+        pošljete vprašanje ali fotografijo in se dogovorimo za
+        primeren naslednji korak.
+      </p>
+    </div>
 
-                <div className="flex flex-col divide-y divide-neutral-200/70">
-                  <div className="py-5 first:pt-0">
-                    <h3 className="text-base font-semibold text-neutral-950">
-                      Pregled tattooja
-                    </h3>
-                    <p className="mt-2 max-w-[46ch] text-body">
-                      Ocenimo velikost, pigment, starost tattooja in stanje
-                      kože, ker vse to vpliva na potek odstranjevanja.
-                    </p>
-                  </div>
+    <div className="flex flex-col divide-y divide-neutral-200/70 rounded-[24px] border border-neutral-200/70 bg-neutral-50/50 px-5">
+      <div className="py-4 first:pt-5">
+        <h3 className="text-base font-semibold text-neutral-950">
+          Osnovne informacije
+        </h3>
 
-                  <div className="py-5">
-                    <h3 className="text-base font-semibold text-neutral-950">
-                      Potek odstranjevanja
-                    </h3>
-                    <p className="mt-2 max-w-[46ch] text-body">
-                      Razložimo, kako postopek poteka, zakaj je potreben čas med
-                      tretmaji in kaj lahko pričakujete po posameznem obisku.
-                    </p>
-                  </div>
+        <p className="mt-2 max-w-[46ch] text-body-sm text-neutral-600">
+          Pogledamo velikost, pigment, starost tattooja in področje
+          na koži, ker vse to vpliva na potek odstranjevanja.
+        </p>
+      </div>
 
-                  <div className="py-5">
-                    <h3 className="text-base font-semibold text-neutral-950">
-                      Realna ocena
-                    </h3>
-                    <p className="mt-2 max-w-[46ch] text-body">
-                      Podamo realna pričakovanja glede poteka odstranjevanja in
-                      okvirne ocene, koliko tretmajev je lahko potrebnih.
-                    </p>
-                  </div>
+      <div className="py-4">
+        <h3 className="text-base font-semibold text-neutral-950">
+          Potek odstranjevanja
+        </h3>
 
-                  <div className="py-5 last:pb-0">
-                    <h3 className="text-base font-semibold text-neutral-950">
-                      Naslednji korak
-                    </h3>
-                    <p className="mt-2 max-w-[46ch] text-body">
-                      Po posvetu imate bolj jasno sliko, ali želite začeti s
-                      postopkom in kako bi ta glede na vaš primer potekal.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <p className="mt-2 max-w-[46ch] text-body-sm text-neutral-600">
+          Razložimo, kako postopek običajno poteka, zakaj je
+          potreben čas med tretmaji in kaj lahko pričakujete po
+          posameznem obisku.
+        </p>
+      </div>
 
-            {/* DARK SIDE */}
-            <div className="rounded-[28px] border border-neutral-200 bg-neutral-950 p-7 text-white sm:p-8 lg:mt-[6px]">
-              <div className="flex flex-col gap-7">
-                <div className="flex flex-col gap-3">
-                  <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-400">
-                    Kontakt
-                  </p>
+      <div className="py-4">
+        <h3 className="text-base font-semibold text-neutral-950">
+          Celjenje med tretmaji
+        </h3>
 
-                  <h2 className="heading-tight text-2xl text-white">
-                    Naročanje na posvet
-                  </h2>
+        <p className="mt-2 max-w-[46ch] text-body-sm text-neutral-600">
+          Koža se po tretmaju celi približno 28–60 dni, zato se
+          tretmaji izvajajo približno na 8 tednov.
+        </p>
+      </div>
 
-                  <p className="max-w-[34ch] text-body-inverse">
-                    Za termin nas lahko kontaktirate po telefonu ali elektronski
-                    pošti. Posvet je namenjen jasni oceni tattooja.
-                  </p>
-                </div>
+      <div className="py-4 last:pb-5">
+        <h3 className="text-base font-semibold text-neutral-950">
+          Naslednji korak
+        </h3>
 
-                <div className="flex flex-col divide-y divide-white/6">
-                  <div className="flex flex-col gap-2 py-4 first:pt-0">
-                    <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-500">
-                      Telefon
-                    </p>
-                    <a
-                      href="tel:+38670553340"
-                      className="text-xl font-semibold text-white transition hover:text-neutral-300"
-                    >
-                      070 55 33 40
-                    </a>
-                  </div>
+        <p className="mt-2 max-w-[46ch] text-body-sm text-neutral-600">
+          Po odgovoru se lahko dogovorimo za termin, dodatna
+          vprašanja ali ogled v studiu.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+           {/* DARK SIDE */}
+<div className="rounded-[28px] border border-neutral-200 bg-neutral-950 p-6 text-white sm:p-7 lg:mt-[6px]">
+  <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-2">
+      <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-400">
+        Kontakt
+      </p>
 
-                  <div className="flex flex-col gap-2 py-4">
-                    <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-500">
-                      E-pošta
-                    </p>
-                    <a
-                      href="mailto:odstranitattoo@gmail.com"
-                      className="break-all text-lg text-white transition hover:text-neutral-300"
-                    >
-                      odstranitattoo@gmail.com
-                    </a>
-                  </div>
+      <h2 className="heading-tight text-2xl text-white">
+        Pošljite povpraševanje
+      </h2>
 
-                  <div className="flex flex-col gap-2 py-4 last:pb-0">
-                    <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-500">
-                      Lokacija
-                    </p>
-                    <p className="text-lg text-white">
-                      Ljubljanska 90, Domžale
-                    </p>
-                  </div>
-                </div>
+      <p className="max-w-[34ch] text-body-inverse-sm text-white/70">
+        Za termin ali vprašanje nas lahko kontaktirate po telefonu
+        ali elektronski pošti.
+      </p>
+    </div>
 
-                <div className="flex flex-col items-start gap-5">
-                  <div className="cta-spacing flex flex-col items-start gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
-                    <Button href="tel:+38670553340" variant="primary-dark">
-                      Pokliči zdaj
-                    </Button>
+    <div className="flex flex-col divide-y divide-white/10 rounded-[24px] border border-white/10 bg-white/[0.03] px-5">
+      <div className="flex flex-col gap-1.5 py-4 first:pt-5">
+        <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-500">
+          Telefon
+        </p>
 
-                    <a
-                      href="mailto:odstranitattoo@gmail.com"
-                      className="inline-flex items-center justify-center rounded-full border border-white px-5 py-3 text-sm font-medium text-white transition hover:bg-white/10"
-                    >
-                      Pošlji e-pošto
-                    </a>
-                  </div>
+        <a
+          href="tel:+38670553340"
+          className="text-lg font-semibold text-white transition hover:text-neutral-300"
+        >
+          070 55 33 40
+        </a>
+      </div>
 
-                  <p className="text-sm text-white/50">
-                    Hiter kontakt za termin in jasno oceno vašega primera.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Container>
+      <div className="flex flex-col gap-1.5 py-4">
+        <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-500">
+          E-pošta
+        </p>
+
+        <a
+          href="mailto:odstranitattoo@gmail.com"
+          className="break-all text-base text-white transition hover:text-neutral-300"
+        >
+          odstranitattoo@gmail.com
+        </a>
+      </div>
+
+      <div className="flex flex-col gap-1.5 py-4 last:pb-5">
+        <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-neutral-500">
+          Lokacija
+        </p>
+
+        <p className="text-base text-white">
+          Ljubljanska 90, Domžale
+        </p>
+      </div>
+    </div>
+
+    <div className="flex flex-col items-start gap-4">
+      <div className="flex flex-col items-start gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+        <Button href="tel:+38670553340" variant="primary-dark">
+          Pokliči zdaj
+        </Button>
+
+        <a
+          href="mailto:odstranitattoo@gmail.com"
+          className="inline-flex items-center justify-center rounded-full border border-white/70 px-5 py-3 text-sm font-medium text-white transition hover:bg-white/10"
+        >
+          Pošlji e-pošto
+        </a>
+      </div>
+
+      <p className="text-sm text-white/50">
+        Posvet 30 € • ob zakupu storitve se znesek odšteje.
+      </p>
+    </div>
+  </div>
+</div>    </div>    </Container>
       </section>
 
       {/* EXPECTATIONS */}

@@ -4,28 +4,28 @@ import Button from "@/components/ui/Button";
 
 const resultsPreview = [
   {
-    before: "/images/results/fairy-before.jpg",
-    after: "/images/results/fairy-after.jpg",
-    title: "Vidno zmanjšanje pigmenta",
-    meta: "4 tretmaji",
-    beforeAlt: "Tattoo pred laserskim odstranjevanjem",
-    afterAlt: "Tattoo po štirih tretmajih laserskega odstranjevanja",
+    before: "/images/results/2before.webp",
+    after: "/images/results/2after1tretma.webp",
+    title: "Odstranjevanje permanentnih obrvi",
+    meta: "po 1 tretmaju",
+    beforeAlt: "Permanentne obrvi pred laserskim odstranjevanjem",
+    afterAlt: "Permanentne obrvi po enem tretmaju laserskega odstranjevanja",
   },
   {
-    before: "/images/results/phoenix-before.jpg",
-    after: "/images/results/phoenix-after.jpg",
-    title: "Začetni fade",
-    meta: "2 tretmaja",
+    before: "/images/results/3before.webp",
+    after: "/images/results/3after3tretma.webp",
+    title: "Postopno bledenje tattooja",
+    meta: "po 3 tretmajih",
     beforeAlt: "Tattoo pred laserskim odstranjevanjem",
-    afterAlt: "Tattoo po dveh tretmajih laserskega odstranjevanja",
+    afterAlt: "Tattoo po treh tretmajih laserskega odstranjevanja",
   },
   {
-    before: "/images/results/tree-before.jpg",
-    after: "/images/results/tree-after.jpg",
-    title: "Enakomerno bledenje",
-    meta: "4 tretmaji",
-    beforeAlt: "Temnejši tattoo pred laserskim odstranjevanjem",
-    afterAlt: "Temnejši tattoo po štirih tretmajih laserskega odstranjevanja",
+    before: "/images/results/8before.webp",
+    after: "/images/results/8after5tretma.webp",
+    title: "Enakomerno bledenje večjega tattooja",
+    meta: "po 5 tretmajih",
+    beforeAlt: "Večji tattoo pred laserskim odstranjevanjem",
+    afterAlt: "Večji tattoo po petih tretmajih laserskega odstranjevanja",
   },
 ];
 
@@ -43,13 +43,14 @@ export default function ResultsPreviewSection() {
             </h2>
 
             <p className="text-body-lg max-w-[56ch]">
-              Spodaj so realni primeri, kako tattoo skozi več tretmajev
-              postopoma bledi.
+              Spodaj so primeri, kako tattoo skozi več tretmajev postopoma
+              bledi in kako se rezultat razvija skozi čas.
             </p>
 
             <p className="text-body-sm max-w-[52ch] text-neutral-600">
-              Napredek ni enak pri vseh — odvisen je od pigmenta, globine in
-              odziva kože.
+              Primeri niso obljuba enakega rezultata za vsak tattoo, ampak
+              realen prikaz napredka glede na pigment, globino nanosa in odziv
+              kože.
             </p>
           </div>
 
@@ -69,6 +70,10 @@ export default function ResultsPreviewSection() {
                       className="object-cover"
                       sizes="(min-width: 1024px) 16vw, 50vw"
                     />
+
+                    <div className="pointer-events-none absolute left-3 top-3 rounded-full bg-black/70 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-white backdrop-blur">
+                      Pred
+                    </div>
                   </div>
 
                   <div className="relative aspect-[4/5]">
@@ -79,6 +84,10 @@ export default function ResultsPreviewSection() {
                       className="object-cover"
                       sizes="(min-width: 1024px) 16vw, 50vw"
                     />
+
+                    <div className="pointer-events-none absolute right-3 top-3 rounded-full bg-white/75 px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.12em] text-neutral-900 backdrop-blur">
+                      Po
+                    </div>
                   </div>
                 </div>
 

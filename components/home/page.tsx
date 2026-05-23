@@ -230,7 +230,7 @@ export default function OdstranjevanjeTattooPage() {
                   hover:shadow-[0_8px_24px_rgba(0,0,0,0.25)]
                 "
               >
-                Naroči brezplačen posvet
+               Pošlji povpraševanje
               </Button>
 
               <Button href="/kontakt" variant="secondary-dark">

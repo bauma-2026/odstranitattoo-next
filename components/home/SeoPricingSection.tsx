@@ -17,72 +17,73 @@ export default function SeoPricingSection() {
               </h2>
 
               <p className="text-body-lg">
-               Cene so odvisne od velikosti, pigmenta in zahtevnosti odstranjevanja.
-Spodaj so okvirni primeri storitev.
+                Cene so odvisne od velikosti, pigmenta in zahtevnosti
+                odstranjevanja. Spodaj so okvirni primeri storitev.
               </p>
             </div>
 
             {/* PRICE CARDS */}
-<div className="grid gap-3 sm:grid-cols-2">
-  <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5">
-    <p className="text-[13px] font-medium leading-5 text-neutral-700">
-      Posvet pred lasersko terapijo
-    </p>
+            <div className="grid gap-3 sm:grid-cols-2">
+              <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5">
+                <p className="text-[13px] font-medium leading-5 text-neutral-700">
+                  Posvet pred lasersko terapijo
+                </p>
 
-    <p className="mt-2 text-[32px] font-semibold leading-none tracking-[-0.04em] text-neutral-900">
-      30€
-    </p>
+                <p className="mt-2 text-[32px] font-semibold leading-none tracking-[-0.04em] text-neutral-900">
+                  30€
+                </p>
 
-    <p className="mt-2 text-body-sm text-neutral-600">
-      Brezplačno ob zakupu storitve.
-    </p>
-  </div>
+                <p className="mt-2 text-body-sm text-neutral-600">
+                  Ob zakupu storitve se znesek odšteje.
+                </p>
+              </div>
 
-  <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5">
-    <p className="text-[13px] font-medium leading-5 text-neutral-700">
-      Zelo majhna tetovaža
-    </p>
+              <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5">
+                <p className="text-[13px] font-medium leading-5 text-neutral-700">
+                  Zelo majhna tetovaža
+                </p>
 
-    <p className="mt-2 text-[32px] font-semibold leading-none tracking-[-0.04em] text-neutral-900">
-      50€
-    </p>
+                <p className="mt-2 text-[32px] font-semibold leading-none tracking-[-0.04em] text-neutral-900">
+                  50€
+                </p>
 
-    <p className="mt-2 text-body-sm text-neutral-600">
-      Prstani, male črke in znakci do 2 cm.
-    </p>
-  </div>
+                <p className="mt-2 text-body-sm text-neutral-600">
+                  Prstani, male črke in znakci do 2 cm.
+                </p>
+              </div>
 
-  <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5">
-    <p className="text-[13px] font-medium leading-5 text-neutral-700">
-      Odstranjevanje obrvi
-    </p>
+              <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5">
+                <p className="text-[13px] font-medium leading-5 text-neutral-700">
+                  Odstranjevanje obrvi
+                </p>
 
-    <p className="mt-2 text-[32px] font-semibold leading-none tracking-[-0.04em] text-neutral-900">
-      100€
-    </p>
+                <p className="mt-2 text-[32px] font-semibold leading-none tracking-[-0.04em] text-neutral-900">
+                  100€
+                </p>
 
-    <p className="mt-2 text-body-sm text-neutral-600">
-      Odstranjevanje pigmenta na obrveh.
-    </p>
-  </div>
+                <p className="mt-2 text-body-sm text-neutral-600">
+                  Odstranjevanje pigmenta na obrveh.
+                </p>
+              </div>
 
-  <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5">
-    <p className="text-[13px] font-medium leading-5 text-neutral-700">
-      Odstranjevanje tetovaž
-    </p>
+              <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5">
+                <p className="text-[13px] font-medium leading-5 text-neutral-700">
+                  Odstranjevanje tetovaž
+                </p>
 
-    <p className="mt-2 text-[32px] font-semibold leading-none tracking-[-0.04em] text-neutral-900">
-      80–250€
-    </p>
+                <p className="mt-2 text-[32px] font-semibold leading-none tracking-[-0.04em] text-neutral-900">
+                  80–250€
+                </p>
 
-    <p className="mt-2 text-body-sm text-neutral-600">
-      Cena je odvisna od velikosti in zahtevnosti tattooja.
-    </p>
-  </div>
-</div>
+                <p className="mt-2 text-body-sm text-neutral-600">
+                  Cena je odvisna od velikosti in zahtevnosti tattooja.
+                </p>
+              </div>
+            </div>
 
             <p className="text-body max-w-[60ch]">
-             Po ogledu tattooja ocenimo okvirno ceno in potek odstranjevanja.
+              Končna cena je odvisna od velikosti, pigmenta in zahtevnosti
+              odstranjevanja.
             </p>
 
             <div className="flex flex-wrap items-center gap-3 pt-1">

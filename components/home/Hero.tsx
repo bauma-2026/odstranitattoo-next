@@ -46,10 +46,9 @@ export default function Hero() {
             </span>
           </h1>
 
-          <p className="max-w-[24ch] text-[1.06rem] leading-[1.45] text-neutral-200">
-            Večino tattoojev lahko postopno odstranimo — varno in brez
-            brazgotin.
-          </p>
+       <p className="max-w-[24ch] text-[1.06rem] leading-[1.45] text-neutral-200">
+  Večino tattoojev lahko postopoma odstranjujemo — z nadzorovanim pristopom.
+</p>
         </div>
 
         {/* BOTTOM */}
@@ -113,9 +112,9 @@ export default function Hero() {
               </h1>
 
               <p className="text-body-inverse max-w-[40ch] text-neutral-300">
-                Tattoo ne izgine čez noč. Lahko pa ga postopno odstranimo —
-                varno in brez brazgotin.
-              </p>
+  Tattoo ne izgine čez noč. Lahko pa ga postopoma odstranjujemo
+  z nadzorovanim pristopom in dovolj časa za kožo.
+</p>
 
               <p className="text-body-inverse-sm text-white/50">
                 Del studia{" "}

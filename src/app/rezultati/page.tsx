@@ -74,10 +74,9 @@ export default function RezultatiPage() {
           </div>
         </Container>
       </section>
-
-      <section className="pb-20 sm:pb-28">
-        <Container>
-          <div className="grid gap-8 lg:grid-cols-2">
+<section className="pb-32 sm:pb-36 lg:pb-44">
+  <Container>
+    <div className="grid gap-8 lg:grid-cols-2">
             {results.map((item, index) => (
               <article
                 key={`${item.title}-${index}`}

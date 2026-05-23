@@ -6,6 +6,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Script from "next/script";
 import CookieConsent from "@/components/ui/CookieConsent";
+import { Analytics } from "@vercel/analytics/next";
 
 const satoshi = localFont({
   src: [
@@ -132,6 +133,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <CookieConsent />
+        <Analytics />
       </body>
     </html>
   );

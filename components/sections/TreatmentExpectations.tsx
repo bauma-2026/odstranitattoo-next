@@ -3,11 +3,11 @@ import Container from "@/components/layout/Container";
 const expectations = [
   {
     q: "Kaj pričakovati pri prvem tretmaju?",
-    a: "Na začetku pregledamo tattoo, ocenimo pigment in kožo ter vam jasno razložimo, kaj je pri vašem primeru realno pričakovati. Sam tretma je običajno kratek.",
+    a: "Na začetku pregledamo tattoo, pigment in kožo ter razložimo, kako postopek običajno poteka. Natančnejši odziv pigmenta se pokaže šele po nekaj tretmajih.",
   },
   {
     q: "Kako stranka občuti postopek?",
-    a: "Občutek se pogosto opisuje kot hitro pikanje ali pekoč občutek na koži. Med celotnim postopkom uporabljamo aktivno hlajenje za večje udobje.",
+    a: "Občutek se pogosto opisuje kot hitro pikanje ali pekoč občutek na koži. Med postopkom uporabljamo aktivno hlajenje za večje udobje.",
   },
   {
     q: "Koliko časa traja en tretma?",
@@ -15,7 +15,7 @@ const expectations = [
   },
   {
     q: "Kako izgleda koža po tretmaju?",
-    a: "Po tretmaju sta možni prehodna rdečina ali občutljivost kože, kar je normalen odziv. Koža se nato postopoma obnovi.",
+    a: "Po tretmaju sta možni prehodna rdečina ali občutljivost kože, kar je normalen odziv. Koža se po tretmaju celi približno 28–60 dni, zato se tretmaji izvajajo približno na 8 tednov.",
   },
 ];
 
@@ -31,10 +31,10 @@ export default function TreatmentExpectations() {
               Kaj pričakovati med postopkom
             </h2>
 
-           <p className="text-body-lg max-w-[56ch] text-neutral-700">
+            <p className="text-body-lg max-w-[56ch] text-neutral-700">
               Pred prvim obiskom je najpomembneje, da veste, kako tretma
-              poteka, kakšen občutek lahko pričakujete in kako se koža odzove po
-              postopku.
+              poteka, kakšen občutek lahko pričakujete in koliko časa koža
+              potrebuje za celjenje med posameznimi tretmaji.
             </p>
           </div>
 

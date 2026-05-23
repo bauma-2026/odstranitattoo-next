@@ -12,16 +12,16 @@ import {
 
 const benefits = [
   {
-    title: "Manjša obremenitev kože",
-    text: "Kratki impulzi delujejo bolj natančno na pigment in manj obremenijo okoliško kožo.",
+    title: "Natančen vpliv na pigment",
+    text: "Kratki impulzi delujejo usmerjeno na pigment, ki se razbije na manjše delce.",
   },
   {
-    title: "Lažje odstranjevanje pigmenta",
-    text: "Pigment se razbije na manjše delce, ki jih telo lažje postopoma odstranjuje.",
+    title: "Postopno odstranjevanje pigmenta",
+    text: "Razgrajeni pigment telo odstranjuje postopoma skozi čas in več tretmajev.",
   },
   {
-    title: "Bolj nadzorovan proces",
-    text: "Postopek je lažje prilagoditi posameznemu tattooju in odzivu kože.",
+    title: "Bolj nadzorovan postopek",
+    text: "Postopek se prilagaja posameznemu tattooju, pigmentu in odzivu kože.",
   },
 ];
 
@@ -38,10 +38,12 @@ export default function PicoLaserPage() {
           basePixels={pixelsSectionDarkMobile}
           className="pointer-events-none absolute inset-0 z-[2] sm:hidden"
         />
+
         <PixelLayerRandom
           basePixels={pixelsSectionDarkTablet}
           className="pointer-events-none absolute inset-0 z-[2] hidden sm:block lg:hidden"
         />
+
         <PixelLayerRandom
           basePixels={pixelsSectionDarkDesktop}
           className="pointer-events-none absolute inset-0 z-[2] hidden lg:block"
@@ -49,46 +51,33 @@ export default function PicoLaserPage() {
 
         <Container className="relative z-10 pt-10 pb-12 sm:pt-12 sm:pb-14 lg:pt-14 lg:pb-16">
           <div className="header-stack max-w-2xl">
-            <p className="eyebrow-dark">Pico laser</p>
+  <p className="eyebrow-dark">Pico laser</p>
 
-            <h1 className="heading-display text-3xl text-white sm:text-4xl lg:text-[3.25rem]">
-              Zakaj je Pico laser
-              <br />
-              bolj učinkovit
-            </h1>
+  <h1 className="heading-display max-w-[11ch] text-3xl text-white sm:text-4xl lg:text-[3.25rem]">
+    Pico laser za odstranjevanje tattoojev
+  </h1>
 
-            <p className="hidden text-body-inverse-lg max-w-[52ch] sm:block">
-              Pico laser razbije pigment na manjše delce, zato ga telo lažje
-              postopoma odstranjuje. Postopek je bolj nadzorovan in manj
-              obremenjujoč za kožo.
-            </p>
+  <p className="text-body-inverse-lg max-w-[38ch]">
+    Pico laser razbije pigment na manjše delce, ki jih telo nato postopoma
+    odstranjuje.
+  </p>
 
-            <p className="text-body-inverse-lg max-w-[52ch] sm:hidden">
-              Pico laser razbije pigment na manjše delce, zato ga telo lažje
-              odstranjuje.
-            </p>
+  <div className="flex flex-col gap-2 pt-3">
+    <a
+      href="/odstranjevanje-tattoojev"
+      className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+    >
+      Preberi, kako poteka odstranjevanje →
+    </a>
 
-            <p className="hidden text-body-inverse-sm max-w-[52ch] sm:block">
-              Končni rezultat je odvisen od pigmenta, globine nanosa in odziva
-              kože. Zato je pred začetkom pomembna realna ocena.
-            </p>
-
-            <div className="flex flex-col gap-2 pt-3">
-              <a
-                href="/odstranjevanje-tattoojev"
-                className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
-              >
-                Preberi, kako poteka odstranjevanje →
-              </a>
-
-              <a
-                href="/rezultati"
-                className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
-              >
-                Poglej rezultate pred in po →
-              </a>
-            </div>
-          </div>
+    <a
+      href="/rezultati"
+      className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+    >
+      Poglej rezultate pred in po →
+    </a>
+  </div>
+</div>
         </Container>
 
         <div className="pointer-events-none absolute inset-0 z-[1]">
@@ -100,50 +89,50 @@ export default function PicoLaserPage() {
       <section className="section-sm bg-white">
         <Container>
           <div className="grid gap-10 lg:grid-cols-[1fr_0.95fr] lg:items-start lg:gap-14">
-  {/* LEFT */}
-  <div className="header-stack max-w-[60ch]">
-    <p className="eyebrow-muted">Prednosti</p>
+            {/* LEFT */}
+            <div className="header-stack max-w-[60ch]">
+              <p className="eyebrow-muted">Prednosti</p>
 
-    <h2 className="heading-section text-neutral-950">
-      Kaj Pico laser naredi drugače
-    </h2>
+              <h2 className="heading-section text-neutral-950">
+                Kaj Pico laser naredi drugače
+              </h2>
 
-    <p className="text-body-lg">
-      Pico laser deluje v izjemno kratkih impulzih, zato pigment razbije bolj
-      natančno in na manjše delce.
-    </p>
+              <p className="text-body-lg">
+                Pico laser deluje v izjemno kratkih impulzih, zato pigment
+                razbije natančno in na manjše delce.
+              </p>
 
-    <p className="text-body">
-      To pomeni manjšo obremenitev kože, lažje postopno odstranjevanje
-      pigmenta in boljši nadzor nad postopkom.
-    </p>
+              <p className="text-body">
+                To omogoča bolj nadzorovan postopek, ki se prilagaja pigmentu,
+                področju in odzivu kože.
+              </p>
 
-    <a
-      href="/faq"
-      className="text-sm font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
-    >
-      Preberi pogosta vprašanja o postopku →
-    </a>
-  </div>
+              <a
+                href="/faq"
+                className="text-sm font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
+              >
+                Preberi pogosta vprašanja o postopku →
+              </a>
+            </div>
 
-  {/* RIGHT */}
-  <div className="flex flex-col gap-4">
-    <div className="overflow-hidden rounded-[28px] border border-neutral-200 bg-white">
-      <Image
-        src="/images/pico/pico-laser-nastavki-odstranjevanje-tattoo.webp"
-        alt="Nastavki Pico laserja za odstranjevanje tattoojev"
-        width={1600}
-        height={1200}
-        className="block w-full object-cover"
-      />
-    </div>
+            {/* RIGHT */}
+            <div className="flex flex-col gap-4">
+              <div className="overflow-hidden rounded-[28px] border border-neutral-200 bg-white">
+                <Image
+                  src="/images/pico/pico-laser-nastavki-odstranjevanje-tattoo.webp"
+                  alt="Nastavki Pico laserja za odstranjevanje tattoojev"
+                  width={1600}
+                  height={1200}
+                  className="block w-full object-cover"
+                />
+              </div>
 
-    <p className="max-w-[52ch] text-sm leading-6 text-neutral-500">
-      Različni nastavki omogočajo prilagoditev tretmaja glede na pigment,
-      področje in odziv kože.
-    </p>
-  </div>
-</div>
+              <p className="max-w-[52ch] text-sm leading-6 text-neutral-500">
+                Različni nastavki omogočajo prilagoditev tretmaja glede na
+                pigment, področje in odziv kože.
+              </p>
+            </div>
+          </div>
         </Container>
       </section>
 
@@ -183,8 +172,13 @@ export default function PicoLaserPage() {
 
               <p className="text-body">
                 Zato odstranjevanje tattooja ni enkraten poseg. Med tretmaji
-                mora miniti dovolj časa, da se koža umiri in da telo postopoma
+                mora miniti dovolj časa, da se koža zaceli in da telo postopoma
                 odstrani razgrajeni pigment.
+              </p>
+
+              <p className="text-body">
+                Koža se po tretmaju celi približno 28–60 dni, zato se tretmaji
+                izvajajo približno na 8 tednov.
               </p>
 
               <a
@@ -206,24 +200,24 @@ export default function PicoLaserPage() {
               <p className="eyebrow-muted">Nadzor postopka</p>
 
               <h2 className="heading-section text-neutral-950">
-                Pomembna sta tudi hlajenje in realna ocena
+                Pomembni so tudi hlajenje, koža in razmiki med tretmaji
               </h2>
 
               <p className="text-body-lg">
                 Pri odstranjevanju ni pomemben samo laser, ampak tudi nadzor nad
-                postopkom, odziv kože in pravilni razmiki med tretmaji.
+                postopkom, hlajenje kože in pravilni razmiki med tretmaji.
               </p>
 
               <p className="text-body">
-                Zato pred začetkom pregledamo tattoo in ocenimo, kaj je pri
-                vašem primeru smiselno pričakovati.
+                Postopek se prilagaja tattooju, pigmentu in odzivu kože. Bolj
+                jasen odziv pigmenta se pokaže po nekaj tretmajih.
               </p>
 
               <a
                 href="/posvet"
                 className="text-sm font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
               >
-                Preverite svoj primer →
+                Pošlji povpraševanje →
               </a>
             </div>
 
@@ -249,55 +243,51 @@ export default function PicoLaserPage() {
       </section>
 
       {/* CTA */}
-    {/* CTA */}
-<section className="section-sm relative overflow-hidden bg-neutral-950 text-white">
-  <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-black via-black to-neutral-950" />
+      <section className="section-sm relative overflow-hidden bg-neutral-950 text-white">
+        <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-black via-black to-neutral-950" />
 
-  <div className="pointer-events-none absolute inset-0 z-[2]">
-    <PixelLayer pixels={pixelsSubtleDark} />
-  </div>
-
-  <Container className="relative z-10">
-    <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-      <div className="flex flex-col items-center gap-4 sm:gap-5">
-        <p className="eyebrow-dark">Posvet</p>
-
-        <h2 className="heading-section text-white">
-          Preverite svoj primer
-        </h2>
-
-        <p className="text-body-inverse max-w-[52ch]">
-          Na posvetu pregledamo tattoo in vam jasno povemo,
-          <br className="hidden sm:block" />
-          kaj je pri vašem primeru smiselno pričakovati.
-        </p>
-
-        <div className="cta-spacing flex flex-wrap justify-center gap-4">
-          <Button href="/posvet" variant="primary-dark">
-            Preveri svoj primer
-          </Button>
-
-          <Button href="/rezultati" variant="secondary-dark">
-            Poglej rezultate
-          </Button>
+        <div className="pointer-events-none absolute inset-0 z-[2]">
+          <PixelLayer pixels={pixelsSubtleDark} />
         </div>
 
-        <p className="pt-2 text-sm leading-6 text-white/55">
-          Posvet pred lasersko terapijo: 30 €
-          <br />
-          Ob zakupu storitve se znesek odšteje.
-        </p>
+        <Container className="relative z-10">
+          <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
+            <div className="flex flex-col items-center gap-4 sm:gap-5">
+              <p className="eyebrow-dark">Kontakt</p>
 
-        <a
-          href="/faq"
-          className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
-        >
-          Preberi pogosta vprašanja →
-        </a>
-      </div>
-    </div>
-  </Container>
-</section>
+              <h2 className="heading-section text-white">
+                Imate vprašanje o odstranjevanju?
+              </h2>
+
+              <p className="text-body-inverse max-w-[44ch]">
+                Pošljite povpraševanje ali fotografijo tattooja in dogovorili se
+                bomo za naslednji korak.
+              </p>
+
+              <p className="text-body-sm text-white/60">
+                Posvet 30 € • ob zakupu storitve se znesek odšteje
+              </p>
+            </div>
+
+            <div className="cta-spacing flex flex-wrap justify-center gap-4">
+              <Button href="/posvet" variant="primary-dark">
+                Pošlji povpraševanje
+              </Button>
+
+              <Button href="/rezultati" variant="secondary-dark">
+                Poglej rezultate
+              </Button>
+            </div>
+
+            <a
+              href="/faq"
+              className="mt-6 text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
+            >
+              Preberi pogosta vprašanja →
+            </a>
+          </div>
+        </Container>
+      </section>
     </main>
   );
 }

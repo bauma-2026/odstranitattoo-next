@@ -30,68 +30,75 @@ export default function HowItWorks() {
 
               <p className="text-body-lg max-w-[36ch]">
                 Pico laser pigment razbije na manjše delce, ki jih telo
-                postopoma odstrani.
+                postopoma odstranjuje.
               </p>
 
-              <p className="text-body-lg max-w-[36ch]">
-                Odstranjevanje zato poteka postopno skozi več tretmajev.
+              <p className="text-body-lg max-w-[38ch]">
+                Koža se mora med tretmaji zaceliti, zato odstranjevanje poteka
+                postopno skozi več obiskov.
               </p>
             </div>
           </div>
 
-          <div className="border-t border-neutral-200 pt-0 sm:pt-4">
-            {/* MOBILE STACK */}
-            <div className="flex flex-col gap-0 lg:hidden">
-              <div className="flex flex-col gap-2 py-5">
-                <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-skin-500/70">
-                  01
-                </div>
+        <div className="border-t border-neutral-200 pt-6 sm:pt-8">
+         {/* MOBILE STACK */}
+<div className="grid gap-3 lg:hidden">
+  <div className="grid grid-cols-[44px_1fr] gap-4 rounded-2xl border border-neutral-200/70 bg-white px-4 py-4">
+    <div className="pt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-skin-500/70">
+      01
+    </div>
 
-                <h3 className="text-[1.05rem] font-semibold leading-tight text-neutral-950">
-                  Pigment se razbije
-                </h3>
+    <div className="flex flex-col gap-1.5">
+      <h3 className="text-[1rem] font-semibold leading-tight text-neutral-950">
+        Pigment se razbije
+      </h3>
 
-                <p className="text-[15px] leading-[1.55] text-neutral-600">
-                  Pigment se razbije na manjše delce, ki jih telo postopoma
-                  odstrani.
-                </p>
-              </div>
+      <p className="text-[14px] leading-[1.5] text-neutral-600">
+        Laser pigment razbije na manjše delce, ki jih telo postopoma
+        odstranjuje.
+      </p>
+    </div>
+  </div>
 
-              <div className="flex flex-col gap-2 border-t border-neutral-200/70 py-5">
-                <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-skin-500/70">
-                  02
-                </div>
+  <div className="grid grid-cols-[44px_1fr] gap-4 rounded-2xl border border-neutral-200/70 bg-white px-4 py-4">
+    <div className="pt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-skin-500/70">
+      02
+    </div>
 
-                <h3 className="text-[1.05rem] font-semibold leading-tight text-neutral-950">
-                  Proces poteka postopno
-                </h3>
+    <div className="flex flex-col gap-1.5">
+      <h3 className="text-[1rem] font-semibold leading-tight text-neutral-950">
+        Koža se med tretmaji zaceli
+      </h3>
 
-                <p className="text-[15px] leading-[1.55] text-neutral-600">
-                  Telo med tretmaji postopoma odstranjuje razbite delce
-                  pigmenta.
-                </p>
-              </div>
+      <p className="text-[14px] leading-[1.5] text-neutral-600">
+        Koža se po tretmaju celi približno 28–60 dni, zato se tretmaji
+        praviloma izvajajo v razmiku približno 8 tednov.
+      </p>
+    </div>
+  </div>
 
-              <div className="flex flex-col gap-2 border-t border-neutral-200/70 py-5">
-                <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-skin-500/70">
-                  03
-                </div>
+  <div className="grid grid-cols-[44px_1fr] gap-4 rounded-2xl border border-neutral-200/70 bg-white px-4 py-4">
+    <div className="pt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-skin-500/70">
+      03
+    </div>
 
-                <h3 className="text-[1.05rem] font-semibold leading-tight text-neutral-950">
-                  Vsak tattoo reagira drugače
-                </h3>
+    <div className="flex flex-col gap-1.5">
+      <h3 className="text-[1rem] font-semibold leading-tight text-neutral-950">
+        Vsak tattoo reagira drugače
+      </h3>
 
-                <p className="text-[15px] leading-[1.55] text-neutral-600">
-                  Hitrost bledenja je odvisna od pigmenta, globine nanosa in
-                  odziva telesa.
-                </p>
-              </div>
-            </div>
+      <p className="text-[14px] leading-[1.5] text-neutral-600">
+        Odziv pigmenta je odvisen od barve, globine nanosa, starosti tattooja
+        in odziva kože.
+      </p>
+    </div>
+  </div>
+</div>
 
             {/* DESKTOP GRID */}
             <div className="hidden lg:block">
               <div className="grid gap-10 sm:grid-cols-3">
-               <div className="flex flex-col gap-2.5 pt-3">
+                <div className="flex flex-col gap-2.5 pt-3">
                   <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-skin-500/70">
                     01
                   </div>
@@ -101,27 +108,27 @@ export default function HowItWorks() {
                   </h3>
 
                   <p className="text-body-sm max-w-[26ch]">
-                    Pigment se razbije na manjše delce, ki jih telo postopoma
-                    odstrani.
+                    Laser pigment razbije na manjše delce, ki jih telo postopoma
+                    odstranjuje.
                   </p>
                 </div>
 
-             <div className="flex flex-col gap-2.5 pt-3">
+                <div className="flex flex-col gap-2.5 pt-3">
                   <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-skin-500/70">
                     02
                   </div>
 
                   <h3 className="text-base font-semibold text-neutral-950 sm:text-lg">
-                    Proces poteka postopno
+                    Koža se med tretmaji zaceli
                   </h3>
 
-                  <p className="text-body-sm max-w-[26ch]">
-                    Telo med tretmaji postopoma odstranjuje razbite delce
-                    pigmenta.
+                  <p className="text-body-sm max-w-[28ch]">
+                    Koža se po tretmaju celi približno 28–60 dni, zato se
+                    tretmaji izvajajo približno na 8 tednov.
                   </p>
                 </div>
 
-             <div className="flex flex-col gap-2.5 pt-3">
+                <div className="flex flex-col gap-2.5 pt-3">
                   <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-skin-500/70">
                     03
                   </div>
@@ -130,9 +137,9 @@ export default function HowItWorks() {
                     Vsak tattoo reagira drugače
                   </h3>
 
-                  <p className="text-body-sm max-w-[26ch]">
-                    Rezultat je odvisen od pigmenta, globine nanosa in odziva
-                    kože.
+                  <p className="text-body-sm max-w-[28ch]">
+                    Odziv je odvisen od pigmenta, globine nanosa, starosti
+                    tattooja in odziva kože.
                   </p>
                 </div>
               </div>
