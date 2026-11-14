@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
 import MobileNav from "@/components/layout/MobileNav";
@@ -32,6 +32,35 @@ export default function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+
+  const restoreFocusRef = useRef(false);
+
+  const closeMobile = useCallback((restoreFocus?: boolean) => {
+    restoreFocusRef.current = !!restoreFocus;
+    setMobileOpen(false);
+  }, []);
+
+  // Fokus vrnemo šele, ko so se po zaprtju menija ozadje in gumb spet
+  // sprostili (inert), sicer focus() ne bi uspel.
+  useEffect(() => {
+    if (mobileOpen || !restoreFocusRef.current) return;
+    restoreFocusRef.current = false;
+    menuButtonRef.current?.focus({ preventScroll: true });
+  }, [mobileOpen]);
+
+  // Gumb za meni je od lg naprej skrit; fokus ne sme ostati na njem.
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 1024px)");
+    const onChange = () => {
+      if (mq.matches && document.activeElement === menuButtonRef.current) {
+        menuButtonRef.current?.blur();
+      }
+    };
+
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => {
@@ -121,10 +150,12 @@ export default function Header() {
 
       <button
         type="button"
+        ref={menuButtonRef}
         onClick={() => setMobileOpen(true)}
         className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 text-ink transition-colors hover:bg-neutral-100 lg:hidden"
         aria-label="Odpri meni"
         aria-expanded={mobileOpen}
+        aria-controls="mobile-nav"
       >
         <span className="flex flex-col gap-[4px]">
           <span className="block h-[1.5px] w-5 bg-current" />
@@ -138,7 +169,7 @@ export default function Header() {
 
       <MobileNav
         open={mobileOpen}
-        onClose={() => setMobileOpen(false)}
+        onClose={closeMobile}
         pathname={pathname}
         nav={nav}
       />
