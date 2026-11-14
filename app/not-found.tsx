@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
+
+// Neobstoječe poti so vedno noindex; prepiše index, follow iz root layouta.
+export const metadata: Metadata = {
+  robots: { index: false },
+};
 
 export default function NotFound() {
   return (

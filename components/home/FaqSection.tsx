@@ -1,6 +1,6 @@
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
-import Script from "next/script";
+import JsonLd from "@/components/seo/JsonLd";
 import { faqs } from "@/content/faq";
 
 type Props = {
@@ -13,22 +13,18 @@ export default function FaqSection({ excludeIds = [], showClosingCta = true }: P
 
   return (
     <>
-      <Script
-        id="faq-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: visibleFaqs.map((faq) => ({
-              "@type": "Question",
-              name: faq.q,
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: faq.a,
-              },
-            })),
-          }),
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: visibleFaqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.q,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.a,
+            },
+          })),
         }}
       />
 

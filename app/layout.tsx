@@ -5,7 +5,7 @@ import "./globals.css";
 
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import Script from "next/script";
+import JsonLd from "@/components/seo/JsonLd";
 import CookieConsent from "@/components/ui/CookieConsent";
 import { Analytics } from "@vercel/analytics/next";
 import { SITE_URL } from "@/lib/seo";
@@ -136,13 +136,7 @@ export default function RootLayout({
   return (
     <html lang="sl" className={`${satoshi.variable} ${inter.variable}`}>
       <body className="bg-canvas font-sans text-ink antialiased">
-        <Script
-          id="local-business-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(businessSchema),
-          }}
-        />
+        <JsonLd data={businessSchema} />
 
         <Header />
         {children}

@@ -24,7 +24,7 @@ type PageMetadataInput = {
 /**
  * Metapodatki strani z lastnim canonical in Open Graph.
  * Next.js openGraph na strani v celoti nadomesti openGraph iz layouta,
- * zato tu ponovimo siteName, locale, type in sliko.
+ * zato tu ponovimo siteName, locale, type in sliko. Enako velja za twitter.
  */
 export function pageMetadata({
   path,
@@ -33,19 +33,26 @@ export function pageMetadata({
   titleSuffix = true,
 }: PageMetadataInput): Metadata {
   const url = `${SITE_URL}${path}`;
+  const socialTitle = titleSuffix ? `${title} | ${SITE_NAME}` : title;
 
   return {
     title,
     description,
     alternates: { canonical: url },
     openGraph: {
-      title: titleSuffix ? `${title} | ${SITE_NAME}` : title,
+      title: socialTitle,
       description,
       url,
       siteName: SITE_NAME,
       locale: "sl_SI",
       type: "website",
       images: [OG_IMAGE],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: socialTitle,
+      description,
+      images: [OG_IMAGE.url],
     },
   };
 }
