@@ -32,11 +32,11 @@
   }
 
   .eyebrow-muted {
-    @apply text-[12px] font-medium uppercase tracking-[0.16em] text-neutral-500;
+    @apply text-[12px] font-medium uppercase tracking-[0.16em] text-neutral-600;
   }
 
   .eyebrow-skin {
-    @apply text-[12px] font-medium uppercase tracking-[0.12em] text-skin-500/90;
+    @apply text-[12px] font-medium uppercase tracking-[0.12em] text-skin-700;
   }
 
   .heading-display {
@@ -179,6 +179,7 @@
   --color-skin-400: #CDAA84;
   --color-skin-500: #B98962;
   --color-skin-600: #9D6E49;
+  --color-skin-700: #7A5233;
   --color-skin-900: #4A2F1D;
 
   --color-canvas: #FAF8F4;

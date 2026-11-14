@@ -60,7 +60,7 @@ export default function SeoLocationSection() {
                     {item.title}
                   </p>
 
-                  <p className="max-w-[44ch] text-body-sm text-neutral-500">
+                  <p className="max-w-[44ch] text-body-sm text-neutral-600">
                     {item.text}
                   </p>
                 </li>

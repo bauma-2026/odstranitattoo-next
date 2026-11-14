@@ -95,7 +95,7 @@ Poglej primer odstranjevanja obrvi →
       <section className="section-sm border-t border-ink/10 bg-cta text-ink">
         <Container>
           <div className="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
-            <p className="text-[12px] font-medium uppercase tracking-[0.12em] text-skin-600/80">Naslednji korak</p>
+            <p className="text-[12px] font-medium uppercase tracking-[0.12em] text-skin-700">Naslednji korak</p>
 
             <h2 className="heading-section text-ink">
               Vsak tattoo se odziva drugače

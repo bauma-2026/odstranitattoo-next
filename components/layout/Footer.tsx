@@ -37,7 +37,7 @@ export default function Footer() {
   >
     <Image
       src="/logo/laser-symbol.svg"
-      alt="Odstrani Tattoo"
+      alt=""
       width={48}
       height={48}
       className="h-12 w-12 opacity-95"
@@ -66,7 +66,7 @@ export default function Footer() {
   <div className="mt-5">
     <Link
       href="/piskotki"
-      className="text-[11px] underline underline-offset-4 text-neutral-500 transition-colors duration-200 hover:text-neutral-800"
+      className="text-[11px] underline underline-offset-4 text-neutral-600 transition-colors duration-200 hover:text-neutral-800"
     >
       Politika piškotkov
     </Link>
@@ -75,7 +75,7 @@ export default function Footer() {
 
       {/* NAV */}
       <div>
-        <p className="text-[12px] font-medium uppercase tracking-[0.16em] text-neutral-500">
+        <p className="text-[12px] font-medium uppercase tracking-[0.16em] text-neutral-600">
           Navigacija
         </p>
 
@@ -94,13 +94,13 @@ export default function Footer() {
 
       {/* CONTACT */}
       <div>
-        <p className="text-[12px] font-medium uppercase tracking-[0.16em] text-neutral-500">
+        <p className="text-[12px] font-medium uppercase tracking-[0.16em] text-neutral-600">
           Kontakt
         </p>
 
         <div className="mt-4 grid gap-4 text-sm">
           <div>
-            <p className="text-neutral-500">Telefon</p>
+            <p className="text-neutral-600">Telefon</p>
             <a
               href="tel:+38670553340"
               className="mt-1 inline-block text-neutral-700 transition-colors duration-200 hover:text-ink"
@@ -110,7 +110,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-neutral-500">E-pošta</p>
+            <p className="text-neutral-600">E-pošta</p>
             <a
               href="mailto:odstranitattoo@gmail.com"
               className="mt-1 inline-block break-all text-neutral-700 underline underline-offset-4 transition-colors duration-200 hover:text-ink"
@@ -120,12 +120,12 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-neutral-500">Lokacija</p>
+            <p className="text-neutral-600">Lokacija</p>
             <p className="mt-1 text-neutral-700">Ljubljanska 90, Domžale</p>
           </div>
 
           <div>
-            <p className="text-neutral-500">Družbena omrežja</p>
+            <p className="text-neutral-600">Družbena omrežja</p>
 
             <div className="mt-2 flex flex-wrap gap-5">
               {socialLinks.map((item) => (
@@ -145,7 +145,7 @@ export default function Footer() {
       </div>
     </div>
 
- <div className="grid gap-3 border-t border-neutral-300/70 pb-8 pt-5 text-sm text-neutral-500 sm:grid-cols-[1fr_auto] sm:items-center sm:py-5">
+ <div className="grid gap-3 border-t border-neutral-300/70 pb-8 pt-5 text-sm text-neutral-600 sm:grid-cols-[1fr_auto] sm:items-center sm:py-5">
   <p>© {new Date().getFullYear()} Odstrani Tattoo</p>
 
   <a

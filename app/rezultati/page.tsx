@@ -318,7 +318,7 @@ export default function RezultatiPage() {
       občutljivo področje obraza.
     </p>
 
-    <p className="mt-3 text-body-sm text-neutral-500">
+    <p className="mt-3 text-body-sm text-neutral-600">
       Rezultat je odvisen od vrste pigmenta, globine nanosa in odziva kože.
     </p>
   </div>

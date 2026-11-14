@@ -50,11 +50,12 @@ export default function Header() {
     <div className="flex min-h-[76px] items-center justify-between gap-4 sm:gap-6">
    <Link
   href="/"
+  aria-label="Odstrani Tattoo"
   className="group flex items-center gap-2 transition-opacity duration-200 hover:opacity-90"
 >
   <Image
     src="/logo/laser-symbol.svg"
-    alt="Odstrani Tattoo"
+    alt=""
     width={52}
     height={52}
     priority

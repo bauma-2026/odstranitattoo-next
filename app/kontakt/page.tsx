@@ -79,7 +79,7 @@ export default function KontaktPage() {
 
                       <a
                         href="tel:+38670553340"
-                        className="mt-2 inline-block text-sm leading-[1.6] text-skin-600 transition hover:text-skin-900"
+                        className="mt-2 inline-block text-sm leading-[1.6] text-skin-700 transition hover:text-skin-900"
                       >
                         070 55 33 40
                       </a>
@@ -92,7 +92,7 @@ export default function KontaktPage() {
 
                       <a
                         href="mailto:odstranitattoo@gmail.com"
-                        className="mt-2 inline-block break-all text-sm leading-[1.6] text-skin-600 transition hover:text-skin-900"
+                        className="mt-2 inline-block break-all text-sm leading-[1.6] text-skin-700 transition hover:text-skin-900"
                       >
                         odstranitattoo@gmail.com
                       </a>

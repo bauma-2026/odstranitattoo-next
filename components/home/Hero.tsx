@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
+import HeroVideo from "@/components/home/HeroVideo";
 
 export default function Hero() {
   return (
@@ -77,17 +78,7 @@ export default function Hero() {
       <div className="relative z-10 hidden md:block">
         <div className="relative min-h-[calc(100vh-72px)] overflow-hidden">
           {/* VIDEO */}
-        <video
-  className="absolute inset-0 h-full w-full object-cover object-[50%_28%]"
-  autoPlay
-  muted
-  loop
-  playsInline
-  preload="metadata"
->
-  <source src="/videos/hero/hero-machine_1_2.webm" type="video/webm" />
-  <source src="/videos/hero/hero-machine_1_2.mp4" type="video/mp4" />
-</video>
+          <HeroVideo />
           {/* OVERLAYS */}
           <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-black/40 via-black/14 to-black/52" />
           <div className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-[56%] bg-gradient-to-r from-black/86 via-black/52 to-transparent" />

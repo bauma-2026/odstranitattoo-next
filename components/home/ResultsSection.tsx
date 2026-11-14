@@ -93,7 +93,7 @@ export default function ResultsPreviewSection() {
 
                 <div className="p-5 sm:p-6">
                   <div className="flex flex-col gap-2">
-                    <p className="text-[11px] uppercase tracking-[0.14em] text-neutral-500">
+                    <p className="text-[11px] uppercase tracking-[0.14em] text-neutral-600">
                       {item.meta}
                     </p>
 

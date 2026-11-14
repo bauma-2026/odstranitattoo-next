@@ -7,7 +7,7 @@ export default function FinalCta() {
       <Container className="relative z-10">
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           <div className="flex flex-col items-center gap-4 sm:gap-5">
-            <p className="text-[12px] font-medium uppercase tracking-[0.12em] text-skin-600">Kontakt</p>
+            <p className="text-[12px] font-medium uppercase tracking-[0.12em] text-skin-700">Kontakt</p>
 
             <h2 className="heading-section text-ink">
               Imate vprašanje<br className="hidden sm:block" /> o odstranjevanju?

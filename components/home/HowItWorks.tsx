@@ -48,7 +48,7 @@ export default function HowItWorks() {
          {/* MOBILE STACK */}
 <ol className="grid list-none divide-y divide-skin-300/50 overflow-hidden rounded-2xl border border-skin-300/60 bg-skin-50 lg:hidden">
   <li className="grid grid-cols-[44px_1fr] items-start gap-4 px-5 py-5">
-    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-skin-200 text-[13px] font-bold tabular-nums text-skin-600">
+    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-skin-200 text-[13px] font-bold tabular-nums text-skin-700">
       01
     </span>
 
@@ -65,7 +65,7 @@ export default function HowItWorks() {
   </li>
 
   <li className="grid grid-cols-[44px_1fr] items-start gap-4 px-5 py-5">
-    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-skin-200 text-[13px] font-bold tabular-nums text-skin-600">
+    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-skin-200 text-[13px] font-bold tabular-nums text-skin-700">
       02
     </span>
 
@@ -81,7 +81,7 @@ export default function HowItWorks() {
   </li>
 
   <li className="grid grid-cols-[44px_1fr] items-start gap-4 px-5 py-5">
-    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-skin-200 text-[13px] font-bold tabular-nums text-skin-600">
+    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-skin-200 text-[13px] font-bold tabular-nums text-skin-700">
       03
     </span>
 
@@ -102,7 +102,7 @@ export default function HowItWorks() {
             <div className="hidden lg:block">
               <div className="grid gap-10 sm:grid-cols-3">
                 <div className="flex flex-col gap-2.5 pt-3">
-                  <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-skin-500/70">
+                  <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-skin-700">
                     01
                   </div>
 
@@ -117,7 +117,7 @@ export default function HowItWorks() {
                 </div>
 
                 <div className="flex flex-col gap-2.5 pt-3">
-                  <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-skin-500/70">
+                  <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-skin-700">
                     02
                   </div>
 
@@ -132,7 +132,7 @@ export default function HowItWorks() {
                 </div>
 
                 <div className="flex flex-col gap-2.5 pt-3">
-                  <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-skin-500/70">
+                  <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-skin-700">
                     03
                   </div>
 
