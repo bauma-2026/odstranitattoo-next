@@ -34,7 +34,7 @@ export default function Hero() {
       <div className="relative flex min-h-[592px] flex-col">
         {/* TOP */}
         <div className="flex max-w-[22rem] flex-col gap-4">
-          <p className="eyebrow-dark text-white/60">
+          <p className="text-[12px] font-medium uppercase tracking-[0.16em] text-white/60">
             Domžale • lasersko odstranjevanje
           </p>
 
@@ -77,19 +77,17 @@ export default function Hero() {
       <div className="relative z-10 hidden md:block">
         <div className="relative min-h-[calc(100vh-72px)] overflow-hidden">
           {/* VIDEO */}
-          <video
-            className="absolute inset-0 h-full w-full object-cover object-[50%_28%]"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            poster="/videos/hero/hero-machine-poster.jpg"
-          >
-            <source src="/videos/hero/hero-machine_1_2.webm" type="video/webm" />
-            <source src="/videos/hero/hero-machine_1_2.mp4" type="video/mp4" />
-          </video>
-
+        <video
+  className="absolute inset-0 h-full w-full object-cover object-[50%_28%]"
+  autoPlay
+  muted
+  loop
+  playsInline
+  preload="metadata"
+>
+  <source src="/videos/hero/hero-machine_1_2.webm" type="video/webm" />
+  <source src="/videos/hero/hero-machine_1_2.mp4" type="video/mp4" />
+</video>
           {/* OVERLAYS */}
           <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-black/40 via-black/14 to-black/52" />
           <div className="pointer-events-none absolute inset-y-0 left-0 z-[1] w-[56%] bg-gradient-to-r from-black/86 via-black/52 to-transparent" />
@@ -111,9 +109,8 @@ export default function Hero() {
                 Ali je vaš tattoo mogoče odstraniti?
               </h1>
 
-              <p className="text-body-inverse max-w-[40ch] text-neutral-300">
-  Tattoo ne izgine čez noč. Lahko pa ga postopoma odstranjujemo
-  z nadzorovanim pristopom in dovolj časa za kožo.
+              <p className="text-body-inverse max-w-[40ch]">
+  Tattoo ne izgine čez noč. Lahko pa ga postopoma odstranjujemo z nadzorovanim pristopom.
 </p>
 
               <p className="text-body-inverse-sm text-white/50">
@@ -130,7 +127,7 @@ export default function Hero() {
               </p>
 
              <p className="text-body-inverse-sm text-white/50">
-  Posvet 30 € • ob zakupu storitve se znesek odšteje
+  Posvet 30 € • ob zakupu storitve je posvet brezplačen
 </p>
 
               <div className="pt-2">

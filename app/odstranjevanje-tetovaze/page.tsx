@@ -38,100 +38,91 @@ const factors = [
 
 export default function OdstranjevanjeTetovazePage() {
   return (
-    <main className="bg-white text-neutral-900">
-      {/* HERO */}
-      <section className="relative overflow-hidden bg-neutral-950 text-white">
-        <div className="pointer-events-none absolute inset-0 z-[1]">
-          <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/20 to-transparent" />
-        </div>
+    <main className="bg-canvas text-ink">
+     {/* HERO */}
+<section className="relative overflow-hidden border-b border-ink/10 bg-hero text-ink">
+  <Container className="relative z-10 section-hero">
+    <div className="flex max-w-3xl flex-col gap-4 sm:gap-5">
+      <p className="eyebrow-skin">Odstranjevanje tetovaže</p>
 
-        <PixelLayerRandom
-          basePixels={pixelsSectionDarkMobile}
-          className="pointer-events-none absolute inset-0 z-[2] sm:hidden"
-        />
+      <h1 className="heading-display max-w-[15ch] text-3xl leading-[1.04] text-ink sm:text-4xl lg:max-w-[16ch] lg:text-[3.25rem]">
+        Odstranjevanje tetovaže je postopen proces
+      </h1>
 
-        <PixelLayerRandom
-          basePixels={pixelsSectionDarkTablet}
-          className="pointer-events-none absolute inset-0 z-[2] hidden sm:block lg:hidden"
-        />
+      <p className="max-w-[40ch] text-lg leading-[1.6] text-ink-muted">
+        Pico laser razbije pigment, telo pa ga skozi več tretmajev
+        postopoma odstranjuje.
+      </p>
 
-        <PixelLayerRandom
-          basePixels={pixelsSectionDarkDesktop}
-          className="pointer-events-none absolute inset-0 z-[2] hidden lg:block"
-        />
+      <div className="cta-spacing flex flex-col items-start gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
+        <Button href="/posvet" variant="primary-light">
+          Pošlji povpraševanje
+        </Button>
 
-        <Container className="relative z-10 pt-10 pb-12 sm:pt-12 sm:pb-14 lg:pt-14 lg:pb-16">
-          <div className="flex max-w-3xl flex-col gap-4 sm:gap-5">
-            <p className="eyebrow-dark">Odstranjevanje tetovaže</p>
-
-            <h1 className="heading-display max-w-[15ch] text-3xl leading-[1.04] text-white sm:text-4xl lg:max-w-[16ch] lg:text-[3.25rem]">
-              Odstranjevanje tetovaže je postopen proces
-            </h1>
-
-            <p className="text-body-inverse-lg max-w-[40ch]">
-              Pico laser razbije pigment, telo pa ga skozi več tretmajev
-              postopoma odstranjuje.
-            </p>
-
-            <div className="cta-spacing flex flex-col items-start gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
-              <Button href="/posvet" variant="primary-dark">
-                Pošlji povpraševanje
-              </Button>
-
-              <a
-                href="/rezultati"
-                className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
-              >
-                Poglej rezultate →
-              </a>
-            </div>
-          </div>
-        </Container>
-
-        <div className="pointer-events-none absolute inset-0 z-[1]">
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-black/5 to-black/35" />
-        </div>
-      </section>
+        <a
+          href="/rezultati"
+          className="text-sm font-medium text-ink-muted underline underline-offset-4 transition hover:text-ink"
+        >
+          Poglej rezultate →
+        </a>
+      </div>
+    </div>
+  </Container>
+</section>
 
       {/* PROCESS */}
-      <section className="section-sm bg-white">
+      <section className="section-sm">
         <Container>
           <div className="grid gap-10 lg:grid-cols-[1fr_0.95fr] lg:items-start lg:gap-14">
             <div className="header-stack max-w-[60ch]">
-              <p className="eyebrow-muted">Kako poteka</p>
+  <p className="eyebrow-muted">Kako poteka</p>
 
-              <h2 className="heading-section text-neutral-950">
-                Kaj se zgodi s pigmentom
-              </h2>
+  <h2 className="heading-section text-ink">
+    Kaj se zgodi s pigmentom
+  </h2>
 
-              <p className="text-body-lg">
-                Lasersko odstranjevanje tetovaže deluje tako, da Pico laser
-                pigment razbije na manjše delce. Telo jih nato postopoma
-                odstranjuje preko naravnih procesov.
-              </p>
+  <p className="text-body-lg">
+    Lasersko odstranjevanje tetovaže deluje tako, da Pico laser pigment v koži
+    razbije na manjše delce. Odstranjevanje zato ni enkraten poseg, ampak
+    proces, ki poteka skozi več tretmajev.
+  </p>
 
-              <p className="text-body">
-                Postopek ni enkraten. Tetovaža bledi postopno, skozi več
-                tretmajev, odziv pa je odvisen od pigmenta, kože in globine
-                nanosa.
-              </p>
+  <p className="text-body">
+    Med posameznimi tretmaji mora miniti dovolj časa, da se koža zaceli in da
+    telo razgrajeni pigment postopoma odstrani. Koža se po tretmaju celi 28–60
+    dni, zato se tretmaji izvajajo na 8 tednov.
+  </p>
 
-              <p className="text-body">
-                Med posameznimi tretmaji mora miniti dovolj časa, da se koža
-                zaceli in da telo odstrani razgrajeni pigment. Koža se po
-                tretmaju celi približno 28–60 dni, zato se tretmaji izvajajo
-                približno na 8 tednov.
-              </p>
+  <div className="mt-8 border-l border-neutral-300/70 pl-5">
+  <p className="text-sm font-semibold text-ink">
+    Kako telo odstrani pigment?
+  </p>
 
-              <a
-                href="/pico-laser"
-                className="text-sm font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
-              >
-                Preberi več o Pico laser tehnologiji →
-              </a>
-            </div>
+  <p className="mt-2 text-body-sm text-ink-muted">
+    Po tretmaju posebne celice imunskega sistema, imenovane{" "}
+    <strong className="font-semibold text-neutral-800">makrofagi</strong>,
+    postopoma zajamejo razbite delce pigmenta, telo pa jih nato preko{" "}
+    <strong className="font-semibold text-neutral-800">
+      limfnega sistema
+    </strong>{" "}
+    odstranjuje.
+  </p>
 
-            <div className="relative overflow-hidden rounded-[24px] border border-neutral-200/70 bg-neutral-100">
+  <p className="mt-3 text-body-sm text-ink-muted">
+    Zato rezultat ni viden takoj po posegu, ampak se tetovaža postopoma svetli v
+    tednih in mesecih po tretmaju.
+  </p>
+</div>
+
+  <a
+    href="/pico-laser"
+    className="text-sm font-medium text-ink underline underline-offset-4 transition hover:text-neutral-700"
+  >
+    Preberi več o Pico laser tehnologiji →
+  </a>
+</div>
+
+            <div className="image-block relative border border-neutral-200/60 bg-white">
               <Image
                 src="/images/pico/pico-laser-process-01-desktop.webp"
                 alt="Pico laser odstranjevanje tetovaže med tretmajem"
@@ -153,13 +144,13 @@ export default function OdstranjevanjeTetovazePage() {
       </section>
 
       {/* FACTORS */}
-      <section className="section-sm border-y border-neutral-200/70 bg-neutral-50/80">
+      <section className="section-sm border-y border-neutral-200/70 bg-hero">
         <Container>
           <div className="section-gap">
             <div className="header-stack max-w-2xl">
               <p className="eyebrow-muted">Kaj vpliva na rezultat</p>
 
-              <h2 className="heading-section text-neutral-950">
+              <h2 className="heading-section text-ink">
                 Od česa je odvisno odstranjevanje tetovaže
               </h2>
 
@@ -169,45 +160,69 @@ export default function OdstranjevanjeTetovazePage() {
               </p>
             </div>
 
-            <div className="grid gap-6 sm:grid-cols-2 lg:gap-10">
+            {/* MOBILE SUMMARY */}
+            <div className="sm:hidden">
+              <div className="flex max-w-[34ch] flex-col gap-3">
+                <p className="text-body text-ink">
+                  Na rezultat vplivajo barva pigmenta, globina, starost
+                  tetovaže in odziv kože.
+                </p>
+
+                <p className="text-body-sm text-ink-muted">
+                  Na začetku lahko okvirno predvidimo potek, bolj jasen odziv
+                  pigmenta pa se pokaže po nekaj tretmajih.
+                </p>
+              </div>
+            </div>
+
+            {/* DESKTOP GRID */}
+            <div className="hidden gap-10 sm:grid sm:grid-cols-2 lg:gap-14">
               {factors.map((item, index) => (
-                <div
-                  key={item.title}
-                  className="relative rounded-[24px] border border-neutral-200/70 bg-white p-5 sm:p-6"
-                >
-                  <div className="mb-3 text-xs font-semibold tracking-[0.14em] text-skin-500/70">
-                    {String(index + 1).padStart(2, "0")}
+                <div key={item.title} className="relative pl-6">
+                  <div className="absolute left-0 top-1 h-[80%] w-[2px] bg-skin-400/60" />
+
+                  <div className="flex flex-col gap-2">
+                    <span className="text-xs font-semibold tracking-[0.14em] text-skin-500/70">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+
+                    <h3 className="text-base font-semibold text-ink">
+                      {item.title}
+                    </h3>
+
+                    <p className="text-body max-w-[36ch]">{item.text}</p>
                   </div>
-
-                  <h3 className="text-base font-semibold text-neutral-950">
-                    {item.title}
-                  </h3>
-
-                  <p className="mt-2 text-body-sm text-neutral-600">
-                    {item.text}
-                  </p>
                 </div>
               ))}
             </div>
 
-            <a
-              href="/rezultati"
-              className="text-sm font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
-            >
-              Poglej realne rezultate odstranjevanja →
-            </a>
+            <div className="flex flex-col gap-2">
+              <a
+                href="/rezultati"
+                className="text-sm font-medium text-ink underline underline-offset-4 transition hover:text-neutral-700"
+              >
+                Poglej realne rezultate odstranjevanja →
+              </a>
+
+              <a
+                href="/odstranjevanje-tattoo-domzale"
+                className="text-sm font-medium text-ink underline underline-offset-4 transition hover:text-neutral-700"
+              >
+                Preberi več o studiu v Domžalah →
+              </a>
+            </div>
           </div>
         </Container>
       </section>
 
       {/* EXPECTATIONS */}
-      <section className="section-tight bg-white">
+      <section className="section-tight">
         <Container>
           <div className="section-gap">
             <div className="header-stack max-w-3xl">
               <p className="eyebrow-muted">Realna pričakovanja</p>
 
-              <h2 className="heading-section text-neutral-950">
+              <h2 className="heading-section text-ink">
                 Ali se tetovaža lahko popolnoma odstrani?
               </h2>
 
@@ -234,7 +249,7 @@ export default function OdstranjevanjeTetovazePage() {
 
             <a
               href="/faq"
-              className="text-sm font-medium text-neutral-900 underline underline-offset-4 transition hover:text-neutral-700"
+              className="text-sm font-medium text-ink underline underline-offset-4 transition hover:text-neutral-700"
             >
               Poglej pogosta vprašanja →
             </a>
@@ -243,30 +258,28 @@ export default function OdstranjevanjeTetovazePage() {
       </section>
 
       {/* CTA */}
-      <section className="section-sm relative overflow-hidden bg-neutral-950 text-white">
-        <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-black via-black to-neutral-950" />
-
+      <section className="section-sm relative overflow-hidden bg-cta text-ink">
         <Container className="relative z-10">
           <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
             <div className="flex flex-col items-center gap-4 sm:gap-5">
-              <p className="eyebrow-dark">Kontakt</p>
+              <p className="eyebrow-skin">Kontakt</p>
 
-              <h2 className="heading-section text-white">
+              <h2 className="heading-section text-ink">
                 Imate vprašanje o odstranjevanju?
               </h2>
 
-              <p className="text-body-inverse max-w-[44ch]">
+              <p className="max-w-[44ch] text-lg leading-[1.6] text-ink-muted">
                 Pošljite povpraševanje ali fotografijo tetovaže in dogovorili
                 se bomo za naslednji korak.
               </p>
 
-              <p className="text-body-sm text-white/60">
-                Posvet 30 € • ob zakupu storitve se znesek odšteje
+              <p className="text-body-sm text-ink-muted">
+                Posvet 30 € • ob zakupu storitve je posvet brezplačen
               </p>
             </div>
 
             <div className="cta-spacing flex flex-col items-center gap-4">
-              <Button href="/posvet" variant="primary-dark">
+              <Button href="/posvet" variant="primary-light">
                 Pošlji povpraševanje
               </Button>
             </div>

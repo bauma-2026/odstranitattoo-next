@@ -26,7 +26,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
- <footer className="border-t border-white/10 bg-neutral-950 text-white">
+ <footer className="border-t border-neutral-200 bg-footer text-ink">
   <Container>
     <div className="grid gap-10 pt-12 pb-10 sm:pt-14 sm:pb-12 lg:grid-cols-[1.1fr_0.9fr_0.9fr] lg:gap-14 lg:pt-16 lg:pb-14">
       {/* BRAND */}
@@ -36,29 +36,29 @@ export default function Footer() {
     className="inline-flex items-center gap-2 transition-opacity duration-200 hover:opacity-90"
   >
     <Image
-      src="/logo/laser-symbol-white.svg"
+      src="/logo/laser-symbol.svg"
       alt="Odstrani Tattoo"
       width={48}
       height={48}
       className="h-12 w-12 opacity-95"
     />
 
-    <span className="text-[11px] font-medium uppercase tracking-[0.13em] text-white/90">
+    <span className="text-[11px] font-medium uppercase tracking-[0.13em] text-ink">
       Odstrani Tattoo
     </span>
   </Link>
 
-  <p className="mt-5 text-sm leading-6 text-neutral-500">
+  <p className="mt-5 text-sm leading-6 text-ink-muted">
   Odstranjevanje tattoojev in permanentnega pigmenta s Pico laserjem v Domžalah.
 </p>
 
-<p className="mt-4 text-sm leading-6 text-neutral-500">
+<p className="mt-4 text-sm leading-6 text-ink-muted">
   Del studia{" "}
   <a
     href="https://artbite-tattoo.com/"
     target="_blank"
     rel="noreferrer"
-    className="underline underline-offset-4 transition-colors duration-200 hover:text-white"
+    className="underline underline-offset-4 transition-colors duration-200 hover:text-ink"
   >
     Artbite Tattoo
   </a>.
@@ -66,7 +66,7 @@ export default function Footer() {
   <div className="mt-5">
     <Link
       href="/piskotki"
-      className="text-[11px] underline underline-offset-4 text-neutral-600 transition-colors duration-200 hover:text-neutral-300"
+      className="text-[11px] underline underline-offset-4 text-neutral-500 transition-colors duration-200 hover:text-neutral-800"
     >
       Politika piškotkov
     </Link>
@@ -84,7 +84,7 @@ export default function Footer() {
             <HashLink
               key={item.href}
               href={item.href}
-              className="text-sm text-neutral-300 transition-colors duration-200 hover:text-white"
+              className="text-sm text-neutral-700 transition-colors duration-200 hover:text-ink"
             >
               {item.label}
             </HashLink>
@@ -103,7 +103,7 @@ export default function Footer() {
             <p className="text-neutral-500">Telefon</p>
             <a
               href="tel:+38670553340"
-              className="mt-1 inline-block text-neutral-300 transition-colors duration-200 hover:text-white"
+              className="mt-1 inline-block text-neutral-700 transition-colors duration-200 hover:text-ink"
             >
               070 55 33 40
             </a>
@@ -113,7 +113,7 @@ export default function Footer() {
             <p className="text-neutral-500">E-pošta</p>
             <a
               href="mailto:odstranitattoo@gmail.com"
-              className="mt-1 inline-block break-all text-neutral-300 underline underline-offset-4 transition-colors duration-200 hover:text-white"
+              className="mt-1 inline-block break-all text-neutral-700 underline underline-offset-4 transition-colors duration-200 hover:text-ink"
             >
               odstranitattoo@gmail.com
             </a>
@@ -121,7 +121,7 @@ export default function Footer() {
 
           <div>
             <p className="text-neutral-500">Lokacija</p>
-            <p className="mt-1 text-neutral-300">Ljubljanska 90, Domžale</p>
+            <p className="mt-1 text-neutral-700">Ljubljanska 90, Domžale</p>
           </div>
 
           <div>
@@ -134,7 +134,7 @@ export default function Footer() {
                   href={item.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-neutral-300 transition-colors duration-200 hover:text-white"
+                  className="text-neutral-700 transition-colors duration-200 hover:text-ink"
                 >
                   {item.label}
                 </a>
@@ -145,14 +145,14 @@ export default function Footer() {
       </div>
     </div>
 
- <div className="grid gap-3 border-t border-white/5 pb-16 pt-5 text-sm text-neutral-500 sm:grid-cols-[1fr_auto] sm:items-center sm:py-5">
+ <div className="grid gap-3 border-t border-neutral-300/70 pb-8 pt-5 text-sm text-neutral-500 sm:grid-cols-[1fr_auto] sm:items-center sm:py-5">
   <p>© {new Date().getFullYear()} Odstrani Tattoo</p>
 
   <a
     href="https://bauma.si"
     target="_blank"
     rel="noreferrer"
-    className="w-fit transition-colors duration-200 hover:text-neutral-300 sm:justify-self-end"
+    className="w-fit transition-colors duration-200 hover:text-neutral-800 sm:justify-self-end"
   >
     Struktura in izvedba: Bauma
   </a>

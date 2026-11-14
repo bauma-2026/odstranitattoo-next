@@ -55,7 +55,7 @@ export default function MobileNav({
 <div
   onClick={onClose}
   className={[
-    "fixed inset-0 z-40 bg-black/50 backdrop-blur-[3px] transition-opacity duration-300 md:hidden",
+    "fixed inset-0 z-40 bg-black/50 backdrop-blur-[3px] transition-opacity duration-300 lg:hidden",
     open
       ? "pointer-events-auto opacity-100"
       : "pointer-events-none opacity-0",
@@ -65,18 +65,18 @@ export default function MobileNav({
 {/* panel */}
 <aside
   className={[
-    "fixed inset-y-0 left-0 z-50 w-[86vw] max-w-[360px] border-r border-white/10 bg-neutral-950 text-white shadow-2xl transition-transform duration-300 ease-out md:hidden",
+    "fixed inset-y-0 left-0 z-50 w-[86vw] max-w-[360px] border-r border-ink/10 bg-cta text-ink shadow-2xl transition-transform duration-300 ease-out lg:hidden",
     open ? "translate-x-0" : "-translate-x-full",
   ].join(" ")}
 >
   <div className="flex h-full flex-col">
     
     {/* header */}
-    <div className="flex items-center justify-between border-b border-white/10 px-5 py-5">
+    <div className="flex items-center justify-between border-b border-ink/10 px-5 py-5">
       <Link
         href="/"
         onClick={onClose}
-        className="text-[12px] font-medium uppercase tracking-[0.16em] text-white"
+        className="text-[12px] font-medium uppercase tracking-[0.16em] text-ink"
       >
         Odstrani Tattoo
       </Link>
@@ -84,7 +84,7 @@ export default function MobileNav({
       <button
         type="button"
         onClick={onClose}
-        className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white transition-colors duration-200 hover:bg-white/5"
+        className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-ink/10 text-ink transition-colors duration-200 hover:bg-ink/5"
         aria-label="Zapri meni"
       >
         <span className="text-lg leading-none">×</span>
@@ -108,8 +108,8 @@ export default function MobileNav({
               className={[
                 "rounded-xl px-4 py-3 text-[1.05rem] font-medium tracking-tight transition-all duration-200",
                 active
-                  ? "border border-white/10 bg-white/5 text-white"
-                  : "text-neutral-300 hover:bg-white/[0.04] hover:text-white",
+                  ? "border border-ink/10 bg-ink/5 text-ink"
+                  : "text-ink-muted hover:bg-ink/[0.04] hover:text-ink",
               ].join(" ")}
             >
               {item.label}
@@ -120,17 +120,17 @@ export default function MobileNav({
     </nav>
 
     {/* CTA */}
-    <div className="border-t border-white/10 px-5 py-5">
+    <div className="border-t border-ink/10 px-5 py-5">
       <div className="flex flex-col gap-4">
         <Link
           href="/posvet"
           onClick={onClose}
-          className="inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-medium text-black transition-all duration-200 hover:bg-white/90"
+          className="inline-flex w-full items-center justify-center rounded-full bg-accent px-5 py-3 text-sm font-medium text-[#ffffff] transition-all duration-200 hover:bg-accent-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-white"
         >
           Posvet
         </Link>
 
-        <p className="text-xs leading-5 text-neutral-500">
+        <p className="text-xs leading-5 text-ink-muted">
           Lasersko odstranjevanje tetovaž s Pico laserjem v Domžalah.
         </p>
       </div>

@@ -1,43 +1,16 @@
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
 import Script from "next/script";
+import { faqs } from "@/content/faq";
 
-const faqs = [
-  {
-    q: "Ali se tattoo lahko popolnoma odstrani?",
-    a: "Večino tetovaž je možno uspešno odstraniti v celoti, vendar je potek odvisen od pigmenta, barve, globine, starosti tattooja in odziva kože.",
-  },
-  {
-    q: "Koliko tretmajev je potrebnih?",
-    a: "Število tretmajev je odvisno od barve, globine, starosti pigmenta in odziva kože. Na začetku lahko okvirno predvidimo potek, bolj jasen odziv pigmenta pa se pokaže po nekaj tretmajih.",
-  },
-  {
-    q: "Koliko časa mora miniti med tretmaji?",
-    a: "Koža se po tretmaju celi približno 28–60 dni, zato se tretmaji izvajajo približno na 8 tednov. V tem času telo postopoma odstranjuje razgrajeni pigment.",
-  },
-  {
-    q: "Ali odstranjevanje tattooja boli?",
-    a: 'Občutek se pogosto opisuje kot hitro pikanje ali rahlo "švikanje" po koži. Občutek je odvisen od mesta tattooja in občutljivosti.',
-  },
-  {
-    q: "Kdaj so vidni prvi rezultati?",
-    a: "Pigment se razgrajuje postopoma, zato rezultat ni takojšen. Prve spremembe so pogosto vidne po nekaj tretmajih.",
-  },
-  {
-    q: "Ali Pico laser deluje na vse barve tattooja?",
-    a: "Pico laser se uporablja tudi pri zahtevnejših pigmentih, vendar hitrost bledenja ni pri vseh barvah enaka. Odziv je odvisen od barve, globine pigmenta in kože.",
-  },
-  {
-    q: "Ali lahko tattoo samo posvetlim za cover-up?",
-    a: "Da. Tattoo lahko postopoma posvetlimo do stopnje, ki je primerna za cover-up. V tem primeru cilj ni nujno popolna odstranitev, ampak dovolj enakomeren fade za nov tattoo.",
-  },
-  {
-    q: "Ali odstranjujete tudi permanentne obrvi?",
-    a: "Da. Pico laser se lahko uporablja tudi za odstranjevanje neželenega pigmenta pri permanentnih obrveh. Ker gre za občutljiv predel obraza, je pomemben postopen pristop in dovolj časa za celjenje med tretmaji.",
-  },
-];
+type Props = {
+  excludeIds?: string[];
+  showClosingCta?: boolean;
+};
 
-export default function FaqSection() {
+export default function FaqSection({ excludeIds = [], showClosingCta = true }: Props) {
+  const visibleFaqs = faqs.filter((faq) => !excludeIds.includes(faq.id));
+
   return (
     <>
       <Script
@@ -47,7 +20,7 @@ export default function FaqSection() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            mainEntity: faqs.map((faq) => ({
+            mainEntity: visibleFaqs.map((faq) => ({
               "@type": "Question",
               name: faq.q,
               acceptedAnswer: {
@@ -60,7 +33,7 @@ export default function FaqSection() {
       />
 
       {/* FAQ */}
-      <section className="section-tight border-t border-neutral-200/70 bg-neutral-50">
+      <section className="section-tight border-t border-neutral-200/70 bg-hero">
         <Container className="max-w-3xl">
           <div className="section-gap">
             {/* HEADER */}
@@ -72,19 +45,19 @@ export default function FaqSection() {
               </h2>
 
               <p className="text-body-lg max-w-[46ch] text-neutral-700">
-                Najpogostejša vprašanja pred odločitvijo.
+                Najpogostejša vprašanja pred odločitvijo in med postopkom.
               </p>
             </div>
 
             {/* FAQ LIST */}
-            <div className="max-w-3xl">
-              {faqs.map((faq) => (
+           <div className="max-w-3xl pb-6 sm:pb-14">
+              {visibleFaqs.map((faq) => (
                 <details
-                  key={faq.q}
-                  className="group border-b border-neutral-200/70"
+                  key={faq.id}
+                  className="group border-b border-neutral-300/70"
                 >
-                  <summary className="flex cursor-pointer list-none items-start justify-between gap-6 px-0 py-5 text-left">
-                    <span className="pr-4 text-base font-semibold leading-7 tracking-tight text-neutral-950 sm:text-[1.05rem]">
+                  <summary className="flex cursor-pointer list-none items-start justify-between gap-6 px-0 py-3 text-left sm:py-4">
+                    <span className="pr-4 text-base font-medium leading-7 tracking-tight text-neutral-950 sm:text-[1.05rem]">
                       {faq.q}
                     </span>
 
@@ -109,28 +82,30 @@ export default function FaqSection() {
       </section>
 
       {/* CTA */}
-      <section className="section-tight border-t border-neutral-200/70 bg-neutral-100/70">
-        <Container>
-          <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
-            <p className="eyebrow-muted">Kontakt</p>
+      {showClosingCta && (
+        <section className="section-tight border-t border-neutral-200/70 bg-hero">
+          <Container>
+            <div className="mx-auto flex max-w-2xl flex-col items-center text-center">
+              <p className="eyebrow-muted">Kontakt</p>
 
-            <h2 className="mt-4 text-3xl font-semibold tracking-[-0.04em] text-neutral-950 sm:text-4xl">
-              Še vedno imate vprašanje?
-            </h2>
+              <h2 className="heading-section mt-4 text-neutral-950">
+                Še vedno imate vprašanje?
+              </h2>
 
-            <p className="mt-4 max-w-[50ch] text-body-lg text-neutral-600">
-              Pošljite vprašanje ali fotografijo tattooja in dogovorili se bomo
-              za naslednji korak.
-            </p>
+           <p className="mt-4 max-w-[50ch] text-body-lg text-neutral-600">
+    Pošljite vprašanje ali fotografijo tetovaže in dogovorili se bomo
+    za naslednji korak.
+  </p>
 
-            <div className="mt-8">
-              <Button href="/kontakt" variant="primary-light">
-                Pošlji povpraševanje
-              </Button>
+              <div className="mt-8">
+                <Button href="/posvet" variant="primary-light">
+                  Pošlji povpraševanje
+                </Button>
+              </div>
             </div>
-          </div>
-        </Container>
-      </section>
+          </Container>
+        </section>
+      )}
     </>
   );
 }

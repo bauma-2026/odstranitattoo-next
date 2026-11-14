@@ -1,14 +1,13 @@
 import { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/seo";
 
-// Samo namenske, indeksabilne strani s statusom 200 in lastnim canonicalom.
 const routes = [
   "",
+  "/rezultati",
+  "/pico-laser",
   "/odstranjevanje-tattoojev",
   "/odstranjevanje-tetovaze",
   "/odstranjevanje-tattoo-domzale",
-  "/pico-laser",
-  "/rezultati",
   "/faq",
   "/kontakt",
   "/posvet",

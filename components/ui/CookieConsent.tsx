@@ -10,34 +10,33 @@ export default function CookieConsent() {
   const [closing, setClosing] = useState(false);
 
   useEffect(() => {
+  const t = window.setTimeout(() => {
     const accepted = localStorage.getItem(STORAGE_KEY);
 
     if (!accepted) {
       setVisible(true);
     }
 
-    const t = window.setTimeout(() => {
+    setMounted(true);
+  }, 50);
+
+  const openSettings = () => {
+    setClosing(false);
+    setVisible(true);
+    setMounted(false);
+
+    window.setTimeout(() => {
       setMounted(true);
-    }, 50);
+    }, 20);
+  };
 
-    const openSettings = () => {
-      setClosing(false);
-      setVisible(true);
-      setMounted(false);
+  window.addEventListener("open-cookie-settings", openSettings);
 
-      window.setTimeout(() => {
-        setMounted(true);
-      }, 20);
-    };
-
-    window.addEventListener("open-cookie-settings", openSettings);
-
-    return () => {
-      window.clearTimeout(t);
-      window.removeEventListener("open-cookie-settings", openSettings);
-    };
-  }, []);
-
+  return () => {
+    window.clearTimeout(t);
+    window.removeEventListener("open-cookie-settings", openSettings);
+  };
+}, []);
   const acceptCookies = () => {
     localStorage.setItem(STORAGE_KEY, "true");
     setClosing(true);
@@ -59,16 +58,16 @@ export default function CookieConsent() {
           : "translate-y-6 opacity-0"
       }`}
     >
-      <div className="rounded-[22px] border border-white/10 bg-neutral-950 p-5 text-white shadow-[0_8px_24px_rgba(0,0,0,0.16)]">
+      <div className="rounded-[22px] border border-ink/10 bg-cta p-5 text-ink">
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-2">
-            <p className="eyebrow-dark text-white/40">Piškotki</p>
+            <p className="eyebrow text-ink-muted">Piškotki</p>
 
-            <p className="w-full text-body-inverse-sm text-white/75">
+            <p className="w-full text-sm leading-6 text-ink-muted">
               Ta spletna stran uporablja piškotke za osnovno delovanje in boljšo
               uporabniško izkušnjo. Več informacij najdete v{" "}
               <a
-                className="underline underline-offset-4 transition hover:text-white"
+                className="underline underline-offset-4 transition hover:text-ink"
                 href="/piskotki"
               >
                 politiki piškotkov
@@ -80,7 +79,7 @@ export default function CookieConsent() {
             <button
               type="button"
               onClick={acceptCookies}
-              className="inline-flex items-center justify-center rounded-full bg-white px-4 py-2 text-sm font-medium text-neutral-900 transition hover:bg-neutral-100"
+              className="inline-flex items-center justify-center rounded-full bg-accent px-4 py-2 text-sm font-medium text-[#ffffff] transition hover:bg-accent-hover"
             >
               V redu
             </button>

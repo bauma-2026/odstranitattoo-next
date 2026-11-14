@@ -4,10 +4,10 @@ import Button from "@/components/ui/Button";
 
 export default function SeoPricingSection() {
   return (
-    <section
-      id="cenik"
-      className="section-sm scroll-mt-[var(--header-h)] border-t border-neutral-200/70 bg-neutral-100"
-    >
+  <section
+  id="cenik"
+  className="section-sm border-t border-neutral-200/70 bg-hero scroll-mt-[var(--header-h)]"
+>
       <Container>
         <div className="grid gap-10 lg:grid-cols-[1fr_0.95fr] lg:items-center lg:gap-14">
           {/* TEXT */}
@@ -26,8 +26,8 @@ export default function SeoPricingSection() {
             </div>
 
             {/* PRICE CARDS */}
-            <div className="grid gap-3 sm:grid-cols-2">
-              <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5">
+            <div className="grid grid-cols-2 gap-3">
+              <div className="rounded-2xl border border-neutral-200/70 bg-canvas p-5">
                 <p className="text-[13px] font-medium leading-5 text-neutral-700">
                   Posvet pred lasersko terapijo
                 </p>
@@ -37,11 +37,11 @@ export default function SeoPricingSection() {
                 </p>
 
                 <p className="mt-2 text-body-sm text-neutral-600">
-                  Ob zakupu storitve se znesek odšteje.
+                 Ob zakupu storitve je posvet brezplačen
                 </p>
               </div>
 
-              <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5">
+              <div className="rounded-2xl border border-neutral-200/70 bg-canvas p-5">
                 <p className="text-[13px] font-medium leading-5 text-neutral-700">
                   Zelo majhna tetovaža
                 </p>
@@ -55,7 +55,7 @@ export default function SeoPricingSection() {
                 </p>
               </div>
 
-              <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5">
+              <div className="rounded-2xl border border-neutral-200/70 bg-canvas p-5">
                 <p className="text-[13px] font-medium leading-5 text-neutral-700">
                   Odstranjevanje obrvi
                 </p>
@@ -69,7 +69,7 @@ export default function SeoPricingSection() {
                 </p>
               </div>
 
-              <div className="rounded-[20px] border border-neutral-200/70 bg-white p-5">
+              <div className="rounded-2xl border border-neutral-200/70 bg-canvas p-5">
                 <p className="text-[13px] font-medium leading-5 text-neutral-700">
                   Odstranjevanje tetovaž
                 </p>
@@ -92,10 +92,6 @@ export default function SeoPricingSection() {
             <div className="flex flex-wrap items-center gap-3 pt-1">
               <Button href="/posvet" variant="primary-light">
                 Pošlji povpraševanje
-              </Button>
-
-              <Button href="/rezultati" variant="secondary-light">
-                Poglej rezultate
               </Button>
             </div>
           </div>

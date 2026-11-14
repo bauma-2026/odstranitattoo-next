@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
 import Container from "@/components/layout/Container";
+import Button from "@/components/ui/Button";
 import PixelLayerRandom from "@/components/ui/pixels/PixelLayerRandom";
 import {
   pixelsSectionDarkMobile,
@@ -18,68 +19,41 @@ export const metadata: Metadata = pageMetadata({
 
 export default function FaqPage() {
   return (
-    <main className="bg-white text-neutral-900">
-      {/* HERO */}
-      <section className="relative overflow-hidden bg-neutral-950 text-white">
-        <div className="pointer-events-none absolute inset-0 z-[1]">
-          <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/20 to-transparent" />
-        </div>
+    <main className="bg-canvas text-ink">
+     {/* HERO */}
+<section className="relative overflow-hidden border-b border-ink/10 bg-hero text-ink">
+  <Container className="relative z-10 section-hero">
+    <div className="flex max-w-3xl flex-col gap-4 sm:gap-5">
+      <p className="eyebrow-skin">FAQ</p>
 
-        <PixelLayerRandom
-          basePixels={pixelsSectionDarkMobile}
-          className="pointer-events-none absolute inset-0 z-[2] sm:hidden"
-        />
+      <h1 className="heading-display max-w-[13ch] text-3xl leading-[1.04] text-ink sm:text-4xl lg:text-[3.25rem]">
+        Pogosta vprašanja
+      </h1>
 
-        <PixelLayerRandom
-          basePixels={pixelsSectionDarkTablet}
-          className="pointer-events-none absolute inset-0 z-[2] hidden sm:block lg:hidden"
-        />
+      <p className="max-w-[42ch] text-lg leading-[1.6] text-ink-muted">
+        Jasni odgovori na najpogostejša vprašanja pred odstranjevanjem
+        tattooja in med samim postopkom.
+      </p>
 
-        <PixelLayerRandom
-          basePixels={pixelsSectionDarkDesktop}
-          className="pointer-events-none absolute inset-0 z-[2] hidden lg:block"
-        />
+      <p className="max-w-[46ch] text-sm leading-[1.6] text-ink-muted">
+     Če odgovora ne najdete, lahko pošljete vprašanje ali fotografijo tetovaže.
+      </p>
 
-        <Container className="relative z-10 pt-10 pb-12 sm:pt-12 sm:pb-14 lg:pt-14 lg:pb-16">
-          <div className="header-stack max-w-3xl">
-            <p className="eyebrow-dark">FAQ</p>
+      <div className="flex flex-col items-start gap-3 pt-3 sm:gap-4">
+        <Button href="/posvet" variant="primary-light">
+          Pošlji povpraševanje
+        </Button>
 
-            <h1 className="heading-display leading-[1.04] text-3xl text-white sm:text-4xl lg:text-[3.25rem]">
-              Pogosta vprašanja
-            </h1>
-
-            <p className="text-body-inverse-lg max-w-[56ch]">
-              Jasni odgovori na najpogostejša vprašanja pred odstranjevanjem
-              tattooja in med samim postopkom.
-            </p>
-
-            <p className="text-body-inverse-sm max-w-[56ch]">
-              Če odgovora ne najdete, lahko pošljete vprašanje ali fotografijo
-              tattooja.
-            </p>
-
-            <div className="flex flex-col gap-2 pt-3">
-              <a
-                href="/odstranjevanje-tattoojev"
-                className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
-              >
-                Kako poteka odstranjevanje →
-              </a>
-
-              <a
-                href="/rezultati"
-                className="text-sm font-medium text-white/65 underline underline-offset-4 transition hover:text-white"
-              >
-                Poglej rezultate odstranjevanja →
-              </a>
-            </div>
-          </div>
-        </Container>
-
-        <div className="pointer-events-none absolute inset-0 z-[1]">
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-black/5 to-black/35" />
-        </div>
-      </section>
+        <a
+          href="/rezultati"
+          className="text-sm font-medium text-ink-muted underline underline-offset-4 transition hover:text-ink"
+        >
+          Poglej rezultate odstranjevanja →
+        </a>
+      </div>
+    </div>
+  </Container>
+</section>
 
       {/* FAQ CONTENT */}
       <FaqSection />

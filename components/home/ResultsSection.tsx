@@ -1,16 +1,8 @@
 import Image from "next/image";
 import Container from "@/components/layout/Container";
-import Button from "@/components/ui/Button";
 
 const resultsPreview = [
-  {
-    before: "/images/results/2before.webp",
-    after: "/images/results/2after1tretma.webp",
-    title: "Odstranjevanje permanentnih obrvi",
-    meta: "po 1 tretmaju",
-    beforeAlt: "Permanentne obrvi pred laserskim odstranjevanjem",
-    afterAlt: "Permanentne obrvi po enem tretmaju laserskega odstranjevanja",
-  },
+ 
   {
     before: "/images/results/3before.webp",
     after: "/images/results/3after3tretma.webp",
@@ -27,11 +19,19 @@ const resultsPreview = [
     beforeAlt: "Večji tattoo pred laserskim odstranjevanjem",
     afterAlt: "Večji tattoo po petih tretmajih laserskega odstranjevanja",
   },
+   {
+    before: "/images/results/2before.webp",
+    after: "/images/results/2after1tretma.webp",
+    title: "Odstranjevanje permanentnih obrvi",
+    meta: "po 1 tretmaju",
+    beforeAlt: "Permanentne obrvi pred laserskim odstranjevanjem",
+    afterAlt: "Permanentne obrvi po enem tretmaju laserskega odstranjevanja",
+  },
 ];
 
 export default function ResultsPreviewSection() {
   return (
-    <section className="section-sm border-t border-neutral-200/70 bg-white">
+    <section className="section-sm border-t border-neutral-200/70">
       <Container>
         <div className="section-gap">
           {/* HEADER */}
@@ -108,13 +108,12 @@ export default function ResultsPreviewSection() {
 
           {/* CTA */}
           <div className="cta-spacing flex justify-center pt-0 sm:pt-2">
-            <div className="flex flex-wrap justify-center gap-4">
-              <Button href="/rezultati">Poglej vse rezultate</Button>
-
-              <Button href="/posvet" variant="secondary-light">
-                Pošlji povpraševanje
-              </Button>
-            </div>
+            <a
+              href="/posvet"
+              className="text-sm font-medium text-ink-muted underline underline-offset-4 transition hover:text-ink"
+            >
+              Pošlji povpraševanje →
+            </a>
           </div>
         </div>
       </Container>

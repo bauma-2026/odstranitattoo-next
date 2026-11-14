@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Container from "@/components/layout/Container";
-import Button from "@/components/ui/Button";
 
 const points = [
   {
@@ -19,22 +18,23 @@ const points = [
 
 export default function SeoLocationSection() {
   return (
-    <section className="section-sm border-t border-neutral-200/70 bg-white">
+    <section className="section-sm border-t border-neutral-200/70">
       <Container>
-        <div className="grid gap-10 lg:grid-cols-[0.95fr_1fr] lg:items-center lg:gap-14">
+        <div className="grid gap-10 lg:grid-cols-[0.95fr_1fr] lg:items-start lg:gap-14">
           {/* IMAGE */}
-          <div className="image-block relative aspect-[6/5] overflow-hidden border border-neutral-200/60 bg-white lg:aspect-[4/5]">
+          <div className="image-block relative aspect-[6/5] overflow-hidden border border-neutral-200/60 bg-white">
             <Image
               src="/images/studio/image00074.webp"
               alt="Pico laser naprava v studiu v Domžalah"
               fill
               sizes="(min-width: 1024px) 48vw, 100vw"
-              className="scale-[1.12] object-cover object-[50%_54%]"
+              className="scale-[1.05] object-cover object-[50%_64%]"
             />
           </div>
 
           {/* TEXT */}
-          <div className="order-1 flex max-w-[720px] flex-col gap-5 sm:gap-6 lg:order-2">
+          <div className="order-1 flex max-w-[720px] flex-col lg:order-2">
+            {/* 1–2: SECTION IDENTITY + MAIN EXPLANATION */}
             <div className="header-stack gap-4">
               <p className="eyebrow-muted">Studio in tehnologija</p>
 
@@ -49,58 +49,32 @@ export default function SeoLocationSection() {
               </p>
             </div>
 
-            <ul className="grid gap-5">
+            {/* 3: SUPPORTING PROOF POINTS */}
+            <ul className="mt-6 flex flex-col gap-3 sm:mt-7">
               {points.map((item) => (
-                <li key={item.title} className="flex items-start gap-3">
-                  <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-skin-500" />
+                <li
+                  key={item.title}
+                  className="relative pl-[18px] before:absolute before:left-0 before:top-[0.42em] before:h-[6px] before:w-[6px] before:rounded-full before:bg-skin-600 before:content-['']"
+                >
+                  <p className="text-sm font-semibold text-neutral-900">
+                    {item.title}
+                  </p>
 
-                  <div>
-                    <p className="text-sm font-semibold text-neutral-900">
-                      {item.title}
-                    </p>
-
-                    <p className="mt-1 max-w-[44ch] text-body-sm text-neutral-600">
-                      {item.text}
-                    </p>
-                  </div>
+                  <p className="max-w-[44ch] text-body-sm text-neutral-500">
+                    {item.text}
+                  </p>
                 </li>
               ))}
             </ul>
 
-            <div className="flex flex-col items-start gap-4 pt-1">
-              <p className="text-body max-w-[48ch]">
-                Za vprašanja o postopku ali terminu lahko pošljete
-                povpraševanje in dogovorili se bomo za naslednji korak.
-              </p>
-
-              {/* BUTTONS */}
-              <div className="flex flex-wrap gap-3">
-                <Button href="/posvet" variant="primary-light">
-                  Pošlji povpraševanje
-                </Button>
-
-                <Button href="/rezultati" variant="secondary-light">
-                  Poglej rezultate
-                </Button>
-              </div>
-
-              {/* UTILITY LINKS */}
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 pt-2 text-sm text-neutral-500">
-                <a href="/kontakt" className="transition hover:text-neutral-900">
-                  Kontakt
-                </a>
-
-                <span className="text-neutral-300">•</span>
-
-                <a
-                  href="https://www.google.com/maps/search/?api=1&query=Artbite%20Tattoo%20Dom%C5%BEale"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="transition hover:text-neutral-900"
-                >
-                  Navodila za pot
-                </a>
-              </div>
+            {/* 4: CLOSING ACTION */}
+            <div className="mt-6 sm:mt-7">
+              <a
+                href="/posvet"
+                className="text-sm font-medium text-ink-muted underline underline-offset-4 transition hover:text-ink"
+              >
+                Pošlji povpraševanje →
+              </a>
             </div>
           </div>
         </div>

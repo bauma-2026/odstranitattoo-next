@@ -1,40 +1,32 @@
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
-import PixelLayer from "@/components/ui/pixels/PixelLayer";
-import { pixelsSubtleDark } from "@/components/ui/pixels/pixels.config";
 
 export default function FinalCta() {
   return (
-    <section className="section-sm relative overflow-hidden bg-neutral-950 text-white">
-      <div className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-black via-black to-neutral-950" />
-
-      <div className="pointer-events-none absolute inset-0 z-[2]">
-        <PixelLayer pixels={pixelsSubtleDark} />
-      </div>
-
+    <section className="section-sm relative overflow-hidden bg-cta text-ink">
       <Container className="relative z-10">
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           <div className="flex flex-col items-center gap-4 sm:gap-5">
-            <p className="eyebrow-dark text-white/50">Kontakt</p>
+            <p className="text-[12px] font-medium uppercase tracking-[0.12em] text-skin-600">Kontakt</p>
 
-            <h2 className="heading-section text-white">
-              Imate vprašanje o odstranjevanju?
+            <h2 className="heading-section text-ink">
+              Imate vprašanje<br className="hidden sm:block" /> o odstranjevanju?
             </h2>
 
-            <p className="text-body-inverse-lg max-w-[42ch]">
-              Pošljite povpraševanje ali fotografijo tattooja in dogovorili se
-              bomo za naslednji korak.
-            </p>
+          <p className="max-w-[42ch] text-lg leading-[1.6] text-ink-muted">
+  Pošljite povpraševanje ali fotografijo tetovaže in dogovorili se
+  bomo za naslednji korak.
+</p>
 
-            <p className="text-body-inverse-sm text-white/55">
-              Posvet 30 € • ob zakupu storitve se znesek odšteje
+            <p className="text-sm leading-[1.6] text-ink-muted">
+              Posvet 30 € • ob zakupu storitve je posvet brezplačen
             </p>
           </div>
 
           <div className="cta-spacing flex flex-wrap justify-center gap-4">
-            <Button href="/posvet" variant="primary-dark">
-              Pošlji povpraševanje
-            </Button>
+           <Button href="/posvet" variant="primary-light">
+  Pošlji svoj primer
+</Button>
           </div>
         </div>
       </Container>

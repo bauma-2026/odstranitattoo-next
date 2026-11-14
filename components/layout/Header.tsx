@@ -45,7 +45,7 @@ export default function Header() {
 
   return (
     <>
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-white/80 backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-neutral-200 bg-header/90 backdrop-blur-md">
   <Container>
     <div className="flex min-h-[76px] items-center justify-between gap-4 sm:gap-6">
    <Link
@@ -68,7 +68,7 @@ export default function Header() {
 
   <span
     className={[
-      "overflow-hidden whitespace-nowrap text-[12px] font-medium uppercase tracking-[0.14em] text-neutral-900 transition-all duration-400 ease-out",
+      "overflow-hidden whitespace-nowrap text-[12px] font-medium uppercase tracking-[0.14em] text-ink transition-all duration-400 ease-out",
       scrolled
         ? "max-w-0 -translate-x-2 opacity-0"
         : "max-w-[180px] translate-x-0 opacity-100",
@@ -79,7 +79,7 @@ export default function Header() {
   </span>
 </Link>
 
-<nav className="hidden items-center gap-7 md:flex lg:gap-8">
+<nav className="hidden items-center gap-7 lg:flex lg:gap-8">
   {nav.map((item) => {
     const active = !item.external && isActive(pathname, item.href);
 
@@ -93,15 +93,15 @@ export default function Header() {
           "relative pb-1 text-[14px] font-medium tracking-[0.01em] transition-colors duration-200",
           "whitespace-nowrap",
           active
-            ? "text-neutral-950"
-            : "text-neutral-600 hover:text-neutral-950",
+            ? "text-ink"
+            : "text-ink-muted hover:text-ink",
         ].join(" ")}
       >
         {item.label}
 
         <span
           className={[
-            "pointer-events-none absolute bottom-0 left-0 h-px bg-neutral-900 transition-all duration-200",
+            "pointer-events-none absolute bottom-0 left-0 h-px bg-ink transition-all duration-200",
             item.external
               ? "w-0 opacity-0"
               : active
@@ -114,14 +114,14 @@ export default function Header() {
   })}
 </nav>
   
-      <div className="ml-1 hidden md:block">
+      <div className="ml-1 hidden lg:block">
         <Button href="/posvet" variant="primary-light">Posvet</Button>
       </div>
 
       <button
         type="button"
         onClick={() => setMobileOpen(true)}
-        className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 text-neutral-900 transition-colors hover:bg-neutral-100 md:hidden"
+        className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 text-ink transition-colors hover:bg-neutral-100 lg:hidden"
         aria-label="Odpri meni"
         aria-expanded={mobileOpen}
       >
