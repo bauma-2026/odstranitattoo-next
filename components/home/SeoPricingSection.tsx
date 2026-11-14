@@ -4,11 +4,14 @@ import Button from "@/components/ui/Button";
 
 export default function SeoPricingSection() {
   return (
-    <section className="section-sm border-t border-neutral-200/70 bg-neutral-100">
+    <section
+      id="cenik"
+      className="section-sm scroll-mt-[var(--header-h)] border-t border-neutral-200/70 bg-neutral-100"
+    >
       <Container>
         <div className="grid gap-10 lg:grid-cols-[1fr_0.95fr] lg:items-center lg:gap-14">
           {/* TEXT */}
-          <div className="order-2 flex max-w-2xl flex-col gap-5 sm:gap-6 lg:order-1 lg:justify-self-start">
+          <div className="flex max-w-2xl flex-col gap-5 sm:gap-6 lg:order-1 lg:justify-self-start">
             <div className="header-stack gap-4">
               <p className="eyebrow-muted">Cena</p>
 

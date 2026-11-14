@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --header-h: 77px; /* sticky header: min-h 76px + 1px border */
   --font-sans: var(--font-satoshi), var(--font-inter), system-ui, sans-serif;
 }
 @layer utilities {

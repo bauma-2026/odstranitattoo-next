@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect } from "react";
+import { scrollToSameHash } from "@/components/ui/HashLink";
 
 type NavItem = {
   href: string;
@@ -100,7 +101,10 @@ export default function MobileNav({
             <Link
               key={item.href}
               href={item.href}
-              onClick={onClose}
+              onClick={() => {
+                onClose();
+                scrollToSameHash(item.href);
+              }}
               className={[
                 "rounded-xl px-4 py-3 text-[1.05rem] font-medium tracking-tight transition-all duration-200",
                 active

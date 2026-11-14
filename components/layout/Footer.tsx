@@ -1,12 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/layout/Container";
+import HashLink from "@/components/ui/HashLink";
 
 const quickLinks = [
   { href: "/odstranjevanje-tattoojev", label: "Odstranjevanje" },
   { href: "/pico-laser", label: "Pico laser" },
   { href: "/rezultati", label: "Rezultati" },
   { href: "/faq", label: "FAQ" },
+  { href: "/#cenik", label: "Cenik" },
   { href: "/kontakt", label: "Kontakt" },
   { href: "/posvet", label: "Povpraševanje" },
 ];
@@ -79,13 +81,13 @@ export default function Footer() {
 
         <nav className="mt-4 grid gap-3">
           {quickLinks.map((item) => (
-            <Link
+            <HashLink
               key={item.href}
               href={item.href}
               className="text-sm text-neutral-300 transition-colors duration-200 hover:text-white"
             >
               {item.label}
-            </Link>
+            </HashLink>
           ))}
         </nav>
       </div>

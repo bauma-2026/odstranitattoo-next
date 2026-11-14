@@ -7,12 +7,14 @@ import { useEffect, useState } from "react";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
 import MobileNav from "@/components/layout/MobileNav";
+import { scrollToSameHash } from "@/components/ui/HashLink";
 
 const nav = [
   { href: "/odstranjevanje-tattoojev", label: "Odstranjevanje" },
   { href: "/pico-laser", label: "Pico laser" },
   { href: "/rezultati", label: "Rezultati" },
   { href: "/faq", label: "FAQ" },
+  { href: "/#cenik", label: "Cenik" },
   { href: "/kontakt", label: "Kontakt" },
   {
     href: "https://artbite-tattoo.com/",
@@ -85,6 +87,7 @@ export default function Header() {
       <Link
         key={item.href}
         href={item.href}
+        onClick={() => scrollToSameHash(item.href)}
         {...(item.external ? { target: "_blank", rel: "noreferrer" } : {})}
         className={[
           "relative pb-1 text-[14px] font-medium tracking-[0.01em] transition-colors duration-200",
