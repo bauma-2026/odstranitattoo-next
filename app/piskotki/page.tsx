@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Container from "@/components/layout/Container";
 import OpenCookieSettingsButton from "@/components/ui/OpenCookieSettingsButton";
 
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
+  path: "/piskotki",
   title: "Politika piškotkov",
   description:
     "Informacije o uporabi piškotkov na strani Odstrani Tattoo.",
-  alternates: {
-    canonical: "https://odstranitattoo.si/piskotki",
-  },
-};
+});
 
 export default function PiskotkiPage() {
   return (

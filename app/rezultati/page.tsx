@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
@@ -11,14 +12,12 @@ import {
   pixelsSectionDarkDesktop,
 } from "@/components/ui/pixels/pixels.config";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
+  path: "/rezultati",
   title: "Rezultati odstranjevanja tattoojev",
   description:
     "Realni primeri odstranjevanja tattoojev in permanentnih obrvi s Pico laserjem. Primeri prikazujejo postopno bledenje skozi več tretmajev.",
-  alternates: {
-    canonical: "https://odstranitattoo.si/rezultati",
-  },
-};
+});
 
 const results = [
   {
@@ -313,7 +312,7 @@ export default function RezultatiPage() {
                   Pošlji povpraševanje
                 </Button>
 
-                <Button href="/cenik" variant="secondary-dark">
+                <Button href="/#cenik" variant="secondary-dark">
                   Poglej cenik
                 </Button>
               </div>

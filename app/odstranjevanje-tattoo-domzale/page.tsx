@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
@@ -9,14 +10,12 @@ import {
   pixelsSectionDarkDesktop,
 } from "@/components/ui/pixels/pixels.config";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
+  path: "/odstranjevanje-tattoo-domzale",
   title: "Odstranjevanje tattoojev Domžale",
   description:
     "Lasersko odstranjevanje tattoojev s Pico laserjem v Domžalah. Postopen postopek, celjenje kože med tretmaji in realni rezultati odstranjevanja.",
-  alternates: {
-    canonical: "https://odstranitattoo.si/odstranjevanje-tattoo-domzale",
-  },
-};
+});
 
 export default function OdstranjevanjeTattooDomzalePage() {
   return (

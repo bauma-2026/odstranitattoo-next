@@ -7,6 +7,7 @@ import Footer from "@/components/layout/Footer";
 import Script from "next/script";
 import CookieConsent from "@/components/ui/CookieConsent";
 import { Analytics } from "@vercel/analytics/next";
+import { SITE_URL } from "@/lib/seo";
 
 const satoshi = localFont({
   src: [
@@ -36,15 +37,12 @@ const inter = Inter({
   display: "swap",
 });
 
-const BASE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ||
-  "https://odstranitattoo-next.vercel.app";
-
-// 🔥 detect production
-const isProd = BASE_URL === "https://odstranitattoo.si";
+// Indeksiranje je dovoljeno samo v produkcijskem deployu (preview ostane noindex).
+// Javni URL-ji (metadataBase, canonical, OG) so vedno produkcijska domena.
+const isProd = process.env.NEXT_PUBLIC_SITE_URL === SITE_URL;
 
 export const metadata: Metadata = {
-  metadataBase: new URL(BASE_URL),
+  metadataBase: new URL(SITE_URL),
 
   title: {
     default: "Odstrani Tattoo",
@@ -77,7 +75,7 @@ export const metadata: Metadata = {
     title: "Odstrani Tattoo",
     description:
       "Lasersko odstranjevanje tattoojev s Pico laserjem v Domžalah.",
-    url: BASE_URL,
+    url: SITE_URL,
     siteName: "Odstrani Tattoo",
     locale: "sl_SI",
     type: "website",
@@ -93,7 +91,7 @@ export const metadata: Metadata = {
 
   // ✅ CANONICAL (vedno production!)
   alternates: {
-    canonical: "https://odstranitattoo.si",
+    canonical: SITE_URL,
   },
 };
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
@@ -11,14 +12,12 @@ import {
   pixelsSectionDarkDesktop,
 } from "@/components/ui/pixels/pixels.config";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
+  path: "/odstranjevanje-tattoojev",
   title: "Odstranjevanje tattoojev s Pico laserjem",
   description:
     "Odstranjevanje tattoojev s Pico laserjem v Domžalah. Kako poteka postopek, koliko tretmajev je potrebnih in kaj vpliva na rezultat.",
-  alternates: {
-    canonical: "https://odstranitattoo.si/odstranjevanje-tattoojev",
-  },
-};
+});
 
 const factors = [
   {

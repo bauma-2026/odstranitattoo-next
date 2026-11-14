@@ -1,44 +1,19 @@
 import { MetadataRoute } from "next";
+import { SITE_URL } from "@/lib/seo";
+
+// Samo namenske, indeksabilne strani s statusom 200 in lastnim canonicalom.
+const routes = [
+  "",
+  "/odstranjevanje-tattoojev",
+  "/odstranjevanje-tetovaze",
+  "/odstranjevanje-tattoo-domzale",
+  "/pico-laser",
+  "/rezultati",
+  "/faq",
+  "/kontakt",
+  "/posvet",
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://odstranitattoo-next.vercel.app";
-
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/rezultati`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/pico-laser`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/odstranjevanje-tattoojev`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/odstranjevanje-tetovaze`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/odstranjevanje-tattoo-domzale`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/faq`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/kontakt`,
-      lastModified: new Date(),
-    },
-    {
-      url: `${baseUrl}/posvet`,
-      lastModified: new Date(),
-    },
-  ];
+  return routes.map((route) => ({ url: `${SITE_URL}${route}` }));
 }

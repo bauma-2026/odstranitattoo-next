@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
@@ -9,6 +10,14 @@ import {
   pixelsSectionDarkTablet,
   pixelsSectionDarkDesktop,
 } from "@/components/ui/pixels/pixels.config";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = pageMetadata({
+  path: "/pico-laser",
+  title: "Pico laser za odstranjevanje tattoojev",
+  description:
+    "Kako Pico laser s kratkimi impulzi razbije pigment tattooja, zakaj je odstranjevanje postopno in kaj vpliva na potek med tretmaji.",
+});
 
 const benefits = [
   {

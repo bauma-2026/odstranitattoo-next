@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
@@ -9,14 +10,12 @@ import {
   pixelsSectionDarkDesktop,
 } from "@/components/ui/pixels/pixels.config";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
+  path: "/odstranjevanje-tetovaze",
   title: "Odstranjevanje tetovaže z laserjem",
   description:
     "Odstranjevanje tetovaže z laserjem je postopen proces. Pico laser razbije pigment, telo pa ga skozi več tretmajev postopoma odstranjuje.",
-  alternates: {
-    canonical: "https://odstranitattoo.si/odstranjevanje-tetovaze",
-  },
-};
+});
 
 const factors = [
   {

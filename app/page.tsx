@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import HowItWorks from "@/components/home/HowItWorks";
 import WhyPico from "@/components/home/WhyPico";
 import ResultsSection from "@/components/home/ResultsSection";
@@ -10,14 +11,13 @@ import SeoPricingSection from "@/components/home/SeoPricingSection";
 import ObjectionSection from "@/components/home/ObjectionSection";
 import TreatmentExpectations from "@/components/sections/TreatmentExpectations";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
+  path: "",
   title: "Lasersko odstranjevanje tattoojev s Pico laserjem",
   description:
     "Varno in postopno odstranjevanje tattoojev s Pico laser tehnologijo. Individualna ocena tattooja in strokovni postopek v Domžalah.",
-  alternates: {
-    canonical: "https://odstranitattoo.si",
-  },
-};
+  titleSuffix: false,
+});
 
 export default function HomePage() {
   return (

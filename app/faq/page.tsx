@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Container from "@/components/layout/Container";
 import PixelLayerRandom from "@/components/ui/pixels/PixelLayerRandom";
 import {
@@ -8,14 +9,12 @@ import {
 } from "@/components/ui/pixels/pixels.config";
 import FaqSection from "@/components/home/FaqSection";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
+  path: "/faq",
   title: "Pogosta vprašanja",
   description:
     "Odgovori na najpogostejša vprašanja o laserskem odstranjevanju tattoojev s Pico laserjem, poteku tretmajev, celjenju kože in rezultatih.",
-  alternates: {
-    canonical: "https://odstranitattoo.si/faq",
-  },
-};
+});
 
 export default function FaqPage() {
   return (

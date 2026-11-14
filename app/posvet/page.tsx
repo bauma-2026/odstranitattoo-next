@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Container from "@/components/layout/Container";
 import Button from "@/components/ui/Button";
 import PixelLayerRandom from "@/components/ui/pixels/PixelLayerRandom";
@@ -8,14 +9,12 @@ import {
   pixelsSectionDarkDesktop,
 } from "@/components/ui/pixels/pixels.config";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
+  path: "/posvet",
   title: "Povpraševanje za odstranjevanje tattooja",
   description:
     "Pošljite povpraševanje za odstranjevanje tattooja ali permanentnega pigmenta s Pico laserjem v Domžalah. Kontakt, termin in informacije pred tretmajem.",
-  alternates: {
-    canonical: "https://odstranitattoo.si/posvet",
-  },
-};
+});
 
 const expectations = [
   {
