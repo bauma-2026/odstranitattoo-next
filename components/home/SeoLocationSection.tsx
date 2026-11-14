@@ -1,7 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import Container from "@/components/layout/Container";
 
-const points = [
+const textLink =
+  "underline underline-offset-4 transition hover:text-neutral-600";
+
+const points: { title: string; text: string; href?: string }[] = [
   {
     title: "Okviren pregled pred začetkom",
     text: "Vsak tattoo pregledamo individualno glede na velikost, barvo, globino pigmenta, starost tattooja in stanje kože.",
@@ -12,6 +16,7 @@ const points = [
   },
   {
     title: "Studio v Domžalah",
+    href: "/odstranjevanje-tattoo-domzale",
     text: "Enostaven dostop, mirno okolje in jasna razlaga postopka pred začetkom odstranjevanja.",
   },
 ];
@@ -43,9 +48,14 @@ export default function SeoLocationSection() {
               </h2>
 
               <p className="text-body-lg">
-                Odstranjevanje tetovaže je postopen proces. Na začetku
-                pregledamo tattoo, kožo in pigment ter razložimo, kako postopek
-                običajno poteka.
+                <Link
+                  href="/odstranjevanje-tetovaze"
+                  className={`font-medium text-ink ${textLink}`}
+                >
+                  Odstranjevanje tetovaže
+                </Link>{" "}
+                je postopen proces. Na začetku pregledamo tattoo, kožo in
+                pigment ter razložimo, kako postopek običajno poteka.
               </p>
             </div>
 
@@ -57,7 +67,13 @@ export default function SeoLocationSection() {
                   className="relative pl-[18px] before:absolute before:left-0 before:top-[0.42em] before:h-[6px] before:w-[6px] before:rounded-full before:bg-skin-600 before:content-['']"
                 >
                   <p className="text-sm font-semibold text-neutral-900">
-                    {item.title}
+                    {item.href ? (
+                      <Link href={item.href} className={textLink}>
+                        {item.title}
+                      </Link>
+                    ) : (
+                      item.title
+                    )}
                   </p>
 
                   <p className="max-w-[44ch] text-body-sm text-neutral-600">
