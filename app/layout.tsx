@@ -36,6 +36,7 @@ const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
+  preload: false,
 });
 
 // Indeksiranje je dovoljeno samo v produkcijskem deployu (preview ostane noindex).
